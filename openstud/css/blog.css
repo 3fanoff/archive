@@ -1,0 +1,149 @@
+/*
+	BLOG
+*/
+.blog_post {
+	padding:28px 0 24px;
+}
+.blog_post .date,
+.more_posts .date {
+	font-size:12px;
+	font-style:italic;
+	color:#888888;
+}
+.blog_post h3 {
+	padding-bottom:6px;
+}
+.blog_post img.picture {
+	margin:0 0 15px;
+}
+.blog_post p {
+	padding:2px 0 15px;
+}
+.blog_post .tag_list,
+#post .tag_list {
+	padding: 0 0 0 32px;
+	background:url("../images/icon/icon_min_teapack.png") 2px 5px no-repeat;
+	font-size:14px;
+	width:280px;
+	float:left;
+}
+#post .tag_list {
+	margin-top:10px;
+	margin-bottom:28px;
+}
+.blog_post .comments_num {
+	font-size:14px;
+	padding: 0 0 0 26px;
+	background:url("../images/icon/icon_min_comment.png") 2px 6px no-repeat;
+	float:left;
+}
+.image_block {
+	width:336px;
+	padding:0 54px 25px 0;
+	float:left;
+	margin-left:-48px;
+	position:relative;
+}
+.image_block .desc {
+	text-align:right;
+	font:italic 12px/14px "Trebuchet MS", Arial, Helvetica, sans-serif;
+	padding-top:6px;
+}
+.citation {
+	padding:0 0 0 30px;
+	border-left:6px solid #AFB461;
+	height:60px;
+	width:532px;
+	margin:10px 0 42px;
+}
+.citation p {
+	font: italic 14px/24px "Trebuchet MS", Arial, Helvetica;
+	padding-bottom:0;
+	display:block;
+	position:relative;
+	top:-6px;
+}
+.more_posts {
+	padding:34px 0 20px
+}
+.more_posts_pos {
+	padding:16px 0;
+}
+.more_posts_pos p a {
+	text-decoration:none;
+}
+.more_posts_pos p a:hover {
+	text-decoration:underline;
+}
+
+/*
+	TAGS
+*/
+.tags {
+	padding-left:20px;
+}
+.tags p {margin-left:-20px;}
+.tags .filter {
+	font-size:14px;
+	padding:7px 0 15px;
+}
+.tags .filter a {
+	text-decoration:none;
+	border-bottom:1px dashed #3A8AAD;
+}
+.tags .filter a:hover {
+	border-bottom:0 solid;
+} 
+.tags .filter a.act {
+	color:#000;
+	border-bottom:0 solid;
+}
+.tags .tag_list {
+	font-size:14px;
+	line-height:24px;
+}
+/*
+	COMMENTS
+*/
+#comment_block .form {
+	border-bottom:1px solid #E5E5E5;
+	padding:24px 0 24px 0;
+}
+#comment_block .comment_title_block {
+	position:relative;
+	background:url("../images/icon/icon_pen.png") 0 22px no-repeat;
+	height:65px;
+	border-top:1px solid #E5E5E5;
+}
+#comment_block .comment_title_block p {
+	font-size:20px;
+	font-weight:bold;
+	padding:36px 0 0 54px;
+}
+#comment_block .comment_title_block a {
+	position:absolute;
+	top:38px;
+	right:0;
+	text-decoration:none;
+	border-bottom:1px dashed #3A8AAD;
+}
+#comment_block .comment_title_block a:hover {
+	border-bottom:0;
+}
+#comment_block .comment {
+	padding-top:24px;
+}
+#comment_block .comment p {
+	padding:0 0 6px;
+}
+#comment_block .comment span {
+	font: italic 12px "Trebuchet MS", Arial, Helvetica;
+	color:#747474;
+	padding-right:26px;
+}
+#comment_block .comment a.back {
+	margin:30px 0 0;
+}
+#comment_block .comments .back {
+	padding:24px 0 10px;
+}

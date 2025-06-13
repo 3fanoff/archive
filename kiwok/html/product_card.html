@@ -1,0 +1,310 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Карточка товара</title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Days+One" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/carouselme.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body class="my">
+	<div id="header">
+    	<div class="wrapper">
+        	<div class="top">
+            	<ul>
+                	<li><a href="#">О компании</a></li>
+                    <li><a href="#">Сотрудничество и обучение</a></li>
+                    <li><a href="#">Контактная информация</a></li>
+                </ul>
+                <div class="auth-on">
+                	<span class="ent"><a href="#" class="jslink">Войти</a></span>
+                    <span class="sep">|</span>
+                    <span class="reg"><a href="#">Регистрация</a></span>
+                    <div class="box">
+                    	<form id="auth-form" name="auth-form" action="" method="post">
+                        	<span class="fs-12">Электронная почта</span>
+                        	<div class="field"><input type="text" name="email" id="email"/></div>
+                            <span class="fs-12">Пароль</span>
+                            <a href="#" class="fs-12">Забыли пароль?</a>
+                            <div class="field"><input type="password" name="pass" id="pass"/></div>
+                            <input type="checkbox" id="remember" name="remember"/><label for="remember">Запомнить меня</label>
+                            <input type="submit" name="enter" id="enter" value="Войти"/>
+                        </form>	
+                    </div>
+                </div>
+            </div>
+            <div class="bot">
+            	<div id="logo"><a href="#"></a><span>&nbsp;</span></div>
+                <div class="address">
+                	<span class="c-grn it">Санкт-Петербург, Лиговский пр.</span>
+                    <a class="seemap" href="#">Посмотреть на карте</a>
+                </div>
+                <div id="cart">
+                	<a href="#" class="fs-25 bd">Моя корзина</a>
+                    <span class="num c-grn">(3)</span><br />
+                    <p>Стоимость всех товаров: <span class="c-red">1600 руб.</span></p>
+                </div>
+                <div class="tel"><span class="c-red">(+7 812)</span> 244-24-42</div>
+                <div class="time">
+                    <p>Принимаем заказы<br />
+                    <span>10:00 — 23:00</span><sup class="fs-12">пн — чт</sup><br />
+                    <span>10:00 — 01:00</span><sup class="fs-12">пт — вс</sup></p>
+                </div>
+                <div id="topmenu">
+                	<ul>
+                    	<li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Сотрудничество и обучение</a></li>
+                        <li><a href="#">Контактная информация</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/HEADER -->
+    <div id="main_body">
+    	<div class="wrapper">
+        	<div class="col-l">
+            	<div id="leftmenu">
+                	<ul>
+                    	<li><span class="parent">Воки</span>
+                            <ul>
+                                <li><a href="#">Готовые наборы</a></li>
+                                <li><a href="#">Конструктор</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="parent">Суши и ролы</span>
+                            <ul>
+                                <li><a href="#">Суши и ролы</a></li>
+                                <li><a href="#">Готовые наборы</a></li>
+                                <li><a href="#">Конструктор</a></li>
+                            </ul>
+                        </li>
+                        <li><span class="parent">Вкусное здоровье</span>
+                            <ul>
+                                <li><a href="#">Супы</a></li>
+                                <li><a href="#">Салаты</a></li>
+                                <li><a href="#">Напитки</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-r">
+            	<!-- CRUMBS -->
+            	<div class="crumbs">
+                	<ul>
+                    	<li><a href="#">Главная</a></li>
+                        <li class="sep">&ndash;</li>
+                        <li><a href="#">Воки: готовые наборы</a></li>
+                        <li class="sep">&ndash;</li>
+                        <li>Кивок драйв</li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <!-- CARD -->
+                <h1>КИВОК ДРАЙВ</h1>
+                <div id="card">
+                    <div class="box w-40">
+                        <img src="pics/demopic30.jpg" alt="bigimg" width="302"/>
+                        <div class="thumbs">
+                            <ul>
+                                <li><img src="pics/demopic30.jpg" alt="mimg" width="78"/></li>
+                                <li><img src="pics/demopic30.jpg" alt="mimg" width="78"/></li>
+                                <li><img src="pics/demopic30.jpg" alt="mimg" width="78"/></li>
+                                <li><img src="pics/demopic30.jpg" alt="mimg" width="78"/></li>
+                                <li><img src="pics/demopic30.jpg" alt="mimg" width="78"/></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="box w-60">
+                        <div class="box w-60">
+                            <p class="cost">450 руб</p>
+                            <p class="sizes">
+                                <a href="#">L (450 гр)</a>
+                                <a href="#" class="selected">M (450 гр)</a>
+                                <a href="#">S (450 гр)</a>
+                            </p>
+                        </div>
+                        <div class="box w-40">
+                        	<div class="changenum">
+                                <a href="#" class="m">minus</a>
+                                <a href="#" class="p">plus</a>
+                                <input type="text" size="1" value="0"/>
+                            </div>
+                            <a href="#" class="but-a">Заказать</a>
+                        </div>
+                        <div class="sp-44"></div>
+                        <div class="box w-60 lh-20">
+                            <h2>Устойчивый математический маятник: электромеханическая система или крен?</h2>
+                            <p>Отсюда видно, что внешнее кольцо влияет на составляющие гироскопического момента больше, чем прецессионный альтиметр, поэтому энергия гироскопического маятника.из законов сохранения следует, что векторная форма вертикальна.</p>
+                        </div>
+                        <div class="box w-40">
+                        	<ul class="c-grn lh-22 pl-12">
+                            	<li>— Фирменная перечная лапша</li>
+                                <li>— Большая порция говядины</li>
+                                <li>— Капуста</li>
+                                <li>— Лук-порей</li>
+                                <li>— Стебель селдерея</li>
+                                <li>— Соус терияки</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+                <div class="sp-18"></div>
+                <div class="sp-18 bts"></div>
+                <!--/CARD -->
+                <div id="associates">
+                	<p class="fs-18">С этим товаром обычно покупают:</p>
+                    <div class="card_list">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="pics/demopic10.jpg" alt="dp" /></a>
+                                <div class="badge none"></div>
+                                <p class="title"><a href="#" class="l-red">Кивок драйв</a></p>
+                                <p class="desc c-grn">Картофель, рыба, лапша удон.</p>
+                                <input type="hidden" name="size" id="size-card1" value=""/>
+                                <p class="sizes">
+                                    <a href="#">L (450 гр)</a>
+                                    <a href="#">M (450 гр)</a>
+                                    <a href="#" class="selected">S (450 гр)</a>
+                                </p>
+                                <p class="cost">Цена 650 руб.</p>
+                                <div class="changenum">
+                                    <a href="#" class="m">minus</a>
+                                    <a href="#" class="p">plus</a>
+                                    <input type="text" size="1" value="0"/>
+                                </div>
+                                <a href="#" class="but-a">Заказать</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="pics/demopic11.jpg" alt="dp" /></a>
+                                <p class="title"><a href="#" class="l-red">Кивок драйв</a></p>
+                                <p class="desc c-grn">Картофель, рыба, лапша удон.</p>
+                                <input type="hidden" name="size" id="size-card2" value=""/>
+                                <p class="sizes">
+                                    <a href="#">L (450 гр)</a>
+                                    <a href="#">M (450 гр)</a>
+                                    <a href="#">S (450 гр)</a>
+                                </p>
+                                <p class="cost">Цена 650 руб.</p>
+                                <div class="changenum">
+                                    <a href="#" class="m">minus</a>
+                                    <a href="#" class="p">plus</a>
+                                    <input type="text" size="1" value="0"/>
+                                </div>
+                                <a href="#" class="but-a">Заказать</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="pics/demopic12.jpg" alt="dp" /></a>
+                                <div class="badge none"></div>
+                                <p class="title"><a href="#" class="l-red">Кивок драйв</a></p>
+                                <p class="desc c-grn">Картофель, рыба, лапша удон.</p>
+                                <input type="hidden" name="size" id="size-card3" value=""/>
+                                <p class="sizes">
+                                    <a href="#">L (450 гр)</a>
+                                    <a href="#">M (450 гр)</a>
+                                    <a href="#">S (450 гр)</a>
+                                </p>
+                                <p class="cost">Цена 650 руб.</p>
+                                <div class="changenum">
+                                    <a href="#" class="m">minus</a>
+                                    <a href="#" class="p">plus</a>
+                                    <input type="text" size="1" value="0"/>
+                                </div>
+                                <a href="#" class="but-a">Заказать</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="pics/demopic13.jpg" alt="dp" /></a>
+                                <p class="title"><a href="#" class="l-red">Кивок драйв</a></p>
+                                <p class="desc c-grn">Картофель, рыба, лапша удон.</p>
+                                <input type="hidden" name="size" id="size-card4" value=""/>
+                                <p class="sizes">
+                                    <a href="#">L (450 гр)</a>
+                                    <a href="#">M (450 гр)</a>
+                                    <a href="#">S (450 гр)</a>
+                                </p>
+                                <p class="cost">Цена 650 руб.</p>
+                                <div class="changenum">
+                                    <a href="#" class="m">minus</a>
+                                    <a href="#" class="p">plus</a>
+                                    <input type="text" size="1" value="0"/>
+                                </div>
+                                <a href="#" class="but-a">Заказать</a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="sp-50"></div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div id="footer_sp"></div>
+    <div id="footer">
+    	<div class="wrapper">
+        	<div class="box-l">
+            	<ul>
+                	<li><span class="parent">Воки</span>
+                    	<ul>
+                        	<li><a href="#">Готовые наборы</a></li>
+                            <li><a href="#">Конструктор</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="parent">Суши и роллы</span>
+                    	<ul>
+                        	<li><a href="#">Суши</a></li>
+                            <li><a href="#">Роллы</a></li>
+                            <li><a href="#">Горячее</a></li>
+                            <li><a href="#">Готовые наборы</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="parent">Вкусное здоровье</span>
+                    	<ul>
+                        	<li><a href="#">Супы</a></li>
+                            <li><a href="#">Салаты</a></li>
+                            <li><a href="#">Напитки</a></li>
+                            <li><a href="#">Десерты</a></li>
+                            <li><a href="#">Горячее</a></li>
+                        </ul>
+                   	</li>
+                </ul>
+            </div>
+            <div class="box-r">
+            	<ul>
+                	<li>
+                    	<ul>
+                        	<li><a href="#">Главная</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Полезно знать</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<ul>
+                        	<li><a href="#">О компании</a></li>
+                            <li><a href="#">Контактная информация</a></li>
+                            <li><a href="#">Сотрудничество и обучение</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <p class="copy">&copy; &laquo;Кивок&raquo;. Первые макарошки в коробочке</p>
+            <div class="box-r stamp">
+            	<div class="tel">
+                	<span class="c-grn">Звоните и задавайте вопросы:</span><br />
+                    <span class="fs-18 bd"><span class="c-red">(+7 812)</span> 981 42 24</span>
+                </div>
+                <a href="#" id="openstud" target="_blank" title="Открытая студия">Создание и продвижение сайта</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

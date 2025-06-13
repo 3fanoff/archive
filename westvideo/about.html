@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Westvideo / О компании</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="fonts/ptsans.css" type="text/css" /><![endif]-->
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+    <script type="text/javascript" src="http://api-maps.yandex.ru/2.0/?load=package.full&lang=ru-RU"></script>
+    <script type="text/javascript">
+        ymaps.ready(init);
+        function init () {
+            var myMap = new ymaps.Map('map', {
+                    center: [55.742878, 37.526582],
+                    zoom: 16
+            }),
+			myGeoObject = new ymaps.Placemark([55.742879, 37.526582],{
+				balloonContentHeader: 'Вест',
+                balloonContentBody: '121170, Москва, Кутузовский просп., 36, стр. 23<br />+7 (495) 640-27-52',
+                balloonContentFooter: 'пн-пт 10:00-18:00'
+            });
+            myMap.controls.add('zoomControl', {left: 10, bottom: 10 }).add(new ymaps.control.ScaleLine());
+			myMap.geoObjects.add(myGeoObject);
+        }
+    </script>
+</head>
+<!-- HEADER -->
+<body class="mybody">
+    <div id="wrapper">
+        <div id="header">
+        	<!-- main_content HEADER -->
+            <div class="wrapper">
+                <a class="logo" href="/">Лого</a>
+                <div id="topmenu">
+                    <ul>
+                        <li><a href="#">Фильмы<span></span></a></li>
+                        <li><a href="#">DVD и Blu-ray<span></span></a></li>
+                        <li><a href="#">Кинотеатры<span></span></a></li>
+                        <li><a href="#">Новости<span></span></a></li>
+                        <li><a href="#">Прессе и партнерам<span></span></a></li>
+                        <li class="active"><a href="#">Компания<span></span></a></li>
+                    </ul>
+                    <div class="right_b"></div>
+                </div>
+            </div>
+            <!-- /main_content HEADER -->
+        </div>
+<!--/HEADER -->
+		<div class="wrapper">
+        	<div id="about">
+            	<div class="col-l">
+                	<div class="content">
+                    	<h1>Мы - &laquo;Вест&raquo;</h1>
+                        <p>Компания «Вест» основана в 1994 году и является одной из самых крупных независимых дистрибьюторских кинокомпаний в России.
+                        <p>За 19 лет работы мы выпустили в российский прокат десятки картин. В их числе: знаменитая сага <a href="#">«Сумерки»</a>, 
+                        хоррор <a href="#">«Сайлент Хилл»</a> и его <a href="#">продолжение</a>, общепризнанная классика <a href="#">«Зелёная миля»</a> и
+                         <a href="#">«Талантливый мистер Рипли»</a>, а также культовые <a href="#">«Реквием по мечте»</a>, <a href="#">«Убить Билла»</a>, 
+                         <a href="#">«Город грехов»</a> и <a href="#">«Американский пирог»</a>.
+                        <p>Кроме того, «Вест» познакомил отечественных кинозрителей со множеством других отличных фильмов: <a href="#">«Жизнь прекрасна»</a>, 
+                        <a href="#">«Фрида»</a>, <a href="#">«Монстр»</a>, <a href="#">«Парфюмер: История одного убийцы»</a>, <a href="#">«Вавилон»</a>, 
+                        <a href="#">«P.S. Я люблю тебя»</a>, <a href="#">«Шаг вперед»</a> (2, 3 и 4 серии), <a href="#">«Крик»</a> (2 и 3 серии) и 
+                        <a href="#">«Очень страшное кино»</a> (1, 2 и 3 серии).
+                        <p><strong>Смотрите на экранах!</strong></p>
+                    </div>
+                    <div class="contacts">
+                    	<div class="card clear"><span class="pos">Генеральный директор</span><span class="name">Тигран Карлович Дохалов</span></div>
+                        <div class="card fl"><span class="pos">Отдел кинопроката</span><span class="name">Инна Слаповская</span> +7 495 640-27-61 <a href="mailto:">inna@westvideo.ru</a></div>
+                        <div class="card fl"><span class="pos"></span><span class="name">Ольга Фролова</span> +7 495 640-27-62 <a href="mailto:">frolova@westvideo.ru</a></div>
+                        <div class="card clear"><span class="pos">Реклама</span><span class="name">Катерина Головина</span> +7 495 640-27-54 <a href="mailto:">golovina@westvideo.ru</a></div>
+                        <div class="card"><span class="pos">PR</span><span class="name">Софья Петрова</span> +7 495 640-27-60 <a href="mailto:">pr@westvideo.ru</a></div>
+                        <div class="sp-30"></div>
+                        <h2>Контактная информация</h2>
+                        <div class="address"><span>Вест</span> 121170, Москва<br />Кутузовский проспект, дом 36, строение 23</div>
+                        <div class="address call"><span>Телефоны:</span> +7 495 640-27-51 +7 495 640-27-52</div>
+                        <a href="http://maps.yandex.ru/?ol=biz&oid=1103558585&ll=37.526582%2C55.742879&spn=0.016909%2C0.005175&z=17&l=map" target="_blank" class="go-y">Посмотреть на Яндекс.Картах</a>
+                    </div>
+                </div>
+                <div class="col-r">
+                	<div class="go-fb"><a href="http://www.facebook.com/west.filmcompany" target="_blank">«Вест» в Фейсбуке</a></div>
+                	<iframe src="//www.facebook.com/plugins/likebox.php?href=https%3A%2F%2Fwww.facebook.com%2Fwest.filmcompany&amp;width=480&amp;height=650&amp;show_faces=true&amp;colorscheme=light&amp;stream=true&amp;border_color=Linen&amp;header=false&amp;appId=483315638398901" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:480px; height:650px; background-image: url('images/bg_light.png'); -webkit-border-radius: 10px; -moz-border-radius: 10px; border-radius: 10px;" allowTransparency="true"></iframe>
+                    <div class="fb-shadow"></div>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="full_wrap ymap">
+        	<div id="map" style="width:100%; height:500px;"></div>
+        </div>
+<!-- FOOTER -->
+        <div id="sp_footer"></div>
+    </div>
+    <div id="footer">
+    	<div class="wrapper">
+        	<div class="sp-30"></div>
+        	<div class="w-500 fl pl-40">
+            	<span class="copy">&copy; 1997–2013 «Вест Видео»<br /><a href="#">О компании</a></span>
+                <div class="socials"></div>
+            </div>
+            <div class="w-500 fl pl-10">
+            	<span>Электронная почта: <a href="mailto:info@westvideo.ru">info@westvideo.ru</a></span>
+                <span class="pt-12">121170, Москва <br /><a href="javaScript:void(0);" class="anchor">Кутузовский проспект, дом 36, строение 23</a></span>
+                <span class="pt-12 fl">Телефоны:</span>
+                <span class="pt-12 fl"><span>&nbsp;+7 495 640-27-51</span><span>&nbsp;+7 495 640-27-52</span></span>
+            </div>
+        </div>
+    </div>
+</body>
+<!--/FOOTER -->
+</html>

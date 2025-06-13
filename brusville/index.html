@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Брусвиль</title>
+<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic&subset=latin,cyrillic" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="css/main.css"/>
+<link rel="stylesheet" type="text/css" href="css/flexslider.css">
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.form.min.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script src="js/jquery.flexslider.js"></script>
+<script type="text/javascript" src="js/script.set.js"></script>
+</head>
+
+<body class="mybody">
+	<div id="top_bg"></div>
+    <div class="wrap">
+    	<div id="header">
+        	<div class="logo"></div>
+            <h1>Строительство и продажа домов<br/ ><span>из клееного бруса «под ключ»</span></h1>
+        </div>
+        <div class="house_box">
+        	<div class="title _top">Хотите построить себе дом?</div>
+            <div class="title _bot">Закажите у нас на самых выгодных условиях!</div>
+        </div>
+        <div class="left_col">
+        	<!-- PROJECTS -->
+            <div class="projects">
+            	<h2>Наши проекты</h2>
+                <ul>
+                    <li>
+                        <a href="javascript:void(0);" class="img" onclick="modal.init('#gallery_1');"><img src="pic/house_1.jpg" width="140" height="105" alt=" " /></a>
+                        <h3><a href="javascript:void(0);" onclick="modal.init('#gallery_1');">Альянс</a></h3>
+                        <div class="area">Площадь дома: <span>117м<sup>2</sup></span></div>
+                        <div class="cost">Цена: <span>2 400 000 руб.</span></div>
+                        <div class="plan"><a href="javascript:void(0);" onclick="modal.init('#plan_1');">Планировка</a></div>
+                        <a href="javascript:void(0);" onclick="flashForm('Хочу заказать проект Альянс');" class="order jslink">Заказать</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="img" onclick="modal.init('#gallery_2');"><img src="pic/house_2.jpg" width="140" height="105" alt=" " /></a>
+                        <h3><a href="javascript:void(0);" onclick="modal.init('#gallery_2');">Дачный</a></h3>
+                        <div class="area">Площадь дома: <span>175м<sup>2</sup></span></div>
+                        <div class="cost">Цена: <span>3 400 000 руб.</span></div>
+                        <div class="plan"><a href="javascript:void(0);" onclick="modal.init('#plan_1');">Планировка</a></div>
+                        <a href="javascript:void(0);" onclick="flashForm('Хочу заказать проект Дачный');" class="order jslink">Заказать</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="img" onclick="modal.init('#gallery_2');"><img src="pic/house_3.jpg" width="140" height="105" alt=" " /></a>
+                        <h3><a href="javascript:void(0);" onclick="modal.init('#gallery_2');">Оптимум</a></h3>
+                        <div class="area">Площадь дома: <span>258м<sup>2</sup></span></div>
+                        <div class="cost">Цена: <span>4 400 000 руб.</span></div>
+                        <div class="plan"><a href="javascript:void(0);" onclick="modal.init('#plan_1');">Планировка</a></div>
+                        <a href="javascript:void(0);" onclick="flashForm('Хочу заказать проект Оптимум');" class="order jslink">Заказать</a>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="img" onclick="modal.init('#gallery_1');"><img src="pic/house_4.jpg" width="140" height="105" alt=" " /></a>
+                        <h3><a href="javascript:void(0);" onclick="modal.init('#gallery_1');">Комфорт</a></h3>
+                        <div class="area">Площадь дома: <span>330м<sup>2</sup></span></div>
+                        <div class="cost">Цена: <span>5 500 000 руб.</span></div>
+                        <div class="plan"><a href="javascript:void(0);" onclick="modal.init('#plan_1');">Планировка</a></div>
+                        <a href="javascript:void(0);" onclick="flashForm('Хочу заказать проект Комфорт');" class="order jslink">Заказать</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="sp_35"></div>
+            <a href="#" class="download">Комплектация строительства проекта<span>Скачать файл</span></a>
+            <div class="sp_15"></div>
+            <!-- GUARANTEES -->
+            <div class="guarantees">
+            	<h2>Мы гарантируем</h2>
+            	<ul>
+                	<li><span>1</span>Полное соблюдение сроков работ</li>
+                    <li><span>2</span>100% качество материалов</li>
+                    <li><span>3</span>Предоставление сертификатов и сопроводительных документов</li>
+                    <li><span>4</span>Индивидуальное обслуживание и квалифицированную консультацию</li>
+                </ul>
+            </div>
+            <div class="sp_15"></div>
+            <!-- REVIEWS -->
+            <div class="reviews">
+            	<h2>Отзывы</h2>
+            	<div class="review">
+                	<div class="photo"><img src="pic/review_01.jpg" width="100" height="75" alt=" " /></div>
+                    <div class="text"><p>Это просто Боги! Мастера своего дела!<br />
+						Проект выполнен на высшем уровне, теперь у меня есть свой<br />огромный и шикарный дом в России.<br />
+						Спасибо Брусвилю за такое счастье!</p>
+						<span class="author">Robert De Niro</span>
+					</div>
+                    <div class="clr sp_15"></div>
+                </div>
+                <div class="review">
+                	<div class="photo"><img src="pic/review_02.jpg" width="100" height="75" alt=" " /></div>
+                    <div class="text"><p>Узнал про то, что Роберт Де Ниро поселился в России и решил прикупить дом рядом с ним. 
+                    С проектом дома мне помогли ребята из компании «Брусвиль». Дом получился шикарный, все самого высокого качества. Молодцы!<br />
+					Тепепь можно спокойно уговаривать Де Ниро сняться в моем фильме.</p>
+						<span class="author">Ваш любимый Федор Бондарчук</span>
+					</div>
+                    <div class="clr sp_15"></div>
+                </div>
+            </div>
+        </div>
+        <div class="right_col">
+            <div class="move_box">
+                <div class="form_order">
+                    <div class="flashbox"></div>
+                    <div class="formbox">
+                        <form id="order" method="post" action="#">
+                            <input type="text" name="order_name" class="place req" value="Имя" />
+                            <input type="text" name="order_tel" class="place req" value="Номер телефона" />
+                            <textarea name="order_text" class="place req" >Сообщение или вопрос</textarea>
+                            <div class="error_box"></div>
+                            <input type="submit" value="Заказать"/>
+                        </form>
+                    </div>
+                </div>
+                <div class="contacts">
+                    <div class="title">Или используйте<br />контактные данные:</div>
+                    <div class="item telephone">+7 495 213-92-75</div>
+                    <div class="item email"><a href="mailto:info@brusville.ru">info@brusville.ru</a></div>
+                    <div class="sp_20"></div>
+                    <a href="javascript:void(0);" class="jslink" onclick="flashForm('Хочу заказать обратный звонок');">Заказать обратный звонок</a>
+                </div>
+            </div>
+        </div>
+        <div class="clr sp_20"></div>
+    </div>
+    <div id="sp_footer"></div>
+	<div id="footer">
+    	<div class="content">
+        	<div class="wrap">
+            	<div class="copy"><span>&copy;2009-2013 "Брусвиль"</span><br /><br />При использовании материалов сайта<br />прямая гиперссылка на "Брусвиль" обязательна.</div>
+                <div class="site">Разработка страницы<br /><a href="#">veSeliy.ru</a></div>
+            </div>
+        </div>
+    </div>
+    <div id="m-overlay" onclick="modal.closed();"></div>
+    <div id="modal" class="modal_win">
+    	<a href="javaScript:void(0)" class="close" onclick="modal.closed();">Закрыть</a>
+        <div class="popup_content"></div>
+    </div>
+    <div style="display:; left:-9999px; top:-9999px; position:absolute;" id="hiden">
+    	<div id="gallery_1">
+        	<div class="flexslider photos">
+        		<ul class="slides">
+					<li><img src="pic/slide422.jpg" width="800" height="533" alt=" "></li>
+					<li><img src="pic/slide423.jpg" width="800" height="533" alt=" "></li>
+					<li><img src="pic/slide424.jpg" width="800" height="533" alt=" "></li>
+	    		</ul>
+      		</div>
+        </div>
+        <div id="gallery_2">
+        	<div class="flexslider photos">
+        		<ul class="slides">
+					<li><img src="pic/slide422.jpg" width="800" height="533" alt=" "></li>
+					<li><img src="pic/slide423.jpg" width="800" height="533" alt=" "></li>
+					<li><img src="pic/slide424.jpg" width="800" height="533" alt=" "></li>
+	    		</ul>
+      		</div>
+        </div>
+        <div id="plan_1">
+        	<div class="flexslider plan">
+        		<ul class="slides">
+					<li><img src="pic/planirovka_03.png" width="780" height="627" alt=" "></li>
+					<li><img src="http://www.brusville.ru/assets/images/projects/117/117plan2.jpg" width="800" height="600" alt=" "></li>
+					<li><img src="http://www.brusville.ru/assets/images/projects/duplex/planir1.jpg" width="800" height="533" alt=" "></li>
+	    		</ul>
+      		</div>
+        </div>
+    </div>
+</body>
+</html>

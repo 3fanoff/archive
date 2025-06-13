@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Westvideo :: Фильм</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="fonts/ptsans.css" type="text/css" /><![endif]-->
+    <link rel="stylesheet" type="text/css" href="video-js.min.css">
+    <link rel="stylesheet" type="text/css" href="fancybox.css">
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox-thumbs.js"></script>
+    <!-- only for page movie_regform.html -->
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<!--<script type="text/javascript" src="js/additional-methods.min.js"></script>
+     /only for page movie_regform.html -->
+	<script type="text/javascript" src="js/video.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+<!-- HEADER -->
+<body class="mybody">
+    <div id="wrapper">
+        <div id="header">
+        	<!-- main_content HEADER -->
+            <div class="wrapper">
+                <a class="logo" href="/">Лого</a>
+                <div id="topmenu">
+                    <ul>
+                        <li><a href="#">Фильмы<span></span></a></li>
+                        <li class="active"><a href="#">DVD и Blu-ray<span></span></a></li>
+                        <li><a href="#">Кинотеатры<span></span></a></li>
+                        <li><a href="#">Новости<span></span></a></li>
+                        <li><a href="#">Прессе и партнерам<span></span></a></li>
+                        <li><a href="#">Компания<span></span></a></li>
+                    </ul>
+                    <div class="right_b"></div>
+                </div>
+            </div>
+            <!-- /main_content HEADER -->
+        </div>
+<!--/HEADER -->
+		<div class="wrapper">
+        	<div id="movie">
+            	<div class="col-l fl pr-20 pl-40">
+                	<a class="poster fancy_gallery" style="background-image:url('pics/movie_poster-01.jpg');" href="pics/poster-01.jpg" data-fancybox-group="fancy_posters"></a>
+                    <div class="a-title"><span>8</span><a href="pics/poster-02.jpg" data-fancybox-group="fancy_posters" class="anchor fancy_gallery">Постеры</a></div>
+                    <div class="pic_list">
+                    	<a href="pics/poster-03.jpg" data-fancybox-group="fancy_posters" class="fancy_gallery"></a>
+                    	<a href="pics/poster-04.jpg" data-fancybox-group="fancy_posters" class="fancy_gallery"></a>
+                        <a href="pics/poster-05.jpg" data-fancybox-group="fancy_posters" class="fancy_gallery"></a>
+                        <a href="pics/poster-06.jpg" data-fancybox-group="fancy_posters" class="fancy_gallery"></a>
+                        <a href="pics/poster-07.jpg" data-fancybox-group="fancy_posters" class="fancy_gallery"></a>
+                    </div>
+                </div>
+                <div class="col-c fl pr-20">
+                	<div class="box">
+                		<h1>Прекрасные создания</h1>
+                        <div class="eng-title">Beautiful Creatures</div>
+                    </div>
+                    <div class="box">
+                    	<div class="fl">
+                    		<div class="year">США, 2013</div>
+                        	<div class="genre"><span>драма</span><span>триллер</span></div>
+                        </div>
+                    	<div class="age" style="background-image:url('images/age-12.png');"></div>
+                        <div class="time">122 мин.</div>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="box">
+                    	<ul class="desc">
+                        	<li><span>Режиссер</span><span>Ричард ЛаГравенес</span></li>
+                            <li><span>Сценарий</span><span>Ричард ЛаГравенес, Ками Гарсиа, Маргарет Штоль</span></li>
+                            <li><span>Оператор</span><span>Филипп Русло</span></li>
+                            <li><span>Художник</span><span>Ричард Шерман, Лорин Флемминг, Джеффри Кёрланд</span></li>
+                            <li><span>Композитор</span><span>Ричард Шерман, Лорин Флемминг, Джеффри Кёрланд</span></li>
+                            <li><span>В ролях</span><span>Виола Дэвис, Элис Энглерт, Олден Эйренрайк, Джереми Айронс, Эмми Россам, Томас Манн, Эмма Томпсон, Кайл Галлнер, Айлин Эткинс, 
+                            Зоя Дойч, Андреа Франкл, Марго Мартиндейл, Рэйчел Броснахэн, Камилль Бальзамо, Бо Брассо, Джеки Таттл, Дж.Д. Эвермор, Тиффани Бун, 
+                            Линдсэй Клифт, Тери Уайбл</span></li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    <div class="box">
+                    	<p>Лена Дюкейн отличается от всех, кого когда-либо видел маленький южный город Гатлин, она борется с собой, пытаясь усмирить 
+                        свою силу и проклятие, веками преследовавшее ее семью. Но даже в разросшихся садах, в мрачных болотах и на разрушенных могильниках 
+                        позабытого Юга секрет не будет жить вечно.</p>
+						<p>Итана Уэйта, считающего дни до своего бегства из Гатлина, преследуют сны о прекрасной девушке, которую он никогда не встречал. Когда Лена приезжает 
+                        жить в дом на самой старой и самой жуткой из всех плантаций города, Итан безоговорочно влюбляется в нее и целенаправленно 
+                        старается раскрыть секрет их удивительной связи.</p>
+                    </div>
+                </div>
+                <div class="col-l fl">
+                	<div class="premiere">
+                    	<div class="country red">Премьера в России</div>
+                        <div class="date">29 сентября 2012 года</div>
+                    </div>
+                	<div class="out-date blu">
+                    	<p>Выходит на Blu-ray</p>
+                        <div class="disk"></div>
+                        <span class="movie-date yel">11 апреля 2013 года</span><span></span>
+                    </div>
+                    <div class="out-date dvd">
+                    	<p>Вышел на DVD</p>
+                        <div class="disk"></div>
+                        <span class="movie-date red">23 июля 2010 года</span><span></span>
+                    </div>
+                </div>
+                <div class="clear"></div>
+                <!-- NEWS -->
+                <div class="a-title pl-40 pt-12" id="movie_news-load"><a href="javaScript:void(0);" class="anchor">Новости</a><span>18</span></div>
+                <div id="movie_news">
+                	<ul>
+                        <li><div class="date">10 февраля</div><a href="#">Кассовые рекорды "Сумеречной саги"</a></li>
+                        <li><div class="date">11 февраля</div><a href="#">В российский прокат выйдет фантастический триллер "Гостья"</a></li>
+                        <li><div class="date">12 февраля</div><a href="#">"Сэмми: Шевели ластами" и постеры</a></li>
+                        <li><div class="date">13 февраля</div><a href="#">Компания "Вест" выпустит в России нового "Терминатора"</a></li>
+                        <li><div class="date">13 февраля</div><a href="#">Сумерки. Сага. Успех.</a></li>
+                        <li><div class="date">14 февраля</div><a href="#">Кассовые рекорды "Сумеречной саги"</a></li>
+                        <li class="vip"><div class="date">15 февраля</div><a href="#">"Веселые каникулы" выходят в широкий прокат</a></li>
+                        <li><div class="date">15 февраля</div><a href="#">"Шкатулка проклятия" собирает миллиарды!</a></li>
+                	</ul>
+                    <div class="clear"></div>
+                	<div class="after"></div>
+                </div>
+                <!--/NEWS -->
+                <div class="sp-30"></div>
+                <div class="sp-30"></div>
+                <!-- MEDIA_BLOCK -->
+                <div id="media">
+                	<div class="col-l fl pl-40">
+                    	<div class="a-title"><a href="pics/shot-01.jpg" class="anchor fancy_gallery" data-fancybox-group="fancy_shots">Кадры и фото</a><span>29</span></div>
+                        <a href="pics/shot-02.jpg" class="img fancy_gallery"  data-fancybox-group="fancy_shots" style="background-image:url('pics/shot-01.jpg');"></a>
+                        <div class="pic_list">
+                        	<a href="pics/shot-03.jpg" class="fancy_gallery"  data-fancybox-group="fancy_shots"></a>
+                            <a href="pics/shot-04.jpg" class="fancy_gallery"  data-fancybox-group="fancy_shots"></a>
+                            <a href="pics/shot-05.jpg" class="fancy_gallery"  data-fancybox-group="fancy_shots"></a>
+                            <a href="pics/shot-06.jpg" class="fancy_gallery"  data-fancybox-group="fancy_shots"></a>
+                        </div>
+                    </div>
+                    <div class="col-c fl" id="videos">
+                    	<div class="a-title"><a href="#video1-container" class="anchor fancy_vids" data-fancybox-group="fancy_vids" data-fancybox-title="О съёмках">Видео</a><span>7</span></div>
+                        <div class="pic_list">
+                        	<a href="#video2-container" class="fancy_vids" data-fancybox-group="fancy_vids" data-fancybox-title="Дублированный ролик о создании с комментариями режиссера"></a>
+                            <a href="#video3-container" class="fancy_vids" data-fancybox-group="fancy_vids" data-fancybox-title="Телевизионный ролик"></a>
+                        </div>
+                        <div id="video_tabs">
+                            <div class="vid" id="video1-container">
+                                <video id="video_1" class="video-js vjs-default-skin" controls preload="auto" width="552" height="232" poster="pics/shot-01.jpg" data-setup="{}">
+                                    <source src="_test/BC1.ogv" type="video/ogg">
+                                    <source src="_test/BC1.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="vid" id="video2-container">
+                                <video id="video_2" class="video-js vjs-default-skin" controls preload="auto" width="552" height="232" poster="pics/shot-02.jpg" data-setup="{}">
+                                    <source src="_test/BC2.ogv" type="video/ogg">
+                                    <source src="_test/BC3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                            <div class="vid" id="video3-container">
+                                <video id="video_3" class="video-js vjs-default-skin" controls preload="auto" width="552" height="232" poster="pics/shot-03.jpg" data-setup="{}">
+                                    <source src="_test/BC3.ogv" type="video/ogg">
+                                    <source src="_test/BC3.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="video_shadow"></div>
+                    </div>
+                    <div class="col-l fl">
+                    	<div id="video_nav">
+                        	<ul>
+                            	<li class="current"><a id="video1-button" href="javaScript:void(0);" onClick="media_tab('video1');">О съёмках</a><span></span></li>
+                                <li><a id="video2-button" href="javaScript:void(0);" onClick="media_tab('video2');">Дублированный ролик о создании с комментариями режиссера</a><span></span></li>
+                                <li><a id="video3-button" href="javaScript:void(0);" onClick="media_tab('video3');">Телевизионный ролик</a><span></span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+            	</div>
+                <!--/MEDIA_BLOCK -->
+                <!-- CINEMA_BLOCK -->
+                <div class="sp-30"></div>
+                <div id="cinema">
+                	<div class="big_title">«Прекрасные создания» в <a href="#">кинотеатрах сети «Вест»</a></div>
+                	<div class="cinema_tabs">
+                    	<ul>
+                        	<li id="cinema_01-button"><a href="javaScript:void(0);" onClick="show_tab('cinema_01')">«Бумеранг» на Варшавской</a></li>
+                            <li id="cinema_02-button"><a href="javaScript:void(0);" onClick="show_tab('cinema_02')">«Бумеранг» на Теплом Стане</a></li>
+                            <li id="cinema_03-button"><a href="javaScript:void(0);" onClick="show_tab('cinema_03')">Орбита</a></li>
+                            <li id="cinema_04-button"><a href="javaScript:void(0);" onClick="show_tab('cinema_04')">Родина</a></li>
+                            <li id="cinema_05-button"><a href="javaScript:void(0);" onClick="show_tab('cinema_05')">«Бумеранг» в Чехове</a></li>
+                        </ul>
+                    </div>
+                    <div class="cinema_box">
+                    	<div id="cinema_01-tab">
+                            <div class="schedule">
+                                <div class="day_box current">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Среда</span> 27 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30</span></div>
+                                        <div class="hall">Большой зал <span>13:45, 22:00</span></div>
+                                        <div class="hall">Длинное название зала для теста <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Четверг</span> 28 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                        <div class="hall">Большой зал <span>09:00, 11:30, 13:40, 17:45, 19:55, 20:50, 21:00, 23:35</span></div>
+                                        <div class="hall">Средний зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Пятница</span> 29 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                        <div class="hall">Средний зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box dayoff">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Суббота</span> 30 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                        <div class="hall">Большой зал <span>09:00, 11:30, 13:40, 17:45, 19:55, 20:50</span></div>
+                                        <div class="hall">Средний зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box dayoff">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Воскресенье</span> 31 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:30, 13:00, 15:20, 17:25, 19:50, 22:10, 00:00</span></div>
+                                        <div class="hall">Средний зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Понедельник</span> 1 апреля</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                        <div class="hall">Средний зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Вторник</span> 2 апреля</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                        <div class="hall">Большой зал <span>09:00, 11:30, 13:40, 17:45, 19:55, 20:50</span></div>
+                                        <div class="hall">Средний зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts">
+                                <div>
+                                    <span><a href="#">Страница кинотеатра</a></span>
+                                    <span>Варшавское шоссе,  87, лит. Б</span>
+                                    <span><span>Бронирование:</span> +7 495 221-50-68</span>
+                                    <span><span>Автоответчик:</span> +7 495 221-50-67</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cinema_02-tab">
+                            <div class="schedule">
+                                <div class="day_box current">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Среда</span> 27 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Главный зал <span>11:00, 16:30</span></div>
+                                        <div class="hall">Малый зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Четверг</span> 28 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Главный зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                        <div class="hall">Малый зал <span>09:00, 11:30, 13:40, 17:45, 20:50, 21:00, 23:35</span></div>
+									</div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Пятница</span> 29 марта</div>
+                                    <div class="halls">
+                                    </div>
+                                </div>
+                                <div class="day_box dayoff">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Суббота</span> 30 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Главный зал <span>09:00, 11:30, 13:40, 17:45, 19:55, 20:50</span></div>
+                                        <div class="hall">Малый зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box dayoff">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Воскресенье</span> 31 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:30, 13:00, 15:20, 17:25, 19:50, 22:10, 00:00</span></div>
+                                        <div class="hall">Средний зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Понедельник</span> 1 апреля</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                        <div class="hall">Главный зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Вторник</span> 2 апреля</div>
+                                    <div class="halls">
+                                        <div class="hall">Главный зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                        <div class="hall">Малый зал <span>09:00, 11:30, 13:40, 20:50</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts">
+                                <div>
+                                    <span><a href="#">Страница кинотеатра</a></span>
+                                    <span>Новоясеневский проспект, влад. 1. ТЦ «Принц Плаза»</span>
+                                    <span><span>Бронирование:</span> +7 495 978-16-42</span>
+                                    <span><span>Автоответчик:</span> +7 495 978-16-41</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cinema_03-tab">
+                            <div class="schedule">
+                                <div class="day_box current">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Среда</span> 27 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Большой зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Четверг</span> 28 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Большой зал <span>09:00, 11:30, 13:40, 17:45, 19:55, 20:50, 21:00, 23:35</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Пятница</span> 29 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Большой зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box dayoff">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Суббота</span> 30 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Большой зал <span>09:00, 11:30, 13:40, 17:45, 19:55, 20:50</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box dayoff">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Воскресенье</span> 31 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Большой зал <span>11:30, 13:00, 15:20, 17:25, 19:50, 22:10, 00:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Понедельник</span> 1 апреля</div>
+                                    <div class="halls">
+                                        <div class="hall">Большой зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Вторник</span> 2 апреля</div>
+                                    <div class="halls">
+                                        <div class="hall">Большой зал <span>09:00, 11:30, 13:40, 17:45, 19:55, 20:50</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts">
+                                <div>
+                                    <span><a href="#">Страница кинотеатра</a></span>
+                                    <span>Проспект Андропова, 27</span>
+                                    <span><span>Бронирование:</span> +7 499 615-65-60</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cinema_04-tab">
+                            <div class="schedule">
+                                <div class="day_box current">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Среда</span> 27 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 19:15</span></div>
+                                        <div class="hall">Большой зал <span>13:45, 17:45, 19:15, 22:00</span></div>
+                                        <div class="hall">Средний <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Четверг</span> 28 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                        <div class="hall">Большой зал <span>09:00, 11:30, 13:40, 17:45, 19:55, 20:50, 21:00, 23:35</span></div>
+                                        <div class="hall">Средний зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Пятница</span> 29 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                        <div class="hall">Большой зал <span>09:00, 11:30, 13:40, 17:45, 19:55</span></div>
+                                        <div class="hall">Средний зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box dayoff">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Суббота</span> 30 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                        <div class="hall">Большой зал <span>09:00, 11:30, 13:40, 17:45, 19:55, 20:50</span></div>
+                                        <div class="hall">Средний зал <span>13:45, 17:45, 19:55, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box dayoff">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Воскресенье</span> 31 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:30, 13:00, 15:20, 17:25, 22:10, 00:00</span></div>
+                                        <div class="hall">Большой зал <span>09:00, 11:30, 13:40, 17:45, 20:50</span></div>
+                                        <div class="hall">Средний зал <span>11:00, 16:30, 17:45, 19:15, 23:00, 01:55</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Понедельник</span> 1 апреля</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                        <div class="hall">Большой зал <span>09:00, 11:30, 13:40, 17:45, 20:50</span></div>
+                                        <div class="hall">Средний зал <span>13:45, 16:30, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Вторник</span> 2 апреля</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00</span></div>
+                                        <div class="hall">Большой зал <span>09:00, 11:30, 13:40, 17:45, 19:55, 20:50</span></div>
+                                        <div class="hall">Средний зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts">
+                                <div>
+                                    <span><a href="#">Страница кинотеатра</a></span>
+                                    <span>Семеновская площадь, 5</span>
+                                    <span><span>Бронирование:</span> +7 499 369-07-93</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="cinema_05-tab">
+                            <div class="schedule">
+                                <div class="day_box current">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Среда</span> 27 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30</span></div>
+                                        <div class="hall">Средний зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Четверг</span> 28 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                        <div class="hall">Средний зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Пятница</span> 29 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box dayoff">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Суббота</span> 30 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:00, 16:30, 17:45, 19:15, 23:00, 01:55</span></div>
+                                        <div class="hall">Средний зал <span>13:45, 22:00</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box dayoff">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Воскресенье</span> 31 марта</div>
+                                    <div class="halls">
+                                        <div class="hall">Малый зал <span>11:30, 13:00, 15:20, 17:25, 19:50, 22:10, 00:00</span></div>
+                                        <div class="hall">Средний зал <span>11:00, 16:30, 17:45, 19:15, 21:10, 23:00, 01:55</span></div>
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Понедельник</span> 1 апреля</div>
+                                    <div class="halls">
+                                    </div>
+                                </div>
+                                <div class="day_box">
+                                    <div class="today">Сегодня</div>
+                                    <div class="day"><span>Вторник</span> 2 апреля</div>
+                                    <div class="halls">
+                                        <div class="hall">Средний зал <span>13:45, 19:15, 22:00</span></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contacts">
+                                <div>
+                                    <span><a href="#">Страница кинотеатра</a></span>
+                                    <span>Московская область, г. Чехов Московская улица, влад. 96. Торговый центр «Карнавал»</span>
+                                    <span><span>Бронирование:</span> +7 915 072-23-18</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="shadow"></div>
+                    </div>
+                </div>
+                <div class="sp-30"></div>
+                <!--/CINEMA_BLOCK -->
+                <!-- AUTH FOR PRESS_BLOCK -->
+                <div id="press-anchor" class="sp-30"></div>
+                <div id="auth_block" class="">
+                	<div class="toggle"></div>
+                	<div class="mid_title">Материалы для прессы и партнёров</div>
+                    <div class="container">
+                    	<div class="desc">Материалы к фильмам в высоком качестве доступны только авторизованным пользователям</div>
+                    	<div class="col fl">
+                        	<div class="tac">
+                        		<a href="#" class="ftype reg" data-form="reg"><span class="ico"></span><span class="clear"></span><span class="anchor">Регистрация</span></a>
+                            </div>
+                            <div class="formbox reg">
+                            	<form action="http://3fan.ru/cityjam/west/_test/form.php" method="post" id="registration">
+                                	<div class="title"><label for="r_email">Электронная почта*</label><br />Используется для входа на сайт</div>
+                                	<input type="text" name="r_email" id="r_email" class="req" />
+                                    <div class="title"><label for="r_pass1">Пароль*</label></div>
+                                	<input type="password" name="r_pass1" id="r_pass1" class="i2 req" />
+                                    <div class="title"><label for="r_pass2">Пароль ещё раз*</label></div>
+                                	<input type="password" name="r_pass2" id="r_pass2" class="i2 req" />
+                                    <div class="title"><label for="r_name">Имя*</label></div>
+                                	<input type="text" name="r_name" id="r_name" class="req" />
+                                    <div class="title"><label for="r_job">Место работы</label></div>
+                                	<input type="text" name="r_job" id="r_job" />
+                                    <div class="title"><label for="r_pos">Должность</label></div>
+                                	<input type="text" name="r_pos" id="r_pos" />
+                                    <div class="title"><label for="r_tel">Телефон</label><br />Не забудьте указать код</div>
+                                	<input type="text" name="r_tel" id="r_tel" class="i2" />
+                                    <div class="errorbox">Пожалуйста, правильно заполните все отмеченные поля</div>
+                                    <div class="reminder"><b>*</b> &mdash; обязательно для заполнения</div>
+                                    <input type="submit" value="Отправить" />
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col fr">
+                        	<div class="tac">
+                        		<a href="#" class="ftype log" data-form="log"><span class="ico"></span><span class="clear"></span><span class="anchor">Вход</span></a>
+                            </div>
+                            <div class="formbox log">
+                            	<form action="http://3fan.ru/cityjam/west/_test/form.php" method="post" id="authorization">
+                                	<div class="title"><label for="a_email">Электронная почта</label></div>
+                                	<input type="text" name="a_email" id="a_email" class="req"/>
+                                    <div class="title"><label for="a_pass1">Пароль</label></div>
+                                	<input type="password" name="a_pass1" id="a_pass1" class="i2" />
+                                    <div class="errorbox">Указан неверный адрес электронной почты или неправильный пароль</div>
+                                    <input type="submit" value="Войти"/>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="sp-30"></div>
+                <!--/AUTH FOR PRESS_BLOCK -->
+            </div>
+        </div>
+<!-- FOOTER -->
+        <div id="sp_footer"></div>
+    </div>
+    <div id="footer">
+    	<div class="wrapper">
+        	<div class="sp-30"></div>
+        	<div class="w-500 fl pl-40">
+            	<span class="copy">&copy; 1997–2013 «Вест Видео»<br /><a href="#">О компании</a></span>
+                <div class="socials"></div>
+            </div>
+            <div class="w-500 fl pl-10">
+            	<span>Электронная почта: <a href="mailto:info@westvideo.ru">info@westvideo.ru</a></span>
+                <span class="pt-12">121170, Москва <br /><a href="javaScript:void(0);" class="anchor">Кутузовский проспект, дом 36, строение 23</a></span>
+                <span class="pt-12 fl">Телефоны:</span>
+                <span class="pt-12 fl"><span>&nbsp;+7 495 640-27-51</span><span>&nbsp;+7 495 640-27-52</span></span>
+            </div>
+        </div>
+    </div>
+</body>
+<!--/FOOTER -->
+</html>

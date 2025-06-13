@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Marusia Order</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" type="text/css" href="grad.css"/>
+<!--[if gte IE 9]>
+  <style type="text/css">
+    .gradient {filter: none;}
+  </style>
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="js/script.js"></script>
+</head>
+
+<body>
+	<!--HEADER-->
+	<div id="header">
+    	<div id="top_on_header">
+        	<a href="/" class="logo"></a>
+            <div class="slogan">
+            	<p>Жизнь есть то, во что ты веришь. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />Верь в хорошее!</p>
+                <!--<p class="sub">Маруся Светлова, фрагмент семинара <a href="#">Тренинг любви к себе</a></p>-->
+            </div>
+            <div class="socials">
+            	<a class="ic vk" href="#"><span>&nbsp;</span><i>VK.com</i></a>
+                <a class="ic fb" href="#"><span>&nbsp;</span><i>Facebook</i></a>
+                <a class="ic tw" href="#"><span>&nbsp;</span><i>Twitter</i></a>
+                <a class="ic yt" href="#"><span>&nbsp;</span><i>YouTube</i></a>
+            </div>
+            <div class="marusya"></div>
+        </div>
+    	<div id="menu_top">
+        	<ul>
+            	<li class="item01"><a href="#">Обо мне</a></li>
+                <li class="item02"><a href="#">Тренинги</a></li>
+                <li class="item03"><a href="#">Книги и издательские проекты</a></li>
+                <li class="item05"><a href="#">Клуб единомышленников</a></li>
+                <li class="item04"><a href="#">Контакты</a></li>
+            </ul>
+        </div>
+    </div>
+    <!--/HEADER-->
+    <!--MAINBODY-->
+    <div id="mainbody">
+    	<div class="inner_container">
+        	<div class="crumbs">
+            	<ul>
+                	<li><a href="#">Вернуться на заглавную</a></li>
+                    <li>&rarr;</li>
+                    <li><a href="#">Книги</a></li>
+                    <li>&rarr;</li>
+                    <li class="current">Оформление заказа</li>
+                </ul>
+            </div>
+            <div class="full">
+            	<div class="block_a yel-whi gradient">
+                    <div class="block_a-inner block01_a">
+                   	  	<div class="body">
+                      		<h1>Оформление заказа</h1>
+                            <table border="0" class="table cart" width="100%">
+                            	<tr>
+                                	<td class="pic"><a href="#"><img src="pics/Marusya_Svetlova_book_3D_8_Misl_tvorit_realnost.png" width="140" height="104" alt=" " /></a></td>
+                                    <td class="inf">
+                                    	<div class="category">Книга</div>
+                                        <div class="name"><a href="#">Мысль творит реальность</a></div>
+                                        <div class="del"><a href="#">Удалить</a></div>
+                                    </td>
+                                    <td class="num">
+                                    	<input type="text" name="num_1" size="3" value="1"/><span> шт. по</span>
+                                    </td>
+                                    <td class="sum">150<span>&#8399;</span></td>
+                                </tr>
+                                <tr>
+                                	<td class="pic"><a href="#"><img src="pics/Marusya_Svetlova_book_3D_9_Odna_nadezda_na_lubov.png" width="140" height="104" alt=" " /></a></td>
+                                    <td class="inf">
+                                    	<div class="category">Книга</div>
+                                        <div class="name"><a href="#">Одна надежда на любовь</a></div>
+                                        <div class="del"><a href="#">Удалить</a></div>
+                                    </td>
+                                    <td class="num">
+                                    	<input type="text" name="num_2" size="3" value="1"/><span> шт. по</span>
+                                    </td>
+                                    <td class="sum">150<span>&#8399;</span></td>
+                                </tr>
+                                <tr>
+                                	<td class="pic"><a href="#"><img src="pics/Marusya_Svetlova_poster_Ya_velikolepnaya_jenshina.jpg" width="80" height="104" alt=" " /></a></td>
+                                    <td class="inf">
+                                    	<div class="category">Постер</div>
+                                        <div class="name"><a href="#">Я великолепная женщина</a></div>
+                                        <div class="del"><a href="#">Удалить</a></div>
+                                    </td>
+                                    <td class="num">
+                                    	<input type="text" name="num_3" size="3" value="1"/><span> шт. по</span>
+                                    </td>
+                                    <td class="sum">100<span>&#8399;</span></td>
+                                </tr>
+                                <tr>
+                                	<td colspan="4"></td>
+                                </tr>
+                                <tfoot>
+                                	<tr>
+                                    	<td class="delivery" colspan="2">
+                                        	<p>Доставка по России наложенным платежом «Почтой России».<br />
+											Доставка по Москве курьером: +7 (965) 150-10-95.<br />
+											Стоимость доставки зависит от расстояния и веса посылки).</p>
+                                        </td>
+                                        <td class="summary" colspan="2">Итого без учета доставки: 1100<span>&#8399;</span></td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                            <form name="order_books" method="post" action="#">
+                          	<table width="830" border="0" cellspacing="0" cellpadding="0" class="table order">
+                                <tr>
+                                <td class="label" width="130">ФИО</td>
+                                <td colspan="4" class="field" width="700"><input type="text" name="orderFio" id="orderFio" class="base full pholder" rel="ФИО"/></td>
+                                </tr>
+                                <tr>
+                                <td class="label">Страна, область</td>
+                                <td colspan="4" class="field"><input type="text" name="orderCountry" id="orderCountry" class="base full pholder" rel="Страна, область"/></td>
+                                </tr>
+                                <tr>
+                                <td class="label">Индекс</td>
+                                <td class="field" width="200"><input type="text" name="orderIndex" id="orderIndex" class="base pholder" rel="Индекс" style="width:76px;"/></td>
+                                <td class="label" width="110">Город</td>
+                                <td colspan="2" class="field" align="right"><input type="text" name="orderCity" id="orderCity" class="base pholder" rel="Город" style="width:363px;"/></td>
+                                </tr>
+                                <tr>
+                                <td class="label">Улица, дом, квартира</td>
+                                <td colspan="4" class="field"><input type="text" name="orderStreet" id="orderStreet" class="base full pholder" rel="Улица, дом, квартира"/></td>
+                                </tr>
+                                <tr>
+                                <td class="label">E-mail</td>
+                                <td colspan="2" class="field" width="310"><input type="text" name="orderEmail" id="orderEmail" class="base half pholder" rel="email@email.ru"/></td>
+                                <td class="label" style="text-align:center;" width="180">Телефон</td>
+                                <td class="field" align="right" width="210"><input type="text" name="orderTel" id="orderTel" class="base half pholder" rel="+X XXX XXXXXX" style="width:175px;"/></td>
+                                </tr>
+                                <tr>
+                                <td class="label">Примечания</td>
+                                <td colspan="4" class="field"><input type="text" name="orderComm" id="orderComm" class="base full"/></td>
+                                </tr>
+                                <tr>
+                                <td class="label">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td class="field" align="right"><input type="submit" value="Отправить заказ"/></td>
+                                </tr>
+                       		</table>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+     		<div class="clear"></div>
+        </div>
+    </div>
+    <!--/MAINBODY-->
+    <!--FOOTER-->
+    <div id="footer_spacer"></div>
+    <div id="footer">
+    	<div class="wrapper">
+        	<div class="border"><img src="images/footer_line.png" width="100%" height="1" alt="fl"/></div>
+            <div class="copyright">© «Маруся Светлова», 2013<br />+7 (965) 150-10-95<br /><a href="#">Контактная информация</a></div>
+            <div class="search_block"><a href="#">Дизайн – Виктория Баранова</a></div>
+            <div class="slogan_bottom">Жизнь есть то, во что ты веришь. Верь в хорошее.<br /><span>Маруся Светлова</span></div>
+        </div>
+    </div>
+    <!--/FOOTER-->
+</body>
+</html>

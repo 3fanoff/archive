@@ -1,0 +1,45 @@
+
+Цвета ссылок со своими ховерами
+.l-red (link red)
+.l-grn (link green)
+
+Просто цвета
+.c-red (color red)
+.c-orn (color orange)
+
+Начертание шрифта
+.it (font-style italic)
+.bd (font-weight bold)
+
+Фонт сайзы
+.fs-18 (font-size: 18px;)
+
+Высота строки
+.lh-20 (line-height:20px;)
+
+.ff-c - Calibri шрифт
+
+Cпейсеры
+.sp-32 
+
+Ширина контейнера в процентах
+.w-25 (width:25%;)
+.w-80 (width:80%;)
+
+Паддинги (редко используется)
+.pt-6 (padding-top:6px;)
+.pl-12 (padding-left:12px;)
+
+Выравнивание текста по правому краю и по центру соотв.
+.ta-r
+.ta-c
+
+.jslink - ссылка подчеркнутая пунктиром
+
+.none - равнозначно style="display:none"
+
+.bts - серая линия border-top-solid (в основном крепится к спейсерам)
+
+.but .but-b - это большая оранжевая кнопка
+.but-a - это маленькая красная кнопка 
+

@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Popup's</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body class="mybody" style="width:730px;">
+<div id="overlay"></div>
+<div id="popup" class="popup">
+	<div class="head">Регистрация<a href="javascript:void(0);" onclick="popup.popupClose('#popup');" class="close"></a></div>
+    <div class="popup_content"></div>
+</div>
+<div class="popup_contents" style="display:block;">
+	<!-- Регистрация шаг 1  
+    onclick="popup.popupInit('#popup','#reg_content1','Регистрация');"
+    / -->
+	<div id="reg_content1" class="pop-box">
+        <h4>Пожалуйста выберите один из предложенных ниже вариантов:</h4>
+        <ul class="reg_list">
+            <li>
+                <div class="ic phys"></div>
+                <p><span>Физическое лицо</span> Недвижимость находится в вашей собственности и вы хотите без лишних хлопот продать, сдать или обменять её?</p>
+            </li>
+            <li>
+                <div class="ic agen"></div>
+                <p><span>Агент по недвижимости</span> Используйте в своей работе профессиональные инструменты, которые позволят 
+                публиковать объекты недвижимости на крупнейшем портале ХМАО.</p>
+            </li>
+            <li>
+                <div class="ic comp"></div>
+                <p><span>Компания</span> Создайте свое полноценное рабочее пространство за 2 минуты.</p></li>
+        </ul>
+    </div>
+    <!-- Регистрация шаг 2 
+    onclick="popup.popupInit('#popup','#reg_content2','Регистрация');"
+    / -->
+	<div id="reg_content2" class="pop-box">
+        <form method="post" action="#">
+        	<div class="col">
+        	<input type="text" name="reg_fio" id="reg_fio" value="ФИО*"/>
+            <input type="text" name="reg_city" id="reg_city" value="Город"/>
+            <div class="sel_box">
+                    <select name="input02">
+                        <option disabled>Агентство</option>
+                        <option value="Дом">Дом</option>
+                        <option value="Квартира">Продажа квартир на рынке</option>
+                        <option value="Комната">Комната</option>
+                        <option value="Дача">Дача</option>
+                    </select>
+            </div>
+            <input type="text" name="reg_tel" id="reg_tel" value="Тел"/>
+            <input type="text" name="reg_pass" id="reg_pass" value="Пароль"/>
+            <input type="text" name="reg_repass" id="reg_repass" value="Подтверждение пароля"/>
+            <input type="submit" value="ОК" name="reg_submit" id="reg_submit" class="btn_blue"/>
+            </div>
+            <div class="col add_photo">
+            	<a href="#"><img src="img/no_photo.jpg" alt="" />Добавить фото</a>
+            </div>
+            <div class="col">
+            	<p><span>Преимущества регистрации</span>
+				- Автоматическая загрузка объектов недвижимости в XML-формате<br />
+				- Возможность автоматической публикации объявлений на крупнейшем портале ХМАО, посвященном недвижимости<br />
+				- Создание рекламной кампании для объектов недвижимости<br />
+				- Редактирование и управление публикацией объявлений</p>
+            </div>
+            <div class="clear"></div>
+        </form>
+    </div>
+    <!-- Оставить отзыв  
+    onclick="popup.popupInit('#popup','#write_review','Оставить отзыв');"
+    / -->
+    <div id="write_review" class="pop-box">
+        <form method="post" action="#">
+        	<div class="box-30 left">
+                <input type="text" name="rev_fio" id="rev_fio" value="Имя"/>
+                <input type="text" name="rev_email" id="rev_emal" value="e-mail"/>
+                <input type="text" name="rev_sym" id="rev_sym" value="введите символы"/>
+            </div>
+            <div class="box-70 left">
+            	<textarea name="rev_rext" id="rev_text" class="right"></textarea>
+                <input type="submit" value="Отправить" name="rev_submit" id="rev_submit" class="btn_blue right"/>
+            </div>
+            <div class="clear"></div>
+        </form>
+    </div>
+    <!-- Новое объявление 
+    onclick="popup.popupInit('#popup','#new_ad','Новое объявление');"
+    / -->
+    <div id="new_ad">
+    	<div class="inner-top new_ad">
+        	<h4>Выберите раздел, в который вы хотите добавить объявление:</h4>
+            <a href="#" class="ico1">Продажа Покупка</a>
+            <a href="#" class="ico2">Обмен</a>
+            <a href="#" class="ico3">Аренда</a>
+            <a href="#" class="ico4">Спецпредложения</a>
+        </div>
+        <div class="inner-bot new_ad">
+        	<a href="#" class="ico5">Оценка</a>
+            <a href="#" class="ico6">Страхование</a>
+            <a href="#" class="ico7">Ипотека</a>
+            <a href="#" class="ico8">Дизайн</a>
+            <a href="#" class="ico9">Ремонт</a>
+            <a href="#" class="ico10">Переезд</a>
+            <a href="#" class="ico11">Юрист</a>
+            <a href="#" class="ico12">Риелтер</a>
+        </div>
+    </div>
+    <!-- Авторизация
+    onclick="popup.popupInit('#popup','#authorization','Вход в личный кабинет');"
+    / -->
+    <div id="authorization" class="pop-box">
+        <form method="post" action="#">
+        <div class="box">
+            <div class="box-50 right"><input type="text" name="auth_login" id="auth_login" value=""/></div><label class="box-20 right">Логин</label>
+            <div class="clear"></div>
+            <div class="box-50 right"><input type="password" name="auth_pass" id="auth_pass" value=""/></div><label class="box-20 right">Пароль</label>
+            <div class="clear"></div>
+            <div class="box-50 right"><input type="checkbox" name="remember" id="remember" value="3" class="checkbox rc"/><label for="remember">Запомнить меня</label></div>
+            <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="box">
+        	<div class="box-50 right"><input type="submit" value="OK" name="rev_submit" id="rev_submit" class="btn_blue"/></div>
+        	<div class="box-50 left"><a href="#" class="rem">Забыли пароль?</a><br /><a href="#" class="reg">Регистрация</a></div>
+            <div class="clear"></div>
+        </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

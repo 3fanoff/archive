@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>OpenStudio :: Services show</title>
+<link href="css/body.css" rel="stylesheet" type="text/css" />
+<link href="css/head_foot.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<link href="css/skin.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+
+</head>
+
+<body class="main">
+<!--POPUP-->
+<div id="overlay" style="display:none;"></div>
+<div class="popup_question" style="display:none;">
+    <a class="close" href="javaScript:void(0);"></a>
+    <h4>Задать вопрос</h4>
+  	<div class="form">
+        <form id="form_popup" method="post" action="#">
+            <label for="name">Представьтесь</label><input type="text" id="name" class="standart"/>
+            <label for="email_tel">Эл.почта или телефон для связи</label><input type="text" id="email_tel" class="standart"/>
+            <label for="comment_text">Сообщение<span class="required">*</span></label><textarea id="comment_text"></textarea>
+                <!--<div class="code_this"><label for="code">Проверочный код</label><input type="text" class="standart minimal" id="code"/></div>
+                <div class="captcha"><img src="images/temporary/captcha_code.png" alt="captcha" /><a href="#">обновить картинку</a></div>
+                <div class="clear"></div>-->
+                <p class="note"><span class="required">*</span><span> &mdash; обязательно к заполнению</span></p>
+                <input type="submit" value="Отправить" class="greenbutton"/>
+                <div class="clear"></div>
+        </form> 
+  	</div>
+</div>
+<!--/POPUP-->
+<!--HEADER-->
+<div id="header">
+	<a id="logo" href="#" name="logo_this"></a>
+    <div class="slogan">Разработка и продвижение сайтов</div>
+    <div class="telephones"><span>+7 (812)</span> 407-85-49, <span>+7 (495)</span> 410-37-76</div>
+    <div class="clear"></div>
+    <!--TOPMENU-->
+    <div id="top_menu" class="menustyle">
+        	<ul>
+            	<li><a href="#">Главная</a></li>
+              <li><a href="#">О компании</a></li>
+                <li class="parent"><a href="#">Портфолио</a>
+               	  <ul>
+                    	<li class="first"><a href="#">сайты</a></li>
+                        <li><a href="#">интернет-магазины</a></li>
+                        <li class="last"><a href="#">фирменный стиль</a></li>
+                    </ul>
+				</li>
+                <li class="parent"><a href="#">Услуги</a>
+               	  <ul>
+                    	<li class="first"><a href="#">сайты</a></li>
+                        <li><a href="#" class="current">интернет-магазины</a></li>
+                        <li class="last"><a href="#">фирменный стиль</a></li>
+                    </ul>
+                </li>
+              <li><a href="#">Контакты</a></li>
+                <li><a href="#">Блог</a>&nbsp;<sup>7 записей</sup></li>
+            </ul>
+            
+    </div>
+    <div class="clear"></div>
+    <!--/TOPMENU-->
+</div>
+<!--//HEADER-->
+<div id="content">
+	<h1>Услуги</h1>
+    <!--CRUMBS-->
+    <div id="crumbs">
+    	<a href="#">Главная</a>
+        <span class="separator">&nbsp;/&nbsp;</span>
+        <a href="#">Услуги</a>
+        <span class="separator">&nbsp;/&nbsp;</span>
+        <a href="#">Сайты</a>
+        <span class="separator">&nbsp;/&nbsp;</span>
+        <span>Разработка сайтов</span>
+    </div>
+    <!--SERVICE-->
+    <div id="service_in" class="menustyle">
+        	<ul>
+            	<li class="parent over"><a href="#">Сайты</a>
+                    <ul>
+                        <li class="first"><a href="#" class="current">Разработка</a></li>
+                      <li><a href="#">Поддержка</a></li>
+                      <li><a href="#">Продвижение</a></li>
+                      <li><a href="#">Аудит</a></li>
+                        <li class="last"><a href="#">Модернизация</a></li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">Интернет магазины</a>
+                	<ul>
+                        <li class="first"><a href="#">Разработка</a></li>
+                      <li><a href="#">Поддержка</a></li>
+                      <li><a href="#">Продвижение</a></li>
+                      <li><a href="#">Аудит</a></li>
+                        <li class="last"><a href="#">Модернизация</a></li>
+                    </ul>
+                </li>
+                <li class="parent"><a href="#">Фирменный стиль</a>
+               	  <ul>
+                    	<li class="first last"><a href="#">Разработка</a></li>
+                    </ul>
+				</li>
+            </ul>
+</div>
+    <div class="clear"></div>
+    <!--IWANT-->
+    <div class="left">
+    	<h2><span class="laquo">&laquo;</span>Хочу, чтобы мой сайт приносил прибыль!&raquo;</h2>
+        <div class="text">
+            <p>Вы решили сделать сайт. Давайте внесём ясность. Вы хотите получить новых клиентов, которые принесут прибыль. Если это так, то отлично. Мы готовы взяться за работу.</p>
+            <p>Теперь представьте, что у Вас много новых клиентов. Новые клиенты заказывают <br />
+              1 раз и уходят после этого к конкурентам. Знакомая ситуация? Мы знаем, как с <br />
+              этим бороться.
+              <br />
+          Вам нужен сайт, который будет “превращать” клиентов в постоянных и лояльных. Сайт должен следить, чтобы они у Вас продолжали регулярно покупать.</p>
+            <p>Сайты наших клиентов зарабатывают. Сайт приводит новых покупателей. <br />
+            Покупатели становятся постоянными. Как следствие, бизнес нашего клиента <br />
+            бурно развивается.</p>
+    	</div>
+	</div>
+    <div class="right">
+    	<div class="anchors">
+            <ul>
+                <li><a href="#examples_this">Примеры работ</a></li>
+                <li><a href="#response_this">Отзывы</a></li>
+                <li><a href="#tariffs_this">Тарифы</a></li>
+                <li><a href="#faq_this">Faq</a></li>
+            </ul>
+        </div>
+    </div>
+  <div class="clear"></div>
+	<!--SEPARATOR-->
+	<div class="separator_block">
+    	<div class="separator_bar"></div>
+    </div>
+    <!--/SEPARATOR-->
+    <!--EXAMPLES-->
+<h3><a href="#" name="examples_this">Примеры работ</a></h3>
+    <div class="portfolio" id="examples">
+    	<div class="element"><a href="#"><img src="images/work/site_gina-korm.jpg" alt="gina" /></a><div class="project_name"><span>сайт, концепция</span><br /><a href="#">Компания «Магна»</a></div></div>
+        <div class="element"><a href="#"><img src="images/work/site_florange.jpg" alt="flor" /></a><div class="project_name"><span>сайт, концепция</span><br /><a href="#">Интернет-магазин «Florange»</a></div></div>
+        <div class="element"><a href="#"><img src="images/work/style_brigantina.jpg" alt="briga" /></a><div class="project_name"><span>фирменный стиль</span><br /><a href="#">Турфирма «Бригантина»</a></div></div>
+        <div class="clear"></div>
+    </div>
+    <!--/EXAMPLES-->
+    <!--BLABLA-->
+    <div class="anchor_block">
+    	<a class="go_top" href="#logo_this" name="response_this"></a>
+    </div>
+  <h3><a href="#">Отзывы клиентов</a></h3>
+    <div class="left">
+    	<div class="resp_serv">
+            <div class="textcloud yellow">
+                <div class="quotes top"></div>
+                <div class="quotes bottom"></div>
+                <p>Начиная рекламную кампанию по продвижению нашего интернет-проекта в поисковых системах Рунета, мы достаточно продолжительное время не могли принять решение, услугами какой компании воспользоваться. Но после проведения переговоров с Генеральным директором компании «Открытая студия» Евгением Севастьяновым мы приступили к совместной творческой и плодотворной работе.</p>
+                <p class="full"><a href="#">Весь отзыв</a></p>
+            </div>
+      <div class="imsay_yellow"></div>
+            <div class="faces">
+        		<img src="images/face/faces_olesya.jpg" alt="olesya_serova" />
+        		<div class="fio"><b>Серова Олеся Юрьевна</b> <br /><span>генеральный директор туристической компании «Бригантина»</span></div>
+        	</div>
+        </div>
+      	<div class="resp_serv two">
+            <div class="textcloud yellow">
+                <div class="quotes top"></div>
+                <div class="quotes bottom"></div>
+                <p>Когда мы запускаем<br />
+такой проект, как создание сайта, мы пытаемся вложить наши деньги как можно выгоднее. В связи с этим возникает проблема выбора компании, которая выполнит эту задачу. И этот выбор<br />
+всегда субъективен.<br />
+Объективен только результат. Окупаемость моего сайта составила 3 месяца и сейчас он приносит прибыль.</p>
+<p>Хочу выразить благодарность Компании «Открытая студия» вообще и ее директору, Евгению Севастьянову, лично за создание моего сайта. </p>
+                <p class="full"><a href="#">Весь отзыв</a></p>
+            </div>
+   		  <div class="imsay_yellow"></div>
+            <div class="faces">
+        		<img src="images/face/faces_niko.jpg" alt="nikolay" />
+        		<div class="fio"><b>Петров Николай Авенирович,</b> <br /><span>коммерческий директор Мультибрендового турагентства «Аверс»</span></div>
+        	</div>
+        </div>
+    </div>
+    <div class="right">
+    	<!--PAMYATKA-->
+    	<div class="pamyatka">
+        	<div class="title">
+   			  <h4><a href="#">Памятка бизнесменам</a></h4>
+            </div>
+            <p>
+           	  Многие мои знакомые удивляются<br />
+				стоимости создания наших сайтов. Они <br />
+				считают, что это расточительно —<br />
+				тратить столько денег, поручая работу<br />
+				над их сайтами фрилансерам и маленьким веб-студиям. <a href="#">Далее</a>
+          </p>
+            <div class="faces">
+       		  <img src="images/face/faces_eugene.jpg" alt="eugene" />
+        		<div class="fio"><b>Евгений Севастьянов,</b> <br /><span class="date">14 сентября,  2011</span></div>
+        	</div>
+      </div>
+        <!--/PAMYATKA-->
+</div>
+    <div class="clear"></div>
+    <div class="space"></div>
+<!--/BLABLA-->
+    <div class="separator_block">
+    	<div class="separator_bar"></div>
+    </div>
+    <!--TARIFFS-->
+  <div class="anchor_block">
+    	<a class="go_top" href="#logo_this" name="tariffs_this"></a>
+    </div>
+  <h3>Тарифы</h3>
+    <div class="tariffs">
+		<table width="960" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <th width="316" align="left">Работа над проектом</th>
+            <th width="166">Эконом</th>
+            <th width="170">Лайт</th>
+            <th width="166" class="grin">Эконом</th>
+            <th width="142">Лайт</th>
+          </tr>
+          <tr>
+            <td class="work">Создание концепции  интернет-сайта</td>
+            <td>базовая</td>
+            <td>продающая</td>
+            <td class="grin">базовая</td>
+            <td>продающая</td>
+          </tr>
+          <tr>
+            <td class="work">Разработка функционала интернет-сайта</td>
+            <td>базовая</td>
+            <td>продвинутая</td>
+            <td class="grin">базовая</td>
+            <td>продвинутая</td>
+          </tr>
+          <tr>
+            <td class="work">Уровень технического исполнения</td>
+            <td>отличное +</td>
+            <td>отличное +</td>
+            <td class="grin">отличное +</td>
+            <td>отличное +</td>
+          </tr>
+          <tr>
+            <td class="work">Сайт, который готов к продвижению</td>
+            <td>Да</td>
+            <td>Да</td>
+            <td class="grin">Да</td>
+            <td>Да</td>
+          </tr>
+          <tr>
+            <td class="work">Создание эксклюзивного продающего<br />дизайна</td>
+            <td>&mdash;</td>
+            <td>Да</td>
+            <td class="grin">&mdash;</td>
+            <td>Да</td>
+          </tr>
+          <tr>
+            <td class="work">Тестирование юзабилити сайта</td>
+            <td>&mdash;</td>
+            <td>Да</td>
+            <td class="grin">&mdash;</td>
+            <td>Да</td>
+          </tr>
+          <tr>
+            <td class="work">Создание прототипов каждой страницы</td>
+            <td>&mdash;</td>
+            <td>Да</td>
+            <td class="grin">&mdash;</td>
+            <td>Да</td>
+          </tr>
+          <tr>
+            <td class="work">Подход к выполнению работ на всех этапах проекта и послепродажного<br />
+сопровождения</td>
+            <td>исполнители</td>
+            <td>партнёры</td>
+            <td class="grin">исполнители</td>
+            <td>партнёры</td>
+          </tr>
+          <tr class="last">
+            <td class="work">Комплексная защита от взломов</td>
+            <td>Да</td>
+            <td>Да</td>
+            <td class="grin">Да</td>
+            <td>Да</td>
+          </tr>
+          <tr>
+            <th align="left">Послепродажное обслуживание </th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th class="grin">&nbsp;</th>
+            <th>&nbsp;</th>
+          </tr>
+          <tr>
+            <td class="work">Гарантия на сайт</td>
+            <td>1 мес</td>
+            <td>6 мес</td>
+            <td class="grin">1 мес</td>
+            <td>6 мес</td>
+          </tr>
+          <tr class="last">
+            <td class="work">Эффективное малозатратное продвижение<br />сайта (по дополнительному договору)</td>
+            <td>Да</td>
+            <td>Да</td>
+            <td class="grin">Да</td>
+            <td>Да</td>
+          </tr>
+          <tr>
+            <th align="left">Консалтинг</th>
+            <th>&nbsp;</th>
+            <th>&nbsp;</th>
+            <th class="grin">&nbsp;</th>
+            <th>&nbsp;</th>
+          </tr>
+          <tr>
+            <td class="work">Разработка эффективных методов продвижения сайта</td>
+            <td>&mdash;</td>
+            <td>Да</td>
+            <td class="grin">&mdash;</td>
+            <td>Да</td>
+          </tr>
+          <tr>
+            <td class="work">Составление рекламной кампании</td>
+            <td>&mdash;</td>
+            <td>Да</td>
+            <td class="grin">&mdash;</td>
+            <td>Да</td>
+          </tr>
+          <tr>
+            <td class="work">Разработка эксклюзивного маркетингового плана “Как сайт заработает деньги”</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td class="grin">&mdash;</td>
+            <td>&mdash;</td>
+          </tr>
+          <tr>
+            <td class="work">Отслеживание % конверсии, помощь в работе над постоянным улучшением результата.</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td class="grin">&mdash;</td>
+            <td>&mdash;</td>
+          </tr>
+          <tr>
+            <td class="work">Разработка плана по привлечению потенциальных клиентов, их перевод в действующие  и лояльные.</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td class="grin">&mdash;</td>
+            <td>&mdash;</td>
+          </tr>
+          <tr class="last">
+            <td class="work">Создание шикарного фирменного стиля</td>
+            <td>&mdash;</td>
+            <td>&mdash;</td>
+            <td class="grin">&mdash;</td>
+            <td>&mdash;</td>
+          </tr>
+          <tr class="summ">
+            <td class="work">Стоимость (руб.)</td>
+            <td><span>79</span>.000<br /><a href="#">заказать</a></td>
+            <td><span>149</span>.000<br /><a href="#">заказать</a></td>
+            <td class="grin"><span>179</span>.000<br /><a href="#">заказать</a></td>
+            <td><span>500</span>.000<br /><a href="#">заказать</a></td>
+          </tr>
+		</table>
+	</div>
+    <div id="info_block" class="tariffs">
+    	<div class="zadat"><a href="javascript:void(0);">Задать вопрос по тарифу</a></div>
+	</div>
+    <div class="space"></div>
+    <div class="separator_block">
+    	<div class="separator_bar"></div>
+    </div>
+    <!--/TARIFFS-->
+  <div class="anchor_block">
+    	<a class="go_top" href="#logo_this" name="faq_this"></a>
+    </div>
+  <h3>Часто задаваемые вопросы</h3>
+    <div class="faq">
+    	<ul>
+        	<li><span>+ <a href="javaScript:void(0);">Как правильно выбрать разработчиков сайта?</a></span>
+            	<p>Многие мои знакомые удивляются стоимости создания наших сайтов. Они считают, что это расточительно — тратить столько денег, поручая работу над их сайтами фрилансерам и маленьким веб-студиям.</p>
+            </li>
+			<li><span>+ <a href="javaScript:void(0);">Как выбрать хостинг и где зарегистрировать домен?</a></span>
+            	<p>Многие мои знакомые удивляются стоимости создания наших сайтов. Они считают, что это расточительно — тратить столько денег, поручая работу над их сайтами фрилансерам и маленьким веб-студиям.</p>
+            	<p>Многие мои знакомые удивляются стоимости создания наших сайтов. Они считают, что это расточительно — тратить столько денег, поручая работу над их сайтами фрилансерам и маленьким веб-студиям.</p>
+            </li>
+			<li><span>+ <a href="javaScript:void(0);">Какую CMS (систему управления сайтом) лучше выбрать?</a></span>
+            	<p>Рногие мои знакомые удивляются стоимости создания наших сайтов. Они считают, что это расточительно — тратить столько денег, поручая работу над их сайтами фрилансерам и маленьким веб-студиям.</p>
+            </li>
+		</ul>
+    </div>
+  	<div id="subscribe">
+    	<div class="iwant">Хочу знать секреты получения<br />клиентов <a href="#">с помощью сайта</a></div>
+        <div class="field"><input type="text" class="email" value="Ваша электронная почта" /><input type="submit" value="Отправить" class="greenbutton"/></div>
+    </div>
+    
+    <div class="clear"></div>
+</div>
+<!--FOOTER-->
+<div id="gap_footer"></div>
+<div id="footer">
+	<div class="wrapper">
+        <div id="foot_menu">
+            <ul>
+                <li class="first"><a href="#">Главная</a></li>
+                <li><a href="#">О компании</a></li>
+                <li><a href="#">Портфолио</a></li>
+                <li><a href="#" class="current">Услуги</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li class="last"><a href="#">Блог</a></li>
+            </ul>
+        </div>
+        <div class="socials"></div>
+        <div class="clear"></div>
+        <div class="copyright">
+            <p>&copy; 2008-2012 «Открытая студия»</p>
+            <p><em>«Мы заставим Ваш сайт зарабатывать<br />деньги!»</em></p>
+        </div>
+        <div class="address"><p>Санкт-Петербург</p><p><span class="tel">+ 7 (812) 407-85-49</span></p><p>Набережная реки Фонтанки<br />дом 113, офис 15, <a href="#">карта</a></p></div>
+        <div class="address msc"><p>Москва</p><p><span class="tel">+ 7 (495) 410-37-76</span></p><p>Одницово, улица маршала Жукова,<br />дом 38, офис 15, <a href="#">карта</a></p></div>
+    </div>
+</div>
+</body>
+</html>

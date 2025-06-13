@@ -1,0 +1,272 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Заказы</title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Days+One" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/carouselme.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body class="my">
+	<div id="header">
+    	<div class="wrapper">
+        	<div class="top">
+            	<ul>
+                	<li><a href="#">О компании</a></li>
+                    <li><a href="#">Сотрудничество и обучение</a></li>
+                    <li><a href="#">Контактная информация</a></li>
+                </ul>
+                <div class="auth-on">
+                	<span class="ent"><a href="#" class="jslink">Войти</a></span>
+                    <span class="sep">|</span>
+                    <span class="reg"><a href="#">Регистрация</a></span>
+                    <div class="box">
+                    	<form id="auth-form" name="auth-form" action="" method="post">
+                        	<span class="fs-12">Электронная почта</span>
+                        	<div class="field"><input type="text" name="email" id="email"/></div>
+                            <span class="fs-12">Пароль</span>
+                            <a href="#" class="fs-12">Забыли пароль?</a>
+                            <div class="field"><input type="password" name="pass" id="pass"/></div>
+                            <input type="checkbox" id="remember" name="remember"/><label for="remember">Запомнить меня</label>
+                            <input type="submit" name="enter" id="enter" value="Войти"/>
+                        </form>	
+                    </div>
+                </div>
+            </div>
+            <div class="bot">
+            	<div id="logo"><a href="#"></a><span>&nbsp;</span></div>
+                <div class="address">
+                	<span class="c-grn it">Санкт-Петербург, Лиговский пр.</span>
+                    <a class="seemap" href="#">Посмотреть на карте</a>
+                </div>
+                <div id="cart">
+                	<a href="#" class="fs-25 bd">Моя корзина</a>
+                    <span class="num c-grn">(3)</span><br />
+                    <p>Стоимость всех товаров: <span class="c-red">1600 руб.</span></p>
+                </div>
+                <div class="tel"><span class="c-red">(+7 812)</span> 244-24-42</div>
+                <div class="time">
+                    <p>Принимаем заказы<br />
+                    <span>10:00 — 23:00</span><sup class="fs-12">пн — чт</sup><br />
+                    <span>10:00 — 01:00</span><sup class="fs-12">пт — вс</sup></p>
+                </div>
+                <div id="topmenu">
+                	<ul>
+                    	<li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Сотрудничество и обучение</a></li>
+                        <li><a href="#">Контактная информация</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/HEADER -->
+    <div id="main_body">
+    	<div class="wrapper">
+            <div class="col">
+            	<!-- CRUMBS -->
+            	<div class="crumbs">
+                	<ul>
+                    	<li><a href="#">Главная</a></li>
+                        <li class="sep">&ndash;</li>
+                        <li><a href="#">Мой кабинет</a></li>
+                        <li class="sep">&ndash;</li>
+                        <li>Мои заказы разные</li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <!--/CRUMBS -->
+                <h1>Мои заказы (7)</h1>
+                <div class="order_filter ta-c fs-21">
+                	<span>Активные</span><sup>2</sup>
+                    <a href="#" class="l-orn">Все</a><sup>3</sup>
+                    <a href="#" class="l-orn">Выполненные</a><sup>1</sup>
+                    <a href="#" class="l-orn">Отмененные</a><sup>0</sup>
+                </div>
+                <p class="order_act">Заказ №524112086 от 01 августа 2012 года</p>
+                <div class="order">
+                    <div class="box w-50 lh-24">
+                        <p><i class="c-grn">Сумма к оплате:</i> 10 000 руб.</p>
+                        <p><i class="c-grn">Способ оплаты:</i> банковская карта</p>
+                        <p><i class="c-grn">Доставка:</i> Спб, Невский пр-т, д.90</p>
+                        <p><i class="c-grn">Оплачен:</i> да</p>
+                    </div>
+                    <div class="box w-50 lh-24">
+                        <div class="box w-50">
+                            <p class="fs-18">Статус заказа:</p>
+                            <p><i class="c-grn">доставляется</i></p>
+                        </div>
+                        <div class="box w-50">
+                            <p><a href="#">Повторить заказ</a></p>
+                            <p><a href="#" class="l-orn">Отменить</a></p>
+                        </div>
+                    </div>
+                    <div class="sp-18"></div>
+                    <div class="sp-24 bts"></div>
+                    <h2>Ваши покупки:</h2>
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width="32"><span class="c-gry">1</span></td>
+                            <td width="240">
+                                <p class="name"><a href="#" class="l-red">КИВОК драйв</a></p>
+                                <p class="cat"><a href="#" class="l-blu">Китайская еда</a></p>
+                            </td>
+                            <td width="83">L (450гр)</td>
+                            <td width="78">1500 руб</td>
+                            <td width="113">2 шт.</td>
+                            <td width="100"><b>3000 руб</b></td>
+                        </tr>
+                        <tr>
+                            <td width="32"><span class="c-gry">2</span></td>
+                            <td width="240">
+                                <p class="name"><a href="#" class="l-red">КИВОК драйв</a></p>
+                                <p class="cat"><a href="#" class="l-blu">Китайская еда</a></p>
+                            </td>
+                            <td width="83">L (450гр)</td>
+                            <td width="78">1500 руб</td>
+                            <td width="113">2 шт.</td>
+                            <td width="100"><b>3000 руб</b></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><b class="fs-18 ff-c">6000 руб</b></td>
+                        </tr>
+                    </table>
+                </div>
+                <p class="order_act">Заказ №524111253 от 28 сентября 2012 года</p>
+                <div class="order" style="display:none;">
+                    <div class="box w-50 lh-24">
+                        <p><i class="c-grn">Сумма к оплате:</i> 10 000 руб.</p>
+                        <p><i class="c-grn">Способ оплаты:</i> банковская карта</p>
+                        <p><i class="c-grn">Доставка:</i> Спб, Невский пр-т, д.90</p>
+                        <p><i class="c-grn">Оплачен:</i> да</p>
+                    </div>
+                    <div class="box w-50 lh-24">
+                        <div class="box w-50">
+                            <p class="fs-18">Статус заказа:</p>
+                            <p><i class="c-grn">доставляется</i></p>
+                        </div>
+                        <div class="box w-50">
+                            <p><a href="#">Повторить заказ</a></p>
+                            <p><a href="#" class="l-orn">Отменить</a></p>
+                        </div>
+                    </div>
+                    <div class="sp-18"></div>
+                    <div class="sp-24 bts"></div>
+                    <h2>Ваши покупки:</h2>
+                    <table border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <td width="32"><span class="c-gry">1</span></td>
+                            <td width="240">
+                                <p class="name"><a href="#" class="l-red">КИВОК драйв</a></p>
+                                <p class="cat"><a href="#" class="l-blu">Китайская еда</a></p>
+                            </td>
+                            <td width="83">L (450гр)</td>
+                            <td width="78">1500 руб</td>
+                            <td width="113">2 шт.</td>
+                            <td width="100"><b>3000 руб</b></td>
+                        </tr>
+                        <tr>
+                            <td width="32"><span class="c-gry">2</span></td>
+                            <td width="240">
+                                <p class="name"><a href="#" class="l-red">КИВОК драйв</a></p>
+                                <p class="cat"><a href="#" class="l-blu">Китайская еда</a></p>
+                            </td>
+                            <td width="83">L (450гр)</td>
+                            <td width="78">1500 руб</td>
+                            <td width="113">2 шт.</td>
+                            <td width="100"><b>3000 руб</b></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                            <td><b class="fs-18 ff-c">6000 руб</b></td>
+                        </tr>
+                    </table>
+                </div>
+                <p class="order_act">Отмена заказа №524112086 от 01 августа 2012 года</p>
+                <div class="order">
+                	<textarea name="comment" id="comment"></textarea>
+                    <div class="sp-18"></div>
+                    <a href="#" class="return">Я передумал отменять заказ</a>
+                    <a class="but but-b" href="javaScript:void(0);"><span>Отменить заказ</span></a>
+                </div>
+            </div>
+            <div class="sp-50"></div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div id="footer_sp"></div>
+    <div id="footer">
+    	<div class="wrapper">
+        	<div class="box-l">
+            	<ul>
+                	<li><span class="parent">Воки</span>
+                    	<ul>
+                        	<li><a href="#">Готовые наборы</a></li>
+                            <li><a href="#">Конструктор</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="parent">Суши и роллы</span>
+                    	<ul>
+                        	<li><a href="#">Суши</a></li>
+                            <li><a href="#">Роллы</a></li>
+                            <li><a href="#">Горячее</a></li>
+                            <li><a href="#">Готовые наборы</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="parent">Вкусное здоровье</span>
+                    	<ul>
+                        	<li><a href="#">Супы</a></li>
+                            <li><a href="#">Салаты</a></li>
+                            <li><a href="#">Напитки</a></li>
+                            <li><a href="#">Десерты</a></li>
+                            <li><a href="#">Горячее</a></li>
+                        </ul>
+                   	</li>
+                </ul>
+            </div>
+            <div class="box-r">
+            	<ul>
+                	<li>
+                    	<ul>
+                        	<li><a href="#">Главная</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Полезно знать</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<ul>
+                        	<li><a href="#">О компании</a></li>
+                            <li><a href="#">Контактная информация</a></li>
+                            <li><a href="#">Сотрудничество и обучение</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <p class="copy">&copy; &laquo;Кивок&raquo;. Первые макарошки в коробочке</p>
+            <div class="box-r stamp">
+            	<div class="tel">
+                	<span class="c-grn">Звоните и задавайте вопросы:</span><br />
+                    <span class="fs-18 bd"><span class="c-red">(+7 812)</span> 981 42 24</span>
+                </div>
+                <a href="#" id="openstud" target="_blank" title="Открытая студия">Создание и продвижение сайта</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

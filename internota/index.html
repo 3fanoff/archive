@@ -1,0 +1,363 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Главная</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/jcarousellite.min.js"></script>
+<script type="text/javascript" src="js/jquery.form.js"></script>
+<script type="text/javascript" src="js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body class="mybody">
+	<div id="wrapper">
+    	<!-- HEADER -->
+    	<div id="header">
+        	<div class="topmenu">
+            	<div class="_wrap">
+                	<!--TOPMENU-->
+                	<ul id="topmenu">
+                    	<li class="first"><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li><span>Полезная информация<i>&darr;</i></span>
+                        	<ul>
+                            	<li><a href="#">Выпадающее меню</a></li>
+                                <li><a href="#">Выпадающее меню</a></li>
+                                <li><a href="#">Выпадающее меню</a></li>
+                                <li><a href="#">Выпадающее меню</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Прайс-лист</a></li>
+                        <li class="last"><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="person_box">
+                    	<div class="cab"><a href="#">Личный кабинет</a></div>
+                        <div class="lang">
+                        	<a href="#">рус</a>
+                            <a href="#" class="anoth">eng</a>
+                        </div>
+                    </div>
+                    <!--/TOPMENU-->
+                </div>
+            </div>
+            <div class="center _wrap">
+            	<div class="logo">
+                	<a href="#">&nbsp;</a>
+                	<div class="name">Бюро переводов. <span>Перевод. Заверение. Легализация</span></div>
+                </div>
+                <div class="tel">
+                	+7 (987) <span>555-67-76</span>
+                    <div class="_clear"></div>
+                    <a href="javascript:void(0);" class="more" onclick="modal.init('#callback_form'); validCall();">Позвоните мне</a>
+                </div>
+                <div class="address">
+                	г. Москва, ул. Пятницкая, д.14
+                    <span class="metro">Новокузнецкая</span>
+                    <span class="metro">Третьяковская</span>
+                    <div class="_clear"></div>
+                    <a href="javascript:void(0);" class="more">Еще контакты</a>
+                </div>
+            </div>
+        	<div class="tabmenu">
+            	<div class="_wrap">
+                	<ul id="tabmenu">
+                        <li>
+                        	<a href="javascript:void(0);" onclick="showSub(this);">Локализация</a>
+                            <div class="sub">
+                            	<div><a href="#" class="icset _i07">Перевод сайтов<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i08">Перевод видео и Аудиозаписей<i>&nbsp;</i></a></div>
+                                <div class="null" style="width:55%;"></div>
+                                
+                            </div>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" onclick="showSub(this);">Апостиль и нотариус</a>
+                            <div class="sub">
+                                <div><a href="#" class="icset _i09">Легализация документов<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i11">Перевод паспорта<i>&nbsp;</i></a></div>
+                                <div class="current"><a href="#" class="icset _i12">Перевод диплома<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i13">Перевод свидетельства<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i14">Перевод аттестата<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i10">Апостиль<i>&nbsp;</i></a></div>
+                            	<div class="null" style="width:15%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" onclick="showSub(this);">Устный перевод</a>
+                            <div class="sub">
+                            	<div><a href="#" class="icset _i15">Синхронный перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i16">Последовательный перевод<i>&nbsp;</i></a></div>
+                                <div class="null" style="width:55%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" onclick="showSub(this);">Писменный перевод</a>
+                            <div class="sub">
+                            	<div><a href="#" class="icset _i01">Юридический перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i02">Технический перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i03">Медицинский перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i04">Финансовый перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i05">Деловой перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i06">Художественный перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i17">Бесплатный перевод<i>&nbsp;</i></a></div>
+                                <div class="null"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/HEADER -->
+        <div class="main_body _main">
+        	<div class="_sp10"></div>
+        	<!-- SLIDER -->
+        	<div class="slider">
+            	<div class="pic">
+                    <img src="images/slides/slide_06.jpg" width="647" height="288" alt=" " />
+                    <span class="pic_name">1. Долгосрочное партнерство</span>
+                </div>
+                <div class="pic">
+                    <img src="images/slides/slide_05.jpg" width="647" height="288" alt=" " />
+                    <span class="pic_name">2. Индивидуальный подход</span>
+                </div>
+                <div class="pic">
+                	<img src="images/slides/slide_04.jpg" width="647" height="288" alt=" " />
+                    <span class="pic_name">3. Оптимальная цена</span>
+                </div>
+                <div class="pic">
+                    <img src="images/slides/slide_03.jpg" width="647" height="288" alt=" " />
+                    <span class="pic_name">4. Контроль качества</span>
+                </div>
+                <div class="pic">
+                	<img src="images/slides/slide_02.jpg" width="647" height="288" alt=" " />
+                    <span class="pic_name">5. Профессиональная команда</span>
+                </div>
+                <div class="pic">
+                	<img src="images/slides/slide_01.jpg" width="647" height="288" alt=" " />
+                    <span class="pic_name">6. Глобальность</span>
+                </div>
+                <div class="pic">
+                	<img src="images/slides/slide_07.jpg" width="647" height="288" alt=" " />
+                    <span class="pic_name"><span style="font-size:14px;">7. Конфиденциальность<br />переводов и сохранность документов</span></span>
+                </div>
+                <div class="slide_textbox"><span></span></div>
+            </div>
+            <!--/SLIDER -->
+            <!-- NEWS_BOX -->
+            <div class="news_box mini">
+            	<div class="shares_box">Поделиться:</div>
+            	<div class="head"><a href="#">Новости</a></div>
+                <div class="body">
+                	<div class="news">
+                    	<div class="date">06 июня</div>
+                        <a class="title" href="#">Перерыв в работе Юлмарт outpost Коллонтай!</a>
+                    </div>
+                    <div class="news">
+                    	<div class="date">03 июня</div>
+                        <a class="title" href="#">Рассрочка без первоначального взноса и переплат "0-0-6*"</a>
+                    </div>
+                    <div class="news">
+                    	<div class="date">02 июня</div>
+                        <a class="title" href="#">Рассрочка без первоначального взноса и переплат "0-0-6*"</a>
+                    </div>
+                </div>
+            </div>
+            <!-- NEWS_BOX -->
+            <div class="_clear _sp50"></div>
+            <!--CAROUSEL-->
+            <div class="clients">
+            	<div class="carousel">
+                    <ul>
+                        <li><a href="#"><img src="images/clients/vilpe.png" width="90" height="57" alt=" " /></a></li>
+                        <li><a href="#"><img src="images/clients/izovol.png" width="112" height="57" alt=" " /></a></li>
+                        <li><img src="images/clients/tyvek.png" width="110" height="57" alt=" " /></li>
+                        <li><img src="images/clients/izospan.png" width="101" height="57" alt=" " /></li>
+                        <li><img src="images/clients/ondulin.png" width="106" height="57" alt=" " /></li>
+                        <li><img src="images/clients/tyvek.png" width="110" height="57" alt=" " /></li>
+                        <li><img src="images/clients/izovol.png" width="112" height="57" alt=" " /></li>
+                    </ul>
+                </div>
+                <a href="#" class="prev">prev</a><a href="#" class="next">next</a>
+            </div>
+            <!--/CAROUSEL-->
+            <div class="_clear _sp30"></div>
+            <!-- ABOUT BLOCKS -->
+            <div class="about_box">
+            	<div class="head">Мы знаем как работать!</div>
+                <p>На перевод обычных и узкоспециализированных текстов всегда был большой спрос. Он продолжает оставаться таким и сейчас. 
+                Поскольку есть спрос – должны быть и качественные   предложения. Рынок в этом сегменте развивается очень бурно: бюро переводов 
+                растут, как опята после дождя, но хочется в любой ситуации выбрать самый достойный вариант!</p>
+                <a class="more" href="#">Подробнее</a>
+            </div>
+            <div class="about_box _left">
+            	<div class="head">Наши гарантии</div>
+                <p>Мы никогда не бросаем громких лозунгов типа: «Наше бюро переводов с нотариальным заверением берется за любую работу, 
+исполнить ее за 2 часа за символическую сумму»!</p>
+				<p>Агентство переводов в Москве «Интернота» предоставляет только официальные и РЕАЛЬНЫЕ отзывы клиентов!
+                Мы гордимся сотрудничеством с ними!</p>
+                <a class="more" href="#">Посмотреть отзывы</a>
+            </div>
+            <div class="about_box _right">
+            	<div class="head">Даем слово клиентам</div>
+                <p>При создании организации основной упор был поставлен на то, чтобы не только работать на соответствующем высоком уровне, что само собой разумеется, но еще и изначально вызывать у клиентов доверие! Именно отзывы клиентов являются «лакмусовой бумажкой»  работы любой компании!
+Агентство переводов в Москве «Интернота» предоставляет только официальные и РЕАЛЬНЫЕ отзывы клиентов! Мы гордимся сотрудничеством с ними!</p>
+                <a class="more" href="#">Подробнее</a>
+            </div>
+            <div class="_clear _sp10"></div>
+            <!-- /ABOUT BLOCKS -->
+            <div class="_sp10"></div>
+            <!-- /SERVICEs
+            <div class="services">
+            	<div class="head">Среди наших услуг вы можете заказать:</div>
+            	<div class="service_list _s01">
+                	<div class="head">Письменный перевод:</div>
+                	<ul>
+                    	<li><a href="#">Юридический перевод</a></li>
+                        <li><a href="#">Технический перевод</a></li>
+                        <li><a href="#">Медицинский перевод</a></li>
+                        <li><a href="#">Финансовый перевод</a></li>
+                        <li><a href="#">Деловой перевод</a></li>
+                        <li><a href="#">Художественный перевод</a></li>
+                    </ul>
+                </div>
+                <div class="service_list _s02">
+                	<div class="head">Нотариальный перевод:</div>
+                	<ul>
+                    	<li><a href="#">Легализация документов</a></li>
+                        <li><a href="#">Апостиль</a></li>
+                        <li><a href="#">Перевод паспорта</a></li>
+                        <li><a href="#">Перевод диплома</a></li>
+                        <li><a href="#">Перевод свидетельства</a></li>
+                        <li><a href="#">Перевод аттестата</a></li>
+                	</ul>
+                </div>
+                <div class="service_list _s03">
+                	<div class="head">Локализация:</div>
+                	<ul>
+                    	<li><a href="#">Перевод сайтов</a></li>
+                        <li><a href="#">Перевод видео и Аудиозаписей</a></li>
+                    </ul>
+                </div>
+                <div class="service_list _s04">
+                	<div class="head">Дополнительные услуги:</div>
+                	<ul>
+                    	<li><a href="#">Редактирование и вычитка</a></li>
+                        <li><a href="#">Верстка и допечатанная Подготовка</a></li>
+                	</ul>
+                </div>
+            </div>
+            /SERVICEs -->
+            <div class="_sp10"></div>
+            <!-- ARTICLEs -->
+            <div class="articles_box">
+            	<div class="article">
+                	<a href="#" class="title">Среди наших</a>
+                    <img src="images/slides/slide_05.jpg" width="196" height="106" alt="" />
+                    <p>Если мы взялись за работу, то уж будьте уверены, 
+что выполним ее качественно и в срок! Мы уверены в качестве своей работы, и готовы выпонить для Вас бесплатный тестовый перевод!</p>
+                </div>
+                <div class="article">
+                	<a href="#" class="title">Среди наших</a>
+                    <img src="images/slides/slide_02.jpg" width="196" height="106" alt="" />
+                    <p>Если мы взялись за работу, то уж будьте уверены, 
+что выполним ее качественно и в срок! Мы уверены в качестве своей работы, и готовы выпонить для Вас бесплатный тестовый перевод!</p>
+                </div>
+                <div class="article">
+                	<a href="#" class="title">Среди наших</a>
+                    <img src="images/slides/slide_04.jpg" width="196" height="106" alt="" />
+                    <p>Если мы взялись за работу, то уж будьте уверены, 
+что выполним ее качественно и в срок! Мы уверены в качестве своей работы, и готовы выпонить для Вас бесплатный тестовый перевод!</p>
+                </div>
+            </div>
+            <!-- /ARTICLEs -->
+            <div class="s_group"></div>
+            <div class="_clear"></div>
+        </div>
+        <!-- FOOTER -->
+    	<div id="sp_footer"></div>
+    </div>
+	<div id="footer">
+    	<div class="_wrap">&copy; 2013, Интернота. Все права защищены. Полное или частичное копирование материалов запрещено</div>
+    </div>
+    <!-- FORMs -->
+    <div class="call_modals">
+    	<div class="box _ord" onclick="modal.init('#orders_modal');clickTab('.tabs.modal a:eq(0)'); validOrder();"><div class="_icon"></div><span>Рассчитать стоимость</span></div>
+        <div class="box _pay" onclick="modal.init('#orders_modal');clickTab('.tabs.modal a:eq(1)'); validPay()"><div class="_icon"></div><span>Оплатить заказ</span></div>
+    </div>
+    <div id="m-overlay"></div>
+    <div id="modal" class="modal_win">
+    	<a href="javaScript:void(0)" class="close" onclick="modal.closed();">Закрыть</a>
+        <div class="popup_content"></div>
+    </div>
+    <div style="display:none;">
+    	<div id="orders_modal">
+            <div class="tabs modal">
+                <a href="#form_order" onclick="clickTab(this); validOrder(); return false;">1.Стоимость заказа</a>
+                <a href="#form_payment" onclick="clickTab(this); validPay(); return false;">2.Оплатить заказ</a>
+                <a href="#me_order" onclick="clickTab(this); return false;">3.Получить заказ</a>
+            </div>
+            <div id="form_order">
+                <div class="head">
+                    <p>Заполните форму заказа или отправьте нам заказ письмом на адрес xxxx Наш менеджер сообщит вам стоимость, срок и номер заказа.</p>
+                </div>
+                <div class="body">
+                    <form action="http://3fan.ru/cityjam/west/_test/form.php" enctype="multipart/form-data" method="get" id="order">
+                    	<div id="errors"></div>
+                        <div class="label"><label for="name_order">Имя*:</label></div><input type="text" name="mail_name" maxlength="30" id="name_order"/>
+                        <div class="label"><label for="mail_order">Электронная почта*:</label></div><input type="text" name="mail_mail" maxlength="30" id="mail_order"/>
+                        <div class="label"><label for="tel_order">Телефон:</label></div><input type="text" name="mail_phone" maxlength="20" id="tel_order"/>
+                        <div class="label"><label for="comm_order">Комментарий*:</label></div>
+                        <div class="_sp10"></div>
+                        <textarea name="mail_msg" id="comm_order"></textarea>
+                        <input type="file" name="mail_file"/>
+                        <input type="submit" class="submit" value="Отправить"/>
+                    </form>
+                </div>
+            </div>
+            <div id="form_payment">
+                <div class="head">
+                    <p>Оплатить зака можно разными способами бла-бла-бла</p>
+                </div>
+                <div class="body">
+                    <p>Обработка платежей осущесвляется через систему Робокасса.<br />Введите номер и сумму заказа и вы попадете на страницу выбора способа оплаты</p>
+                    <form method="post" action="#" name="buy-order-form" id="buy-order-form">
+                        <div class="label"><label for="invid">Номер заказа*:</label></div><input type="text" name="InvId" id="invid" />
+                        <div class="label"><label for="outsum">Сумма*:</label></div><input type="text" name="OutSum" id="outsum" /><p></p>
+                        <div class="_sp10 _clear"></div>
+                        <input id="buy-order-form-submit" class="submit" value="Отправить"/>
+                    </form>
+                </div>
+            </div>
+            <div id="me_order">
+                <div class="head">
+                    <p>Большинство заказов можно получить по интернету бла-бла</p>
+                </div>
+                <div class="body">
+                    <p>1. Самовывозом</p>
+                    <p>2. Доставка курьером по Москве</p>
+                    <p>3. Доставка Почтой России</p>
+                    <p>4. Доставка коммерческой почтой</p>
+                </div>
+            </div>
+        </div>
+        <div id="callback_form">
+            <div class="head">
+                <p>Заказать обратный звонок</p>
+            </div>
+            <div class="body">
+                <form method="post" id="call" action="#">
+                    <div class="label"><label for="mail_name">Имя*:</label></div><input type="text" name="mail_name" maxlength="30" id="mail_name" />
+                    <div class="label"><label for="mail_phone">Телефон*:</label></div><input type="text" name="mail_phone" id="mail_phone" />
+                    <div class="_sp10 _clear"></div>
+                    <input type="submit" class="submit" name="submit2" value="Отправить" />
+                </form>
+            </div>
+    	</div>
+    </div>
+    
+</body>
+</html>

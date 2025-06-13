@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Стимул - Сделать заказ</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<!--[if IE 6]>
+<script type="text/javascript" src="js/dd_belatedpng.js"></script>
+<script type="text/javascript">
+DD_belatedPNG.fix('.logo, .openstud, #pr .inner_left, #pr .inner_right, .fill, .icon, #card .price_block, #contacts .inner_left, #contacts .right, #contacts .left, #responses .response, #order .price_block, .winnie, .help .arrow');
+</script>
+<![endif]-->
+<script type="text/javascript" src="js/jquery-1.6.1.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/jcarousellite_1.0.1.js"></script>
+
+</head>
+
+<body class="body">
+<!---HEADER-->
+<div id="header">
+	<div class="logo"><a href="#"></a></div>
+    <div class="inner_left">
+    	<p>Россия, 198095, г. Санкт-Петербург,<br />
+ул.Розенштейна, д.8-12 «Е»</p>
+		<a href="#" class="price_button"><span>Скачать прайс-лист  2,3 мб, xls</span></a>
+	</div>
+    <div class="inner_right">
+    	<p>+7 (812) 677-12-05,</p>
+      <a href="mailto:stimylspb@mail.ru">stimylspb@mail.ru</a>
+  		<form name="search_block" id="search_block" method="get" action="#">
+        	<div class="search">
+            	<div>
+                  <input type="text" name="search_text" id="search_text" />
+                  <input type="submit" name="search_submit" id="search_submit" value="Найти"/>
+                </div>
+        	</div>
+        </form>
+  </div>
+  <div class="clear"></div>
+	<div id="topmenu">
+    	<ul>
+        	<li class="first"><a href="#" class="home" title="На главную"><span></span></a></li>
+            <li><a href="#" class="about">О компании</a></li>
+            <li><a href="#" class="catalogue active">Каталог</a></li>
+            <li><a href="#" class="wholesalers">Оптовикам и магазинам</a></li>
+            <li><a href="#" class="response">Отзывы</a></li>
+            <li><a href="#" class="contacts">Контакты</a></li>
+            <li class="last"><a href="#" class="order">Сделать заказ</a></li>
+        </ul>
+    </div>
+</div>
+<!--/HEADER-->
+<div class="content">
+	<!---BREADCRUMBS-->
+	<div id="crumbs_block">
+    	<ul>
+        	<li><a href="#" title="На главную">Главная страница</a></li>
+            <li class="separator">/</li>
+        </ul>
+    </div>
+    <!--/BREADCRUMBS-->
+<!---CONTENT-->
+	<div id="order">
+	<h1>Сделать заказ</h1>
+    <p>Вы можете сделать заказ позвонив нам по телефону или указав,  интересующую вас продукцию, в форме заказа. После получения заявки мы свяжмся с вами в ближайшее время для подтверждения заказа.</p>
+	<div class="price_block">
+          <div class="price_link"><a href="#">Скачать прайс-лист</a></div>
+          <p>2,3 мб, xls</p>
+    </div> 
+    <!---FORM -->
+  	<form name="make_the_order" action="#" method="get">
+    	<div class="hrline_2"></div>
+		<div class="inner_left">
+        	<h3>Заказать игрушки</h3>
+            <div class="inputs">
+            	<label for="i_fio">Ваше имя, фамилия:<span class="required">*</span></label>
+                <div class="in_1">
+                	<div class="in_2"><input type="text" id="i_fio"/></div>
+                </div>
+            </div>
+            <div class="inputs error">
+            	<label for="i_tel">Контактный телефон:<span class="required">*</span></label>
+                <div class="in_1">
+                	<div class="in_2"><input type="text" id="i_tel"/></div>
+                </div>
+            </div>
+            <div class="inputs">
+            	<label for="i_eml">Электронная почта:</label>
+                <div class="in_1">
+                	<div class="in_2"><input type="text" id="i_eml"/></div>
+                </div>
+            </div>
+            <div class="inputs">
+            	<label for="i_org">Организация:</label>
+                	<div class="in_1">
+                    	<div class="in_2"><input type="text" id="i_org"/></div>
+                    </div>
+            </div>
+            <div class="inputs">
+            	<label for="i_msg">Сообщение:<span class="required">*</span></label>
+                <div class="in_3">
+                	<div class="in_4"><textarea id="i_msg"></textarea></div>
+                </div>
+            </div>
+            <div class="inputs">
+            	<img src="images/inputs/captcha.jpg" alt="captcha"/>
+                <a href="#" class="refresh">обновить код</a>
+            </div>
+   	  		<div class="inputs">
+            	<label for="i_cpt">Код с картинки:<span class="required">*</span></label>
+                <div class="in_1 code">
+                	<div class="in_2"><input type="text" id="i_cpt"/></div>
+                </div>
+            </div>
+            <div class="inputs">
+            	<p><span class="required">*</span> &mdash; поля обязательные для заполнения</p>
+                <p class="error_msg">Вы не указали свой контактный телефон</p>
+  			</div>
+        </div>
+        <div class="inner_right">
+        	<div class="help help_tel">
+            	<p>Мы свяжемся с вами, по указанному номеру, для подтверждения заказа</p>
+                <div class="arrow"></div>
+                <div class="winnie"></div>
+       		</div>
+            <div class="help help_cpt">
+            	<p>Введите код с картинки. Если вы<br />не можете прочесть код с картинки, нажмите <a href="#">обновить код</a></p>
+                <div class="arrow"></div>
+       		</div>
+      	</div>
+        <div class="hrline_2"></div>
+    <button class="bigred" type="submit">Отправить</button>
+    </form>
+    <!--/FORM -->
+<!--/CONTENT-->
+	<div class="clear"></div>
+    </div>
+</div>
+<!---FOOTER-->
+<div id="gap_footer"></div>
+<div id="footer">
+	<div class="wrapper">
+    	<div class="inner_left">
+            <div id="bottommenu">
+                <ul>
+                    <li class="first"><a href="#" class="about">О компании</a></li>
+                    <li><a href="#" class="catalogue">Каталог</a></li>
+                    <li><a href="#" class="wholesalers">Оптовикам и магазинам</a></li>
+                    <li><a href="#" class="response active">Отзывы</a></li>
+                    <li class="last"><a href="#" class="contacts">Контакты</a></li>
+                </ul>
+            </div>
+            <p>ООО &laquo;Стимул&raquo;, Россия, 198095, г. Санкт-Петербург,<br />ул.Розенштейна, д.8-12 &laquo;Е&raquo;</p>
+        </div>
+        <div class="inner_right">
+        	<p>&copy; Все права защищены ООО &laquo;Стиль-Л&raquo;</p>
+            <a class="openstud" href="http://openstud.ru/">Создание сайта и маркетинг</a>
+        </div>
+    </div>
+</div>
+<!--/FOOTER-->
+</body>
+</html>

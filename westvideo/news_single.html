@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Westvideo / Новость</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="fonts/ptsans.css" type="text/css" /><![endif]-->
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+<!-- HEADER -->
+<body class="mybody">
+    <div id="wrapper">
+        <div id="header">
+        	<!-- main_content HEADER -->
+            <div class="wrapper">
+                <a class="logo" href="/">Лого</a>
+                <div id="topmenu">
+                    <ul>
+                        <li><a href="#">Фильмы<span></span></a></li>
+                        <li><a href="#">DVD и Blu-ray<span></span></a></li>
+                        <li><a href="#">Кинотеатры<span></span></a></li>
+                        <li class="active"><a href="#">Новости<span></span></a></li>
+                        <li><a href="#">Прессе и партнерам<span></span></a></li>
+                        <li><a href="#">Компания<span></span></a></li>
+                    </ul>
+                    <div class="right_b"></div>
+                </div>
+            </div>
+            <!-- /main_content HEADER -->
+        </div>
+<!--/HEADER -->
+		<div class="wrapper">
+        	<div id="news">
+            	<div class="col-l">
+                	<!--news-->
+                	<div class="news_list_item">
+                    	<div class="date">Сегодня, 10:30</div>
+                    	<p class="title">Может быть и такое: новость с довольно длинным заголовком на несколько строк</p>
+                        <div class="news_content_box">
+                        	<div class="news_content">
+                                <div class="news_img_left"><img src="pics/movie_poster-01.jpg" alt=" "></div>	
+                                <p>Новость верстается простыми тэгами и, в общем, должна поддерживать markdown-разметку. Картинки вставляются через <i>div</i> с классами <b>news_img_left</b> 
+                                и <b>news_img_right</b> (максимальная ширина ограничена 270 пикс.), а также <b>news_img_center</b> (максимальные размеры ограничены 610х400 пикс.) Можно и через 
+                                &laquo;голый&raquo; <b>img src</b> — у этих тоже ограничение на 610 пикс. по ширине.</p>
+                                <p>Предусмотрены все стандартные тэги: <b>b</b>, <strong>strong</strong>, <i>i</i>, <em>em</em>, <span class="tdu">underline</span>, <span class="tlt">s</span>. 
+                                Это — <a href="#">ссылка</a>. Здесь же все заголовки: <b>h1</b>, <b>h2</b>, <b>h3</b>, <b>h4</b>, <b>h5</b> и <b>h6</b>. Вот это, к примеру, <b>h1</b>:</p>
+                                <h1>Заголовок h1. Сделаем его длиннее. Настолько длиннее, или даже больше. Например, вот так. Или даже так? Так нормально.</h1>
+                                <p>В этом месте вставим длинный абзац:</p>
+                                <p>Разумеется, без списков мы никуда. Заготовлены обычные <b>ul&gt;li</b> и нумерованные <b>ol&gt;li</b>. Это — обычный:</p>
+                                <ul><li>Pledge This!</li><li>Superbabies: Baby Geniuses 2</li><li>Manos: The Hands of Fate</li><li>The Hottie & the Nottie</li><li>Disaster Movie</li></ul>
+                                <blockquote>«Нефть» — великий фильм, но я просто люблю Дэниела Дей-Льюиса. «Старикам тут не место» — не мое. Я мозгом понимаю, что это талантливо, но 
+                                сам бы я не хотел таким кино заниматься. 90 процентов зрителей, которые этот фильм смотрят, не понимают ничего. Непонятно, зачем Коэны это все делают. 
+                                Как и Тарантино. Люди балуются. Это кино не зрительское. Оно для критиков, киноманов. Я от «Мстителей» или «Железного человека» получаю большее 
+                                удовольствие, чем от «Стариков».</blockquote>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit 
+                                in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+							</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-r">
+                	<!-- CALENDAR -->
+                	<div class="calendar_box">
+                    	<ul class="calendar" id="inside-calendar">
+                        	<li class="first"><a href="#">Последние новости</a></li>
+                        	<li>
+                            	<a href="#" class="current">2013</a>
+                                <ul>
+                                    <li><a href="#" class="current">14 февраля</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="shadow"></div>
+                    </div>
+                    <!--/CALENDAR -->
+                </div>
+            </div>
+        </div>
+<!-- FOOTER -->
+        <div id="sp_footer"></div>
+    </div>
+    <div id="footer">
+    	<div class="wrapper">
+        	<div class="sp-30"></div>
+        	<div class="w-500 fl pl-40">
+            	<span class="copy">&copy; 1997–2013 «Вест Видео»<br /><a href="#">О компании</a></span>
+                <div class="socials"></div>
+            </div>
+            <div class="w-500 fl pl-10">
+            	<span>Электронная почта: <a href="mailto:info@westvideo.ru">info@westvideo.ru</a></span>
+                <span class="pt-12">121170, Москва <br /><a href="javaScript:void(0);" class="anchor">Кутузовский проспект, дом 36, строение 23</a></span>
+                <span class="pt-12 fl">Телефоны:</span>
+                <span class="pt-12 fl"><span>&nbsp;+7 495 640-27-51</span><span>&nbsp;+7 495 640-27-52</span></span>
+            </div>
+        </div>
+    </div>
+</body>
+<!--/FOOTER -->
+</html>

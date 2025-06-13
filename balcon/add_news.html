@@ -1,0 +1,306 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Balcon - Добавить Новость</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript" src="js/sliderme.js"></script>
+</head>
+
+<body class="mybody">
+<!--HEADER-->
+<div class="banner_top"><a href="#"><img src="img/banner_top.jpg" width="978" height="84" alt=""/></a></div>
+<div id="header">
+	<div class="inner-top">
+    	<div class="wrapper">
+        	<div id="logo">
+            	<div class="slogan">Недвижимость Ханты-Мансийского АО</div>
+                <a href="#" class="logo"></a>
+            </div>
+            <div class="city">
+            	<ul class="dropdown">
+                	<li class="parent"><a href="#">Ханты-Мансийск</a>
+                    	<ul>
+                            <li><a href="#">Сургут</a></li>
+                            <li><a href="#">Лангепас</a></li>
+                            <li><a href="#">Мегион</a></li>
+                            <li><a href="#">Нефтеюганск</a></li>
+                            <li><a href="#">Нижневартовск</a></li>
+                            <li><a href="#">Нягань</a></li>
+                            <li><a href="#">Покачи</a></li>
+                            <li><a href="#">Пыть-Ях</a></li>
+                            <li><a href="#">Радужный</a></li>
+                            <li><a href="#">Когалым</a></li>
+                            <li><a href="#">Урай</a></li>
+                            <li><a href="#">Ханты-Мансийск</a></li>
+                            <li><a href="#">Югорск</a></li>
+                        </ul>
+                        <span class="lock"></span>
+                        <span class="dott"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="auth_block">
+            	<div class="balance_box">
+                	<div>Баланс <span>120 248</span></div>
+                </div>
+            	<div>
+                	<a href="javaScript:void(0);"  class="lk">Личный кабинет</a>
+                    <span>|</span><a href="#" class="exit">Выход</a>
+                </div>
+            </div>
+            <div class="menus">
+            	<ul class="dropdown">
+                	<li class="parent"><a href="#">Недвижимость</a>
+                    	<ul>
+                        	<li><a href="#">квартиры</a></li>
+                            <li><a href="#">комнаты</a></li>
+                            <li><a href="#">дома/коттеджи</a></li>
+                            <li><a href="#">дачи</a></li>
+                            <li><a href="#">гаражи</a></li>
+                            <li><a href="#">участки</a></li>
+                            <li><a href="#">коммерческая недвижимость</a></li>
+                        </ul>
+                        <span class="lock"></span>
+                    </li>
+                    <li class="parent"><a href="#">Услуги</a>
+                    	<ul>
+                        	<li><a href="#">переезд</a></li>
+                            <li><a href="#">ремонт</a></li>
+                            <li><a href="#">оценка</a></li>
+                            <li><a href="#">дизайн</a></li>
+                            <li><a href="#">консультация юриста для физ.лиц</a></li>
+                            <li><a href="#">консультация юриста для юр.лиц</a></li>
+                            <li><a href="#">консультация риелтора</a></li>
+                        </ul>
+                        <span class="lock"></span>
+                    </li>
+                    <li><a href="#">По карте</a></li>
+                </ul>
+                <a href="#" class="new_ad">Добавить объявление</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/HEADER-->
+<div id="cabinet">
+	<div class="wrapper">
+        <div class="column_left">
+        	<!--LEFT_MENU's-->
+        	<div class="left_menu">
+            	<div class="m_title">Мой профайл <a href="#">Редактировать</a></div>
+                <div class="container">
+                	<ul>
+                        <li class="active"><a href="#">Мои объявления</a><span>&nbsp;</span></li>
+                        <li><a href="#">Мои услуги</a><span>&nbsp;</span></li>
+                        <li><a href="#">Мои сообщения (2)</a><span>&nbsp;</span></li>
+                        <li><a href="#">Избранное</a><span>&nbsp;</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="left_menu">
+            	<div class="m_title blu">Инструменты</div>
+                <div class="container">
+                	<ul>
+                        <li><a href="#">Мои баннеры</a><span>&nbsp;</span></li>
+                        <li><a href="#">Мои спецпредложеня</a><span>&nbsp;</span></li>
+                        <li><a href="#">Мои статьи</a><span>&nbsp;</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="left_menu">
+            	<div class="m_title">Баланс <span class="balance">120 248</span></div>
+                <div class="container">
+                	<ul>
+                        <li><a href="#">Список операций со счетом</a><span>&nbsp;</span></li>
+                    </ul>
+                </div>
+            </div>
+            <!--/LEFT_MENU's-->
+        </div>
+        <div class="column_right">
+        	<div class="m_title">Размещение новости</div>
+            <div class="add_ad">
+            	<form class="standart" name="add_ad" method="get" action="#">
+                <div class="box-25 left sp-10"></div>
+                <div class="box-70 left" style=" position:relative;">
+                	<label class="abs">Заголовок</label>
+                    <input type="text" value="" name="ad_title" id="ad_title" class="long"/>
+                    <label class="abs">Показывать в регионе</label>
+                    <div class="sel_box city">
+                        <select name="ad_city">
+                            <option disabled>Сургут</option>
+                            <option value="Лангепас">Лангепас</option>
+                            <option value="Мегион">Мегион</option>
+                            <option value="Нефтеюганск">Нефтеюганск</option>
+                            <option value="Нижневартовск">Нижневартовск</option>
+                            <option value="Нягань">Нягань</option>
+                            <option value="Покачи">Покачи</option>
+                            <option value="Пыть-Ях">Пыть-Ях</option>
+                            <option value="Радужный">Радужный</option>
+                            <option value="Когалым">Когалым</option>
+                            <option value="Урай">Урай</option>
+                            <option value="Ханты-Мансийск">Ханты-Мансийск</option>
+                            <option value="Югорск">Югорск</option>
+                        </select>
+                	</div>
+                    <div class="sp-10"></div>
+                    <label class="abs">Текст</label>
+                    <textarea name="ad_desc"></textarea>
+                    <div class="sp-20"></div>
+                    <label class="abs">Превью</label>
+                    <div class="add_pics">
+                    	<ul>
+                            <li>
+                                <img src="img/demo_img-03.jpg" width="80" height="60" alt="p01" />
+                                <div><a class="del" href="#"><span>&times;</span>Удалить</a></div>
+                            </li>
+                        </ul>
+                        <a class="btn_grey" href="javaScript:void(0);">Выбрать</a><a class="btn_grey" href="javaScript:void(0);">Сохранить</a>
+                    </div>
+                    <div class="sp-10 clear"></div>
+                    <input type="submit" class="btn_blue" value="Разместить новость"/>
+                </div>
+                </form>
+            </div>
+        </div>
+        <div class="clear"></div>
+    </div>
+</div>
+<!--/FOOTER-->
+<div id="sp_footer"></div>
+<div id="footer">
+	<div class="wrapper">
+    	<div class="inner-top">
+        	<div id="logo_bot" class="logo"></div>
+            <ul class="botmenu">
+            	<li><span>недвижимость</span>
+                	<ul>
+                    	<li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </li>
+                <li><span>недвижимость</span>
+                	<ul>
+                    	<li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </li>
+                <li><span>недвижимость</span>
+                	<ul>
+                    	<li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </li>
+                <li><span>недвижимость</span>
+                	<ul>
+                    	<li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </li>
+                <li><span>недвижимость</span>
+                	<ul>
+                    	<li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </li>
+                <li><span>недвижимость</span>
+                	<ul>
+                    	<li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="inner-bot">
+        	<div class="copy">Balcon<span>|</span>8 3466 1 23 45<span>|</span></div>
+            <div class="auth_block"><a href="#" class="reg">Регистрация</a><span>|</span><a href="#">Вход</a><span>|</span><a href="#">Помощь</a></div>
+        </div>
+    </div>
+</div>
+<!--/FOOTER-->
+<div id="overlay"></div>
+<div id="popup" class="popup">
+	<div class="head">Регистрация<a href="javascript:void(0);" onclick="popup.popupClose('#popup');" class="close"></a></div>
+    <div class="popup_content"></div>
+</div>
+<div class="popup_contents">
+	<div id="reg_content1" class="pop-box">
+        <h4>Пожалуйста выберите один из предложенных ниже вариантов:</h4>
+        <ul class="reg_list">
+            <li>
+                <div class="ic phys" onclick="popup.popupInit('#popup','#reg_content2','Регистрация');"></div>
+                <p><span>Физическое лицо</span> Недвижимость находится в вашей собственности и вы хотите без лишних хлопот продать, сдать или обменять её?</p>
+            </li>
+            <li>
+                <div class="ic agen"></div>
+                <p><span>Агент по недвижимости</span> Используйте в своей работе профессиональные инструменты, которые позволят 
+                публиковать объекты недвижимости на крупнейшем портале ХМАО.</p>
+            </li>
+            <li>
+                <div class="ic comp"></div>
+                <p><span>Компания</span> Создайте свое полноценное рабочее пространство за 2 минуты.</p></li>
+        </ul>
+    </div>
+	<div id="reg_content2" class="pop-box">
+        <form method="post" action="#">
+        	<div class="col">
+        	<input type="text" name="reg_fio" id="reg_fio" value="ФИО*"/>
+            <input type="text" name="reg_city" id="reg_city" value="Город"/>
+            <div class="sel_box">
+                    <select name="input02">
+                        <option disabled>Агентство</option>
+                        <option value="Дом">Дом</option>
+                        <option value="Квартира">Продажа квартир на рынке</option>
+                        <option value="Комната">Комната</option>
+                        <option value="Дача">Дача</option>
+                    </select>
+            </div>
+            <input type="text" name="reg_tel" id="reg_tel" value="Тел"/>
+            <input type="text" name="reg_pass" id="reg_pass" value="Пароль"/>
+            <input type="text" name="reg_repass" id="reg_repass" value="Подтверждение пароля"/>
+            <input type="submit" value="ОК" name="reg_submit" id="reg_submit" class="btn_blue"/>
+            </div>
+            <div class="col add_photo">
+            	<a href="#"><img src="img/no_photo.jpg" alt="" />Добавить фото</a>
+            </div>
+            <div class="col">
+            	<p><span>Преимущества регистрации</span>
+				- Автоматическая загрузка объектов недвижимости в XML-формате<br />
+				- Возможность автоматической публикации объявлений на крупнейшем портале ХМАО, посвященном недвижимости<br />
+				- Создание рекламной кампании для объектов недвижимости<br />
+				- Редактирование и управление публикацией объявлений</p>
+            </div>
+            <div class="clear"></div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

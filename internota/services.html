@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Услуги</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<link rel="stylesheet" type="text/css" href="jquery.fancybox.css"/>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/jcarousellite.min.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.pack.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body class="mybody">
+	<div id="wrapper">
+    	<!-- HEADER -->
+    	<div id="header">
+        	<div class="topmenu">
+            	<div class="_wrap">
+                	<!--TOPMENU-->
+                	<ul id="topmenu">
+                    	<li class="first"><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li><span class="current">Полезная информация<i>&darr;</i></span>
+                        	<ul>
+                            	<li><a href="#">Выпадающее меню</a></li>
+                                <li><a href="#">Выпадающее меню</a></li>
+                                <li><a href="#">Выпадающее меню</a></li>
+                                <li><a href="#">Выпадающее меню</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Прайс-лист</a></li>
+                        <li class="last"><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="person_box">
+                    	<div class="cab"><a href="#">Личный кабинет</a></div>
+                        <div class="lang">
+                        	<a href="#">рус</a>
+                            <a href="#" class="anoth">eng</a>
+                        </div>
+                    </div>
+                    <!--/TOPMENU-->
+                </div>
+            </div>
+            <div class="center _wrap">
+            	<div class="logo">
+                	<a href="#">&nbsp;</a>
+                	<div class="name">Бюро переводов. <span>Перевод. Заверение. Легализация</span></div>
+                </div>
+                <div class="tel">
+                	+7 (987) <span>555-67-76</span>
+                    <div class="_clear"></div>
+                    <a href="javascript:void(0);" class="more" onclick="modal.init('#callback_form');">Позвоните мне</a>
+                </div>
+                <div class="address">
+                	г. Москва, ул. Пятницкая, д.14
+                    <span class="metro">Новокузнецкая</span>
+                    <span class="metro">Третьяковская</span>
+                    <div class="_clear"></div>
+                    <a href="javascript:void(0);" class="more">Еще контакты</a>
+                </div>
+            </div>
+        	<div class="tabmenu">
+            	<div class="_wrap">
+                	<ul id="tabmenu">
+                        <li>
+                        	<a href="javascript:void(0);" onclick="showSub(this);">Локализация</a>
+                            <div class="sub">
+                            	<div><a href="#" class="icset _i07">Перевод сайтов<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i08">Перевод видео и Аудиозаписей<i>&nbsp;</i></a></div>
+                                <div class="null" style="width:50%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" onclick="showSub(this);">Апостиль и нотариус</a>
+                            <div class="sub">
+                                <div><a href="#" class="icset _i09">Легализация документов<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i11">Перевод паспорта<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i12">Перевод диплома<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i13">Перевод свидетельства<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i14">Перевод аттестата<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i10">Апостиль<i>&nbsp;</i></a></div>
+                            	<div class="null"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" onclick="showSub(this);">Устный перевод</a>
+                            <div class="sub">
+                            	<div><a href="#" class="icset _i15">Синхронный перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i16">Последовательный перевод<i>&nbsp;</i></a></div>
+                                <div class="null" style="width:50%;"></div>
+                            </div>
+                        </li>
+                        <li class="over">
+                        	<a href="javascript:void(0);" onclick="showSub(this);">Писменный перевод</a>
+                            <div class="sub">
+                            	<div><a href="#" class="icset _i01">Юридический перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i02">Технический перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i03">Медицинский перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i04">Финансовый перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i05">Деловой перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i06">Художественный перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i17">Бесплатный перевод<i>&nbsp;</i></a></div>
+                                <div class="null"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/HEADER -->
+        <div class="main_body _inner service">
+        	<div class="_sp10"></div>
+            <div class="pagetitle"><div><h1>Перевод паспорта с нотариальным заверением</h1></div></div>
+            <div class="col_l">
+                <p><img src="temp/passports.jpg" alt="" style="float:left;"/>Теперь вам не нужно думать, где заказать КАЧЕСТВЕННЫЙ перевод 
+                паспорта с нотариальным заверением по выгодной цене! Мы предлагаем комплексный подход, 
+                грамотную реализацию и лояльную ценовую политику! Можно получить качественную работу в сжатые сроки и по демократичной стоимости у нас! 
+                Согласитесь, что качественно проделанная работа в плане перевода паспорта с нотариальным заверением – это залог спокойствия. С документами, 
+                как известно, не шутят!</p>
+                <p>Если перевод сделан некорректно, документ может быть признан недействительным, что будет препятствовать его легализации, 
+                например, будет невозможно поставить апостиль.</p>
+                <div class="text_full">
+                	<div class="_sp20"></div>
+                	<div class="title _ic1"><h2>Как заказать нотариальный перевод паспорта?</h2></div>
+                    <div class="_sp50"></div>
+                    <h3>Паспорт иностранного гражданина</h3>
+                    <div class="step">
+                    	<div class="num">Шаг 1</div>
+                        <div class="txt">Сделайте скан паспорта</div>
+                    </div>
+                    <div class="step">
+                    	<div class="num">Шаг 2</div>
+                        <div class="txt">Отправьте скан на e-mail info@internota.ru или воспользуйтесь формой заказа</div>
+                    </div>
+                    <div class="step">
+                    	<div class="num">Шаг 3</div>
+                        <div class="txt">Оплатите заказ он-лайн </div>
+                    </div>
+                    <div class="step">
+                    	<div class="num">Шаг 4</div>
+                        <div class="txt">Получите нотариально заверенный перевод паспорта</div>
+                    </div>
+                    <div class="_sp20"></div>
+                    <h3>Паспорт гражданина РФ</h3>
+                    <div class="step">
+                    	<div class="num">Шаг 1</div>
+                        <div class="txt">Сделайте нотариальную копию паспорта РФ </div>
+                    </div>
+                    <div class="step">
+                    	<div class="num">Шаг 2</div>
+                        <div class="txt">Передайте нотариальную копию нам в офис</div>
+                    </div>
+                    <div class="step">
+                    	<div class="num">Шаг 3</div>
+                        <div class="txt">Оплатите заказ</div>
+                    </div>
+                    <div class="step">
+                    	<div class="num">Шаг 4</div>
+                        <div class="txt">Получите нотариально заверенный перевод паспорта РФ</div>
+                    </div>
+                    <div class="_sp50"></div>
+                    <div class="title _ic2"><h2>На что обратить внимание перед заказом?</h2></div>
+                    <div class="_sp20"></div>
+                    <div class="onthe">
+                    	По месту требования вам необходимо выяснить каким образом необходимо заверить документ: 
+                        нотариальное заверение или заверение печатью бюро переводов
+                	</div>
+                    <div class="onthe">
+                    	По месту требования вам необходимо выяснить каким образом необходимо прошить документ: 
+                        к оригиналу документа или к нотариально заверенной копии документа;
+                	</div>
+                    <div class="_sp50"></div>
+            	</div>
+            </div>
+            <div class="col_r">
+            	<!-- BENEFITS -->
+            	<div class="benefit_box _all">
+                	<div>
+                    	<ul>
+                        	<li><a href="#">Привлекательная цена перевода паспорта 900 руб.</a></li>
+                            <li><a href="#">Бесплатная доставка при заказе от 3000 руб.</a></li>
+                            <li><a href="#">Скидка до 15% при повторном обращении.</a></li>
+                            <li><a href="#">Офис рядом с метро и продленный график работы</a></li>
+                            <li><a href="#">Исправляем ошибки оперативно и бесплатно для Вас</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="benefits_full">
+                    <div class="benefit_box _b1">
+                        <div>
+                            <div class="head">Выгода №</div>
+                            <p>У нас самое привлекательное сочетание цены и скорости выполнения перевода паспорта среди московских бюро</p>
+                        </div>
+                    </div>
+                    <div class="benefit_box _b2">
+                        <div>
+                            <div class="head">Выгода №</div>
+                            <p>Бесплатная доставка в пределах МКАД готовых документов при единовременном заказе от 3000 руб. Выгодные предложения для вас! </p>
+                        </div>
+                    </div>
+                    <div class="benefit_box _b3">
+                        <div>
+                            <div class="head">Выгода №</div>
+                            <p>Скидка до 15% при повторном обращении. Мы ценим своих клиентов!</p>
+                        </div>
+                    </div>
+                    <div class="benefit_box _b4">
+                        <div>
+                            <div class="head">Выгода №</div>
+                            <p>Офис рядом с метро и продленный график работы специально для Вашего удобства. Никаких проблем!</p>
+                        </div>
+                    </div>
+                    <div class="benefit_box _b5">
+                        <div>
+                            <div class="head">Выгода №</div>
+                            <p>Если обнаружится ошибка в переводе паспорта, мы ее исправим оперативно и бесплатно для Вас. Мы даем гарантии!</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /BENEFITS -->
+            </div>
+            <div class="_clear _sp20"></div>
+            <div class="full_short _fs">
+            	<div class="short _l">Кратко</div><div class="short _r">Кратко</div>
+                <div class="full _l">Полностью</div><div class="full _r">Полностью</div>
+            </div>
+            <div class="service_tabs">
+            	<div><a href="#tab-cost" class="_t1" onclick="clickTab(this); return false;">Цены</a></div>
+                <div><a href="#tab-reviews" class="_t2" onclick="clickTab(this); return false;">Отзывы</a></div>
+                <div><a href="#tab-faq" class="_t3" onclick="clickTab(this); return false;">Вопрос/Ответ</a></div>
+                <div><a href="#tab-articles" class="_t4" onclick="clickTab(this); return false;">Статьи</a></div>
+                <div><a href="#tab-bonuses" class="_t5" onclick="clickTab(this); return false;">Бонусы</a></div>
+            </div>
+            <div class="_sp10 _clear"></div>
+          	<div class="tab_boxes">
+            	<!-- articles -->
+            	<div class="articles_serv" id="tab-articles">
+                	<div class="article">
+                		<img src="images/slides/slide_06.jpg" width="100" height="100" alt="" />
+                		<a href="#" class="title">Мы чаще всего предлагаем заказчику окончательный расчет</a>
+                    	<p>Если мы взялись за работу, то уж будьте уверены, что выполним ее качественно и в 
+                        срок!Мы уверены в качестве своей работы, и готовы выпонить для Вас бесплатный тестовый перевод! Когда речь идёт об исходном тексте 
+                        на китайском,  японском корейском языке, мы чаще всего предлагаем заказчику окончательный расчет производить по объему 
+                        текста готового перевода. Но всё же можно произвести предварительную...</p>
+                        <p class="more"><a href="#">Подробнее</a></p>
+                	</div>
+                    <div class="article">
+                		<img src="images/slides/slide_06.jpg" width="100" height="100" alt="" />
+                		<a href="#" class="title">Мы чаще всего предлагаем заказчику окончательный расчет</a>
+                    	<p>Если мы взялись за работу, то уж будьте уверены, что выполним ее качественно и в 
+                        срок!Мы уверены в качестве своей работы, и готовы выпонить для Вас бесплатный тестовый перевод! Когда речь идёт об исходном тексте 
+                        на китайском,  японском корейском языке, мы чаще всего предлагаем заказчику окончательный расчет производить по объему 
+                        текста готового перевода. Но всё же можно произвести предварительную...</p>
+                        <p class="more"><a href="#">Подробнее</a></p>
+                	</div>
+                    <div class="article">
+                		<img src="images/slides/slide_06.jpg" width="100" height="100" alt="" />
+                		<a href="#" class="title">Мы чаще всего предлагаем заказчику окончательный расчет</a>
+                    	<p>Если мы взялись за работу, то уж будьте уверены, что выполним ее качественно и в 
+                        срок!Мы уверены в качестве своей работы, и готовы выпонить для Вас бесплатный тестовый перевод! Когда речь идёт об исходном тексте 
+                        на китайском,  японском корейском языке, мы чаще всего предлагаем заказчику окончательный расчет производить по объему 
+                        текста готового перевода. Но всё же можно произвести предварительную...</p>
+                        <p class="more"><a href="#">Подробнее</a></p>
+                	</div>
+                    <div class="more"><a href="#">Показать все статьи</a></div>
+                </div>
+                <!-- price -->
+                <div class="cost_serv" id="tab-cost">
+                    <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                        <tr>
+                            <th width="60%" rowspan="2" align="left" class="chapter">Паспорт иностранного государства</th>
+                            <th colspan="2" align="center" style="font-size:14px; height:19px; border-left:0 solid;">Цена *, руб.</th>
+                        </tr>
+                        <tr>
+                            <th width="20%" align="center">Завтра</th>
+                            <th width="20%" align="center">Сегодня</th>
+                        </tr>
+                        <tr>
+                            <td style="padding:24px 16px;">Белоруссия, Украина, Молдавия, Киргизия, Казахстан, Таджикистан, Туркменистан, Узбекистан, Эстония, Латвия, Литва, 
+                            Великобритания, Германия, Канада, Ирландия, США, Филиппины, Норвегия, Кипр, Австралия, Турция (загранпаспорт)</td>
+                            <td align="center">900</td>
+                            <td align="center">1200</td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td align="center">1200</td>
+                            <td align="center">1500</td>
+                        </tr>
+                        <tr>
+                            <td colspan="3" style="padding-bottom:18px;">* Цены приведены с учетом нотариального заверения подлинности подписи переводчика</td>
+                        </tr>
+                        <tr>
+                            <th align="left" class="chapter">Паспорт РФ</th>
+                            <th colspan="2" align="center" style="border-left:0 solid;">Цена, руб.</th>
+                        </tr>
+                        <tr>
+                            <td>Перевод выписки из паспорта РФ (первая страница + страница с пропиской)</td>
+                            <td colspan="2" align="center">400</td>
+                        </tr>
+                        <tr>
+                            <td>Перевод всех страниц паспорта РФ</td>
+                            <td colspan="2" align="center">500</td>
+                        </tr>
+                        <tr>
+                            <td>Нотариальное заверение выписки из паспорта,  1стр.</td>
+                            <td colspan="2" align="center">100</td>
+                        </tr>
+                        <tr>
+                            <td>Нотариальное заверение всех страниц паспорта</td>
+                            <td colspan="2" align="center">800</td>
+                        </tr>
+                        <tr>
+                            <td>Нотариальное заверение подлинности подписи переводчика</td>
+                            <td colspan="2" align="center">500</td>
+                        </tr>
+                    </table>
+                    <div class="more"><a href="#">Полный прайс-лист</a></div>
+              </div>
+          		<!-- faq -->
+              	<div class="faq" id="tab-faq">
+                	<dl>
+                    	<dt><span>Что такое условно-стандартная страница?</span></dt>
+                        <dd>В целом, перевести паспорт нетрудно. Однако сложность заключается в том, что важно сделать это внимательно. Не должно быть ни единой ошибки в переводе имени и фамилии. Все числа и даты переносятся без изменений, а для корректного перевода географических названий: страны, города или административной территории, следует пользоваться профессиональными справочными средствами!<span class="arr"></span></dd>
+                    </dl>
+                    <dl>
+                    	<dt><span>Мы чаще всего предлагаем заказчику окончательный?</span></dt>
+                        <dd>Если мы взялись за работу, то уж будьте уверены, что выполним ее качественно и в 
+                        срок!Мы уверены в качестве своей работы, и готовы выпонить для Вас бесплатный тестовый перевод!<span class="arr"></span></dd>
+                    </dl>
+                    <dl>
+                    	<dt><span>Что такое условно-стандартная страница?</span></dt>
+                        <dd>В целом, перевести паспорт нетрудно. Однако сложность заключается в том, что важно сделать это внимательно. Не должно быть ни единой ошибки в переводе имени и фамилии. Все числа и даты переносятся без изменений, а для корректного перевода географических названий: страны, города или административной территории, следует пользоваться профессиональными справочными средствами!<span class="arr"></span></dd>
+                    </dl>
+                    <div class="more"><a href="#">Показать все вопросы</a></div>
+                </div>
+                <!-- reviews -->
+                <div class="reviews_serv" id="tab-reviews">
+                	<div class="reviews">
+                    	<ul>
+                        	<li>
+                            	<p>Хочу поделится своими впечатлениями от этого большого аккорда сделанного в США для Европы, как давний любитель 
+                            	и поклонник данной марки, хотя владельцем данного авто к сожалению ещё не являюсь.</p>
+								<p>Мой пробег на данном авто всего 2100 км, прошло две недели с начала эксплуатации, по этому впечатление о машине уже полностью сформировано. 
+                                Самый большой плюс этого автомобиля это рулёжка и комфорт в салоне, машина очень послушна в управлении, мгновенно следует за поворотом 
+                                руля и практически не реагирует на неровности на асфальте. Всё настроено для водителя, быстроходный автомат, мгновенная реакция мотора 
+                                на педаль газа, цепкие и чёткие тормоза. Система курсовой устойчивости VSA включается в самый последний момент и даёт работать на поворотах 
+                                резине мишлен в размерности 225х50R17. Очень нравится классическая посадка, идеальный обзор и остекление, видно капот автомобиля, что 
+                                редкость на сегодня вообще. Этот кузов на порядок жёстче и тише на ходу чем подобный Европеец 2011- 2012 года (был в личной эксплуатации), 
+                                шума в салоне почти нет, тип дорожного полотна и ветер почти не слышно.</p>
+								<p>Нравится настройка подвески, комфорт в салоне, большой размер, автомобиль не ощущает скорость.</p>
+                        	</li>
+                            <li>
+                            	<p>Хочу поделится своими впечатлениями от этого большого аккорда сделанного в США для Европы, как давний любитель 
+                            	и поклонник данной марки, хотя владельцем данного авто к сожалению ещё не являюсь.</p>
+								<p>Мой пробег на данном авто всего 2100 км, прошло две недели с начала эксплуатации, по этому впечатление о машине уже полностью сформировано. 
+                                Самый большой плюс этого автомобиля это рулёж осадка, идеальный обзор и остекление, видно капот автомобиля, что 
+                                редкость на сегодня вообще. Этот кузов на порядок жёстче и тише на ходу чем подобный Европеец 2011- 2012 года (был в личной эксплуатации), 
+                                шума в салоне почти нет, тип дорожного полотна и ветер почти не слышно.</p>
+								<p>Нравится настройка подвески, комфорт в салоне, большой размер, автомобиль не ощущает скорость.</p>
+                        	</li>
+                            <li>
+                            	<p>Хочу поделится своими впечатлениями от этого большого аккорда сделанного в США для Европы, как давний любитель 
+                            	и поклонник данной марки, хотя владельцем данного авто к сожалению ещё не являюсь.</p>
+                        	</li>
+                        </ul>
+                        <a href="#" class="nav prev">prev</a>
+                        <a href="#" class="nav next">next</a>
+                    </div>
+                    <div class="vk_comments"></div>
+                </div>
+                <!-- bonuses -->
+                <div class="bonuses_serv" id="tab-bonuses">
+                	<h2>Экономия в квадрате!</h2>
+                    <p>Уважаемые клиенты, мы предлагаем вам экономить еще больше! Суммируйте скидки, а мы будем работать для вас:</p>
+                    <div class="bonus">1. Вступите в нашу группу ВКонтакте и получите уникальный промо-код на 100 рублей скидки!
+- Каждому вступившему в группу будет выслан промо-код личным сообщением. Осталось только предъявить его менеджеру при осуществлении заказа!</div>
+					<div class="bonus">2. Вы уже наш клиент? Есть что сказать о нашей работе? Оставьте отзыв на нашем сайте о выполненном заказе и получите обратно 200 р. на телефон, либо промо-код на 200 р. скидки на следующий заказ.
+- Оставьте рекомендацию на закладке «Отзывы», затем отправьте свой номер телефона на info@internota.ru с темой «Отзыв».» Все просто! И ввгодно!</div>
+                </div>
+            </div>
+        </div>
+        <!-- FOOTER -->
+    	<div id="sp_footer"></div>
+    </div>
+	<div id="footer">
+    	<div class="_wrap">&copy; 2013, Интернота. Все права защищены. Полное или частичное копирование материалов запрещено</div>
+    </div>
+</body>
+</html>

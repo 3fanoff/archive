@@ -1,0 +1,440 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ИстКнига</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.6.1.min.js" type="text/javascript"></script>
+
+<script src="js/slider.js" type="text/javascript"></script>
+<!--[if IE 6]>
+<script src="js/dd_belatedpng.js" type="text/javascript"></script>
+<script type="text/javascript">
+   DD_belatedPNG.fix('.border-top-03, #container-main-02, .photos_border div, .jcarousel-next-horizontal, .jcarousel-prev-horizontal, .sale, .hit, .choice, .books_carousel, .repeat');
+</script>
+<![endif]-->
+<!--<link href="css/carousel.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.jcarousel.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery('.carus').jcarousel({
+	scroll:3,
+	animation: 500
+	});
+});
+</script>-->
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#slider").easySlider(); 
+});
+</script>
+</head>
+
+<body>
+<div id="ornament-cont-center"><div id="ornament-cont-top"><div id="ornament-cont-bot">
+ <!--MAIN CONTAINER -->
+<div id="container">
+	<div id="topborder_block">
+    	<div class="border-top-01">
+        	<div class="border-top-02">
+            	<div class="border-top-03"></div>
+            </div>
+        </div>
+    </div>
+    <div id="central_block">
+    	<div id="central_block-02">
+        	<div id="central_block-paper">
+            <!-- HEADER -->
+              <div id="header"><div id="logo"><p>istkniga.ru<br /><a href="#" class="tomain">Istkniga</a></p></div>
+              	<div id="leftonlogo">
+                	<div id="ornament-header">
+                     <div id="header-info">
+                   	   <div id="menu_block">
+                     	<ul id="topmenu" class="menu-x">
+                        	<li><a href="#"><span>Главная</span></a></li>
+                            <li><a href="#"><span>Блоги</span></a></li>
+                            <li><a href="#"><span>Форум</span></a></li>
+                            <li><a href="#"><span>События</span></a></li>
+                            <li><a href="#"><span>Фотогалереи</span></a></li>
+                            <li><a href="#"><span>Контакты</span></a></li>
+                        </ul>
+                        <ul id="logmenu" class="menu-x">
+                        	<li class="to-auth current"><a href="#"><span>Вход</span></a></li>
+                            <li><a href="#"><span>Регистрация</span></a></li>
+                        </ul>
+                       </div>
+                       <!-- cornice -->
+                        <div class="cornice">
+                            <div class="right"></div>
+                        </div>
+                        <!--/cornice-->
+                        <ul class="contacts">
+                        	<li class="tel">(812) 123-45-67</li>
+                            <li class="skype">skypelogin</li>
+                            <li class="icq">196450512</li>
+                            <li class="mail"><a href="mailto:info@istkniga.ru">info@istkniga.ru</a></li>
+                        </ul>
+                        <a class="cart" href="#">Моя корзина (12)</a>
+                       
+                     </div>
+                     <div id="welcome_block_top">
+                     <!-- if signed -->
+                     	<div class="welcome">Добро пожаловать, <a href="#">Константин Преображенский</a></div>
+                     </div>
+                     <!-- SEARCH -->
+                       <div id="search_block">
+                       <form method="get" action="#">
+							<div class="search_bitmap"><label for="search">Поиск по каталогу товаров:</label></div>
+                            <div class="search_textfield">
+                            	<span><input type="text" name="search" id="search" autocomplete="off"/></span>
+                            </div>
+                            <input type="button" value="Найти" class="button"/>
+                       </form>
+                       </div><div id="search_shadow"></div>
+					<!-- /SEARCH -->
+                    </div>
+              	</div>
+              </div>
+              <!-- /HEADER -->
+              
+              <div id="container-main">
+              	 <div id="container-main-01">
+                 	<div id="container-main-02">
+              <!-- LEFT -->
+              <!-- /LEFT -->
+                <!-- RIGHT -->
+                <div id="right">
+                    <!-- CRUMBS -->
+                   <div id="breadcrumbs">
+                    	<ul>
+                    	<li><span><a href="index.php" title="На главную">Главная</a></span></li>
+                        <li class="separator">&nbsp;&rsaquo;&nbsp;</li>
+                     	<li><span>Моя корзина</span></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                    <!-- /CRUMBS -->
+                	<h1>Моя корзина <span>(7)</span></h1>
+                   
+                    <!--  CART -->
+                    <div id="cart">
+                    	<div class="back">&rsaquo;&nbsp;<a href="#">Вернуться в магазин</a></div>
+                   	  <div id="tabs_block" class="ready-bck">
+                        	<div class="tabs">
+                            	<a href="javaScript:void(0);" class="ready current" onclick="getElementById('post_order').style.display='none';getElementById('ready_order').style.display='block';">Готовые к заказу (7)</a>
+                                <a href="javaScript:void(0);" class="post" onclick="getElementById('post_order').style.display='block';getElementById('ready_order').style.display='none';">Отложенные товары (3)</a>
+                            </div>
+                        </div>
+                        <!-- READY TO ORDER -->
+                    	<div id="ready_order">
+                        	<div class="cart-list_block">
+                            	<div class="repeat">
+                                <div class="issue_block"><input type="button" class="button issue" value="Оформить заказ"/>
+                                </div>
+                              <table width="100%" cellspacing="0" cellpadding="0" class="cart-list">
+  									<tr class="hed" align="center">
+   										<td width="4%" align="left"><input type="checkbox" name="allselect" id="allselect-ready"/></td>
+    									<td width="38%">Ваши покупки</td>
+    									<td width="10%">Вес</td>
+                                        <td width="10%">Цена</td>
+                                        <td width="13%">Количество</td>
+                                        <td width="13%">Стоимость</td>
+                                        <td width="12%">Действия</td>
+									</tr>
+                                    <tr align="center">
+   										<td align="left"><input type="checkbox" name="allselect" id="select1"/></td>
+    									<td align="left">
+                                        	<div class="purchase">
+                                        	<img src="images/popular/book-demo.jpg" width="40" height="50" alt="book"/>
+                                            <p class="book-name">
+                                            	<span>Ч. Эппинг</span>
+                                                <a href="#">«Повесть об освобождении Москвы от поляков в 1612»</a>                                            </p>
+                                            </div>                                        </td>
+    									<td>10000 г</td>
+                                        <td><p class="value">999999 руб.</p></td>
+                                        <td>
+                                        	<div class="num_block">
+                                      		<input type="text" size="2" class="number" maxlength="3" value="1"/>
+												<div class="arrows">
+                                            		<div class="arr-top" onclick=""></div>
+                                                	<div class="arr-bot" onclick=""></div>
+                                            	</div>                                        
+                                         	</div>                                        </td>
+                                        <td><p class="cost">999999 руб.</p></td>
+                                        <td>
+                                        	<div class="already-cart" >&rsaquo;&nbsp;<a href="#">Отложить</a></div>
+                                        	<div class="to-post">&rsaquo;&nbsp;<a href="#">Удалить</a></div>                                        </td>
+									</tr>
+									<tr class="sep">
+                                        <td colspan="7"><div class="left"><div class="right"></div></div></td>
+                                    </tr>
+                                   	<tr align="center" >
+                                        <td align="left"><input type="checkbox" name="allselect" id="select2"/></td>
+                                        <td align="left">
+                                        	<div class="purchase">
+                                        	<img src="images/popular/book-demo.jpg" width="40" height="50" alt="book"/>
+                                            <p class="book-name">
+                                            	<span>Ч. Эппинг</span>
+                                                <a href="#">«Повесть об освобождении Москвы от поляков в 1612»</a>                                            </p>
+                                            </div>                                        </td>
+                                        <td>10000 г</td>
+                                        <td><p class="value">999999 руб.</p></td>
+                                        <td>
+                                        	<div class="num_block">
+                                      		<input type="text" size="2" class="number" maxlength="3" value="1"/>
+												<div class="arrows">
+                                            		<div class="arr-top" onclick=""></div>
+                                                	<div class="arr-bot" onclick=""></div>
+                                            	</div>                                        
+                                         	</div>                                        </td>
+                                        <td><p class="cost">999999 руб.</p></td>
+                                        <td>
+                                        	<div class="already-cart" >&rsaquo;&nbsp;<a href="#">Отложить</a></div>
+                                        	<div class="to-post">&rsaquo;&nbsp;<a href="#">Удалить</a></div>                                        </td>
+                                    </tr>
+                                    <tr class="sep">
+                                        <td colspan="7"><div class="left"><div class="right"></div></div></td>
+                                    </tr>
+                                    <tr align="center" >
+                                        <td align="left"><input type="checkbox" name="allselect" id="select3"/></td>
+                                        <td align="left">
+                                        	<div class="purchase">
+                                        	<img src="images/popular/book-demo.jpg" width="40" height="50" alt="book"/>
+                                            <p class="book-name">
+                                            	<span>Ч. Эппинг</span>
+                                                <a href="#">«Повесть об освобождении Москвы от поляков в 1612»</a>                                            </p>
+                                            </div>                                        </td>
+                                        <td>10000 г</td>
+                                        <td><p class="value"><span><span class="old">55000 руб.</span><br/>999999 руб.</span></p></td>
+                                        <td>
+                                        	<div class="num_block">
+                                      		<input type="text" size="2" class="number" maxlength="3" value="1"/>
+												<div class="arrows">
+                                            		<div class="arr-top" onclick=""></div>
+                                                	<div class="arr-bot" onclick=""></div>
+                                            	</div>                                        
+                                         	</div>                                        </td>
+                                        <td><p class="cost">999999 руб.</p></td>
+                                        <td>
+                                        	<div class="already-cart" >&rsaquo;&nbsp;<a href="#">Отложить</a></div>
+                                        	<div class="to-post">&rsaquo;&nbsp;<a href="#">Удалить</a></div>                                        </td>
+									</tr>
+                                    <tr class="sep">
+                                        <td colspan="7"><div class="left"><div class="right"></div></div></td>
+                                    </tr>
+                                  <tr align="center" class="sum">
+                                   	<td>&nbsp;</td>
+                                      	<td align="left"><p class="total">Итого:</p></td>
+                                        <td><span class="mass">10000г</span></td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                      	<td><p class="cost total-cost">999999 руб.</p></td>
+                                        <td>&nbsp;</td>
+                                  </tr>
+								</table>
+								<div class="yellow_block"></div>
+                              </div>
+                              <div class="bottom-border"></div>
+                            </div>
+                            <div class="buttons_block">
+                           	  <div class="cart_action">
+                               	<a href="#" class="to-post">Отложить выбранное</a><a href="#" class="delete">Удалить выбранное</a>
+                                    <p>Итого, без стоимости доставки  — 999999 руб.</p>
+                              </div>
+                            	<div class="issue_block"><input type="button" class="button issue" value="Оформить заказ"/>
+                           	  </div>
+                          </div>
+                            <div class="promo-code_block">
+                           	  <form id="promo-code" action="#" class="plain_form">
+                                <label for="promo-code_here">Если у Вас есть <a href="#">промо-код акции</a>, укажите его</label>
+                                <input type="text" name="promo-code_here" id="promo-code_here" class="textfield"/>
+                                <div class="enter-code">&rsaquo;&nbsp;<a href="#">Ввести</a></div>
+                           	  </form>
+                            </div>
+                        </div>
+                        <!-- POST ORDER -->
+                        <div id="post_order" style="display:none;">
+                        	<div class="cart-list_block">
+                            	<div class="repeat">
+                                <div class="issue_block"></div>
+                              <table width="100%" cellspacing="0" cellpadding="0" class="cart-list">
+  									<tr class="hed" align="center">
+   										<td width="4%" align="left"><input type="checkbox" name="allselect" id="allselect-post"/></td>
+    									<td width="38%">Ваши покупки</td>
+    									<td width="10%">Вес</td>
+                                        <td width="10%">Цена</td>
+                                        <td width="13%">Количество</td>
+                                        <td width="13%">Стоимость</td>
+                                        <td width="12%">Действия</td>
+									</tr>
+                                    <tr align="center">
+   										<td align="left"><input type="checkbox" name="allselect" id="select-p1"/></td>
+    									<td align="left">
+                                        	<div class="purchase">
+                                        	<img src="images/popular/book-demo.jpg" width="40" height="50" alt="book"/>
+                                            <p class="book-name">
+                                            	<span>Ч. Эппинг</span>
+                                                <a href="#">«Повесть об освобождении Москвы от поляков в 1612»</a>                                            </p>
+                                            </div>                                        </td>
+    									<td>10000 г</td>
+                                        <td><p class="value">999999 руб.</p></td>
+                                        <td>
+                                        	<div class="num_block">
+                                      		<input type="text" size="2" class="number" maxlength="3" value="1"/>
+												<div class="arrows">
+                                            		<div class="arr-top" onclick=""></div>
+                                                	<div class="arr-bot" onclick=""></div>
+                                            	</div>                                        
+                                         	</div>                                        </td>
+                                        <td><p class="cost">999999 руб.</p></td>
+                                        <td>
+                                        	<div class="already-cart" >&rsaquo;&nbsp;<a href="#">Отложить</a></div>
+                                        	<div class="to-post">&rsaquo;&nbsp;<a href="#">Удалить</a></div>                                        </td>
+									</tr>
+									<tr class="sep">
+                                        <td colspan="7"><div class="left"><div class="right"></div></div></td>
+                                    </tr>
+                                    <tr align="center">
+   										<td align="left"><input type="checkbox" name="allselect" id="select-p2"/></td>
+    									<td align="left">
+                                        	<div class="purchase">
+                                        	<img src="images/popular/book-demo.jpg" width="40" height="50" alt="book"/>
+                                            <p class="book-name">
+                                            	<span>Ч. Эппинг</span>
+                                                <a href="#">«Повесть об освобождении Москвы от поляков в 1612»</a>                                            </p>
+                                            </div>                                        </td>
+    									<td>10000 г</td>
+                                        <td><p class="value">999999 руб.</p></td>
+                                        <td>
+                                        	<div class="num_block">
+                                      		<input type="text" size="2" class="number" maxlength="3" value="1"/>
+												<div class="arrows">
+                                            		<div class="arr-top" onclick=""></div>
+                                                	<div class="arr-bot" onclick=""></div>
+                                            	</div>                                        
+                                         	</div>                                        </td>
+                                        <td><p class="cost">999999 руб.</p></td>
+                                        <td>
+                                        	<div class="already-cart" >&rsaquo;&nbsp;<a href="#">Отложить</a></div>
+                                        	<div class="to-post">&rsaquo;&nbsp;<a href="#">Удалить</a></div>                                        </td>
+									</tr>
+									<tr class="sep">
+                                        <td colspan="7"><div class="left"><div class="right"></div></div></td>
+                                    </tr>
+                                   	<tr align="center" >
+                                        <td align="left"><input type="checkbox" name="allselect" id="select-p3"/></td>
+                                        <td align="left">
+                                        	<div class="purchase">
+                                        	<img src="images/popular/book-demo.jpg" width="40" height="50" alt="book"/>
+                                            <p class="book-name">
+                                            	<span>Ч. Эппинг</span>
+                                                <a href="#">«Повесть об освобождении Москвы от поляков в 1612»</a>                                            </p>
+                                            </div>                                        </td>
+                                        <td>10000 г</td>
+                                        <td><p class="value">999999 руб.</p></td>
+                                        <td>
+                                        	<div class="num_block">
+                                      		<input type="text" size="2" class="number" maxlength="3" value="1"/>
+												<div class="arrows">
+                                            		<div class="arr-top" onclick=""></div>
+                                                	<div class="arr-bot" onclick=""></div>
+                                            	</div>                                        
+                                         	</div>                                        </td>
+                                        <td><p class="cost">999999 руб.</p></td>
+                                        <td>
+                                        	<div class="already-cart" >&rsaquo;&nbsp;<a href="#">Добавить к заказу</a></div>
+                                        	<div class="to-post">&rsaquo;&nbsp;<a href="#">Удалить</a></div>                                        </td>
+                                    </tr>
+                                    <tr class="sep">
+                                        <td colspan="7"><div class="left"><div class="right"></div></div></td>
+                                    </tr>
+                                    <tr align="center" >
+                                        <td align="left"><input type="checkbox" name="allselect" id="select-p4"/></td>
+                                        <td align="left">
+                                        	<div class="purchase">
+                                        	<img src="images/popular/book-demo.jpg" width="40" height="50" alt="book"/>
+                                            <p class="book-name">
+                                            	<span>Ч. Эппинг</span>
+                                                <a href="#">«Повесть об освобождении Москвы от поляков в 1612»</a>                                            </p>
+                                            </div>                                        </td>
+                                        <td>10000 г</td>
+                                        <td><p class="value"><span><span class="old">55000 руб.</span><br/>999999 руб.</span></p></td>
+                                        <td>
+                                        	<div class="num_block">
+                                      		<input type="text" size="2" class="number" maxlength="3" value="1"/>
+												<div class="arrows">
+                                            		<div class="arr-top" onclick=""></div>
+                                                	<div class="arr-bot" onclick=""></div>
+                                            	</div>                                        
+                                         	</div>                                        </td>
+                                        <td><p class="cost">999999 руб.</p></td>
+                                        <td>
+                                        	<div class="already-cart" >&rsaquo;&nbsp;<a href="#">Отложить</a></div>
+                                        	<div class="to-post">&rsaquo;&nbsp;<a href="#">Удалить</a></div>                                        </td>
+									</tr>
+                                    <tr class="sep">
+                                        <td colspan="7"><div class="left"><div class="right"></div></div></td>
+                                    </tr>
+                                  <tr align="center" class="sum">
+                                   	<td>&nbsp;</td>
+                                      	<td align="left"><p class="total">Итого:</p></td>
+                                        <td><span class="mass">10000г</span></td>
+                                    <td>&nbsp;</td>
+                                    <td>&nbsp;</td>
+                                      	<td><p class="cost total-cost">999999 руб.</p></td>
+                                        <td>&nbsp;</td>
+                                  </tr>
+								</table>
+								<div class="yellow_block"></div>
+                              </div>
+                              <div class="bottom-border"></div>
+                            </div>
+                            <div class="buttons_block">
+                           	  <div class="cart_action">
+                               	<a href="#" class="to-cart">Добавить выбранное к заказу</a><a href="#" class="delete">Удалить выбранное</a>
+                              </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- /CART -->
+                </div><!-- /RIGHT -->
+                <!-- FOOTER -->
+                <div id="footer">
+                	<ul id="footmenu">
+                    <li><a href="#"><span>Оплата и доставка</span></a></li>
+                    <li><span class="nolink">О проекте</span>
+                    	<ul class="sub_footmenu">
+                        	<li><a href="#"><span>Миссия</span></a></li>
+                            <li><a href="#"><span>Партнёрам</span></a></li>
+                            <li><a href="#"><span>Статьи</span></a></li>
+                            <li><a href="#"><span>Условия использования</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="tel"><span class="tel">(812) 123-45-67</span>
+                    	<ul class="sub_footmenu">
+                            <li class="skype">skypelogin</li>
+                            <li class="icq">196450512</li>
+                            <li class="mail"><a href="mailto:info@istkniga.ru">info@istkniga.ru</a></li>
+                            <li class="cntct"><a href="#"><span>Контакты</span></a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <div class="clear"></div>
+                    <!-- cornise -->
+                    <div class="cornice">
+                            <div class="right"></div>
+                    </div>
+                    <!-- /cornise -->
+                    <p class="copy"><span>2011 © Все права защищены. Istkniga.ru</span>|<span>Создание сайта ― &laquo;<a href="http://openstud.ru">Открытая студия</a>&raquo;.</span></p>
+                </div><!-- /FOOTER -->
+                	</div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /MAIN CONTAINER -->
+
+</div></div></div><!-- ornament div's -->
+</body>
+</html>

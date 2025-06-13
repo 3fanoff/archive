@@ -1,0 +1,337 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Balcon - Real-Estate search</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body class="mybody">
+<!--HEADER-->
+<div class="banner_top"><a href="#"><img src="img/banner_top.jpg" width="978" height="84" alt=""/></a></div>
+<div id="header">
+	<div class="inner-top">
+    	<div class="wrapper">
+        	<div id="logo">
+            	<div class="slogan">Недвижимость Ханты-Мансийского АО</div>
+                <a href="#" class="logo"></a>
+            </div>
+            <div class="city">
+            	<ul class="dropdown">
+                	<li class="parent"><a href="#">Ханты-Мансийск</a>
+                    	<ul>
+                            <li><a href="#">Сургут</a></li>
+                            <li><a href="#">Лангепас</a></li>
+                            <li><a href="#">Мегион</a></li>
+                            <li><a href="#">Нефтеюганск</a></li>
+                            <li><a href="#">Нижневартовск</a></li>
+                            <li><a href="#">Нягань</a></li>
+                            <li><a href="#">Покачи</a></li>
+                            <li><a href="#">Пыть-Ях</a></li>
+                            <li><a href="#">Радужный</a></li>
+                            <li><a href="#">Когалым</a></li>
+                            <li><a href="#">Урай</a></li>
+                            <li><a href="#">Ханты-Мансийск</a></li>
+                            <li><a href="#">Югорск</a></li>
+                        </ul>
+                        <span class="lock"></span>
+                        <span class="dott"></span>
+                    </li>
+                </ul>
+            </div>
+            <div class="auth_block">
+            	<div>
+                	<a onclick="popup.popupInit('#popup','#reg_content1','Регистрация');" href="javaScript:void(0);"  class="reg">Регистрация</a>
+                    <span>|</span><a href="#" class="enter">Вход</a>
+                </div>
+            </div>
+            <div class="menus">
+            	<ul class="dropdown">
+                	<li class="parent"><a href="#">Недвижимость</a>
+                    	<ul>
+                        	<li><a href="#">квартиры</a></li>
+                            <li><a href="#">комнаты</a></li>
+                            <li><a href="#">дома/коттеджи</a></li>
+                            <li><a href="#">дачи</a></li>
+                            <li><a href="#">гаражи</a></li>
+                            <li><a href="#">участки</a></li>
+                            <li><a href="#">коммерческая недвижимость</a></li>
+                        </ul>
+                        <span class="lock"></span>
+                    </li>
+                    <li class="parent"><a href="#">Услуги</a>
+                    	<ul>
+                        	<li><a href="#">переезд</a></li>
+                            <li><a href="#">ремонт</a></li>
+                            <li><a href="#">оценка</a></li>
+                            <li><a href="#">дизайн</a></li>
+                            <li><a href="#">консультация юриста для физ.лиц</a></li>
+                            <li><a href="#">консультация юриста для юр.лиц</a></li>
+                            <li><a href="#">консультация риелтора</a></li>
+                        </ul>
+                        <span class="lock"></span>
+                    </li>
+                    <li><a href="#">По карте</a></li>
+                </ul>
+                <a href="#" class="new_ad">Добавить объявление</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="filter">
+    <div class="inner-bot">
+    	<div class="wrapper">
+        	<form name="s_form" method="post" action="">
+                <div class="sel_box">
+                    <select name="input01">
+                        <option disabled>Я хочу</option>
+                        <option value="Дом">Дом</option>
+                        <option value="Квартира">Квартира</option>
+                        <option value="Комната">Комната</option>
+                        <option value="Дача">Дача</option>
+                    </select>
+                </div>
+                <div class="sel_box">
+                    <select name="input02">
+                        <option disabled>Что?</option>
+                        <option value="Дом">Дом</option>
+                        <option value="Квартира">Продажа квартир на рынке</option>
+                        <option value="Комната">Комната</option>
+                        <option value="Дача">Дача</option>
+                    </select>
+                </div>
+                <span class="label cost">Стоимость</span><input type="text" name="s_from" id="s_from" value="От"/>
+                <span class="label">-</span><input type="text" name="s_to" id="s_to" value="До"/>
+                <a href="#" class="adv_search">Расширенный поиск</a>
+                <input type="submit" value="Искать" name="s_submit" id="s_submit" class="btn_blue"/>
+                <div class="clear"></div>
+            </form>
+        </div>
+    </div>
+</div>
+<!--/HEADER-->
+<div id="main_body">
+	<div class="wrapper">
+        <div class="column_super">
+        	<div class="inner left">
+            	<!--BREADCRUMBS-->
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="#">Вся недвижимость</a></li>
+                        <li class="sep">/</li>
+                        <li><a href="#">Квартиры</a></li>
+                        <li class="sep">/</li>
+                        <li><a href="#">Продажа</a></li>
+                        <li class="sep">/</li>
+                        <li><a href="#">Двухкомнатные</a></li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <!--/BREADCRUMBS-->
+                <div class="note">2-х комнатные квартиры</div>
+            </div>
+            <div class="inner right">
+            	<div class="pagination">
+                	<div class="total">Найдено 20 000 объектов</div>
+                    <ul>
+                    	<li><a href="#">1</a></li>
+                        <li><a href="#">&hellip;</a></li>
+                        <li><a href="#">3</a></li>
+                        <li class="current"><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&hellip;</a></li>
+                        <li><a href="#">70</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="clear"></div>
+        	<!--TABLE-->
+        	<div class="table_style">
+            	<div class="thead">
+                	<div class="date">&nbsp;</div>
+                	<div class="addr">адрес</div>
+                    <div class="room">комнат</div>
+                    <div class="area">площадь</div>
+                    <div class="cost"><a href="#sort">цена в руб.</a></div>
+                    <div class="levl">этаж</div>
+                    <div class="cont">контакты</div>
+                    <div class="foto">фото</div>
+                    <div class="extr">дополнительно</div>
+                    <div class="add_fav"></div>
+                </div>
+                <div class="trow red">
+                	<a href="#ad2" class="link"></a>
+                	<div class="date">Сегодня</div>
+                	<div class="addr">Сургут<br />ул. Уличная, 13</div>
+                    <div class="room">2</div>
+                    <div class="area">12 / 16 / 36</div>
+                    <div class="cost">4500000 руб 150000 $</div>
+                    <div class="levl">2/2</div>
+                    <div class="cont">(926)166-9196 агентство</div>
+                    <div class="foto"><i class="photo" title="8 фото"></i><i class="quickly"></i></div>
+                    <div class="extr">кух. мебель. жил. мебель, тел.. тв, стиральная машина, холодильник, балкон, можно с детьми</div>
+                    <div class="add_fav"></div>
+                </div>
+                <div class="trow added">
+                	<a href="#ad3" class="link"></a>
+                	<div class="date">15.12</div>
+                	<div class="addr">Новый Сургут<br />ул. Уличная, 25</div>
+                    <div class="room">3</div>
+                    <div class="area">18 / 28 / 46</div>
+                    <div class="cost">467000 руб 154500 $</div>
+                    <div class="levl">4/7</div>
+                    <div class="cont">(926)166-9196 агентство</div>
+                    <div class="foto"><i class="photo" title="8 фото"></i></div>
+                    <div class="extr">кух. мебель. жил. мебель, тел.. тв, стиральная машина, холодильник, балкон, можно с детьми</div>
+                    <div class="add_fav"></div>
+                </div>
+                <div class="bann">
+                	<div><a href="#" class="banner"><img src="img/banner_top.jpg" width="978" height="84" alt="bmain" /></a></div>
+                </div>
+                <div class="trow">
+                	<a href="#ad4" class="link"></a>
+                	<div class="date">16.12</div>
+                	<div class="addr">Ханты-Мансийск<br />ул. Уличная, 12</div>
+                    <div class="room">1</div>
+                    <div class="area">12 / 16 / 28</div>
+                    <div class="cost">4500000 руб 150000 $</div>
+                    <div class="levl">1/3</div>
+                    <div class="cont">(926)166-9196 агентство</div>
+                    <div class="foto"></div>
+                    <div class="extr">кух. мебель. жил. мебель, тел.. тв, стиральная машина, холодильник, балкон, можно с детьми</div>
+                    <div class="add_fav"></div>
+                </div>
+                <div class="trow grey">
+                	<a href="#ad5" class="link"></a>
+                	<div class="date">15.12</div>
+                	<div class="addr">Новый Сургут<br />ул. Уличная, 25</div>
+                    <div class="room">3</div>
+                    <div class="area">18 / 28 / 46</div>
+                    <div class="cost">467000 руб 154500 $</div>
+                    <div class="levl">4/7</div>
+                    <div class="cont">(926)166-9196 агентство</div>
+                    <div class="foto"><i class="quickly"></i></div>
+                    <div class="extr">кух. мебель. жил. мебель, тел.. тв, стиральная машина, холодильник, балкон, можно с детьми</div>
+                    <div class="add_fav"></div>
+                </div>
+                <div class="trow">
+                	<a href="#ad6" class="link"></a>
+                	<div class="date">15.12</div>
+                	<div class="addr">Сургут<br />ул. Уличная, 13</div>
+                    <div class="room">2</div>
+                    <div class="area">12 / 16 / 36</div>
+                    <div class="cost">4500000 руб 150000 $</div>
+                    <div class="levl">2/2</div>
+                    <div class="cont">(926)166-9196 агентство</div>
+                    <div class="foto"><i class="photo" title="8 фото"></i></div>
+                    <div class="extr">кух. мебель. жил. мебель, тел.. тв, стиральная машина, холодильник, балкон, можно с детьми</div>
+                    <div class="add_fav"></div>
+                </div>
+            </div>
+            <!--/TABLE-->
+            <div class="inner">
+            <div class="pagination">
+                    <ul>
+                    	<li><a href="#">1</a></li>
+                        <li><a href="#">&hellip;</a></li>
+                        <li><a href="#">3</a></li>
+                        <li class="current"><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">&hellip;</a></li>
+                        <li><a href="#">70</a></li>
+                    </ul>
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/FOOTER-->
+<div id="sp_footer"></div>
+<div id="footer">
+	<div class="wrapper">
+    	<div class="inner-top">
+        	<div id="logo_bot" class="logo"></div>
+            <ul class="botmenu">
+            	<li><span>недвижимость</span>
+                	<ul>
+                    	<li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </li>
+                <li><span>недвижимость</span>
+                	<ul>
+                    	<li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </li>
+                <li><span>недвижимость</span>
+                	<ul>
+                    	<li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </li>
+                <li><span>недвижимость</span>
+                	<ul>
+                    	<li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </li>
+                <li><span>недвижимость</span>
+                	<ul>
+                    	<li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </li>
+                <li><span>недвижимость</span>
+                	<ul>
+                    	<li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                        <li><a href="#">Lorem Ipsum</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="clear"></div>
+        </div>
+        <div class="inner-bot">
+        	<div class="copy">Balcon<span>|</span>8 3466 1 23 45<span>|</span></div>
+            <div class="auth_block"><a href="#" class="reg">Регистрация</a><span>|</span><a href="#">Вход</a><span>|</span><a href="#">Помощь</a></div>
+        </div>
+    </div>
+</div>
+<!--/FOOTER-->
+<div id="overlay"></div>
+<div id="popup" class="popup">
+	<div class="head">Регистрация<a href="javascript:void(0);" onclick="popup.popupClose('#popup');" class="close"></a></div>
+    <div class="popup_content"></div>
+</div>
+<div class="popup_contents">
+	<div id="reg_content1">Регистрация шаг 1</div>
+	<div id="reg_content2">Регистрация шаг 2</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=1000"> 
+<meta name="apple-mobile-web-app-capable" content="yes"> 
+<meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+<meta name="apple-mobile-web-app-title" content="ФААФ">
+<title>ФААФ Добавление работы 2</title>
+<link rel="apple-touch-icon" href="/apple-touch-icon.png"> 
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"> 
+<link rel="icon" href="favicon.ico" type="image/x-icon"> 
+<link rel="shortcut icon" href="/favicon.png">
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<link href="http://fonts.googleapis.com/css?family=Seymour+One&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Roboto:400,300,400italic,700&subset=latin,cyrillic-ext" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Marck+Script&subset=latin,cyrillic" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.9.1.min.js" type="text/javascript"></script>
+<script src="js/jquery.form.min.js" type="text/javascript"></script>
+<script src="js/jquery.validate.min.js" type="text/javascript"></script>
+<script src="js/script.set.js" type="text/javascript"></script>
+</head>
+
+<body class="mybody">
+	<div id="header">
+    	<div class="topmenu">
+        	<div class="wrap">
+            	<ul>
+                	<li class="callback"><span class="before"></span><span class="after"></span><a href="#">Обратная связь</a></li>
+                    <li class="registration active"><span class="static"></span><i>Регистрация участника</i></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- /HEADER -->
+    <div id="sub_header">
+    	<div class="wrap">
+        	<a href="#" class="logo"></a>
+            <h1>Добавление работы</h1>
+            <div class="user"><span>3fanogg@mail.ru &bull;</span> <a href="#">выйти</a></div>
+            <div class="_clr"></div>
+        </div>
+    </div>
+    <div class="addwork_menu">
+    	<div class="wrap">
+            <ul>
+                <li class="p1">Добавление видео</li>
+                <li class="p2 active">Заполнение заявки</li>
+                <li class="p3">Подтверждение</li>
+                <li class="p4">Готово</li>
+            </ul>
+        </div>
+    </div>
+    <!-- Add -->
+    <div class="sand_zone">
+    	<div class="wrap">
+        	<div class="sp_80"></div>
+            <div class="workorder">
+            <form id="work_order" method="post" action="#">
+            	<div class="w_box w_basis">
+                	<label for="w_name">Название работы<span>*</span></label>
+                    <input type="text" name="w_name" id="w_name">
+                    <div class="sp_20"></div>
+                    <label for="w_desc">Описание работы<span>*</span></label>
+                   	<textarea name="w_desc" id="w_desc"></textarea>
+                </div>
+                <div class="w_box w_team _frame">
+                	<div class="b_left">
+                    	<label for="w_producer">Продюсер<span>*</span></label>
+                        <input type="text" name="w_producer" id="w_producer">
+                        <div class="item"><div class="field"></div><i></i></div>
+                    </div>
+                    <div class="b_right">
+                    	<label for="w_director">Режиссер<span>*</span></label>
+                    	<input type="text" name="w_director" id="w_director">
+                        <div class="item added"><input type="text" name="" id=""><i></i></div>
+                    </div>
+                    <div class="_clr sp_10"></div>
+                	<div class="b_left">
+                        <label for="w_author">Сценарист<span>*</span></label>
+                    	<input type="text" name="w_author" id="w_author">
+                        <div class="item"><div class="field"></div><i></i></div>
+                    </div>
+                    <div class="b_right">
+                    	<label for="w_composer">Композитор</label>
+                    	<input type="text" name="w_composer" id="w_composer">
+                        <div class="item"><div class="field"></div><i></i></div>
+                    </div>
+                    <div class="_clr sp_10"></div>
+                    <div class="b_left">
+                    	<label for="w_specialist">Специалисты</label>
+                    	<input type="text" name="w_specialist" id="w_specialist">
+                        <div class="item"><div class="field"></div><i></i></div>
+                    </div>
+                    <div class="_clr"></div>
+                </div>
+                <div class="sp_10"></div>
+                <div class="w_box w_param">
+                	<label for="w_country">Страна производства<span>*</span></label>
+                    <select name="w_country" id="w_country">
+                    	<option disabled>-- Выберите --</option>
+                        <option>Россия</option>
+                        <option>Украина</option>
+                    </select>
+                    <div class="_clr sp_20"></div>
+                    <label for="w_tech">Технология<span>*</span></label>
+                   	<input type="text" name="w_tech" id="w_tech">
+                    <div class="_clr sp_20"></div>
+                    <label for="w_year">Год выпуска<span>*</span></label>
+                    <select name="w_year" id="w_year">
+                    	<option disabled>-- Выберите --</option>
+                        <option>2013</option>
+                        <option>2012</option>
+                    </select>
+                    <div class="_clr sp_20"></div>
+                    <label for="w_time">Длительность в минутах<span>*</span></label>
+                   	<input type="text" name="w_time" id="w_time" class="mini">
+                    <div class="_clr sp_20"></div>
+                    <label>Формат</label>
+                    <div class="radio">
+                        <input type="radio" name="w_format" id="w_format1" value="16:9">
+                        <label for="w_format1">16:9</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="w_format" id="w_format2" value="4:3">
+                        <label for="w_format2">4:3</label>
+                    </div>
+                    <div class="radio">
+                        <input type="radio" name="w_format" id="w_format3" value="2K">
+                        <label for="w_format3">2K</label>
+                    </div>
+                </div>
+                <div class="w_box w_stud _frame">
+                	<div class="b_left">
+                    	<label for="w_name_s">Название студии</label>
+                        <input type="text" name="w_name_s" id="w_name_s">
+                    </div>
+                    <div class="b_right">
+                    	<label for="w_site">Сайт студии</label>
+                    	<input type="text" name="w_site" id="w_site">
+                    </div>
+                    <div class="_clr sp_10"></div>
+                    <label for="w_mail_s">Почтовый адрес студии</label>
+                   	<input type="text" name="w_mail_s" id="w_mail_s" class="maxi">
+                    <div class="_clr sp_20"></div>
+                	<div class="b_left">
+                        <label for="w_mail">Электронная почта</label>
+                    	<input type="text" name="w_mail" id="w_mail">
+                    </div>
+                    <div class="b_right">
+                    	<label for="w_tel">Телефон</label>
+                    	<input type="text" name="w_tel" id="w_tel">
+                    </div>
+                    <div class="_clr sp_10"></div>
+                    <label for="w_addit">Дополнительная информация об авторах</label>
+                   	<textarea name="w_addit" id="w_addit"></textarea>
+                	<div class="_clr sp_10"></div>
+                </div>
+                <div class="sp_30"></div>
+                <div class="w_box w_priv">
+                	<div class="item">
+                    	<input type="checkbox" value="1" name="priv1">
+                        <p><span class="fw_bd">Правообладатель</span> предоставляет неисключительные 
+                        права на трансляцию СМИ «Телеканал 2х2»<br />
+						произведения на территории России в рамках программы Фестиваля Авторского 
+						Анимационного Фильма.</p>
+                    </div>
+                    <div class="sp_15"></div>
+                    <div class="item">
+                    	<input type="checkbox" value="1" name="priv2">
+                        <p><span class="fw_bd">Правообладатель</span> гарантирует, что он является единственным владельцем всех прав на произведение, включая права на музыку.</p>
+                    </div>
+                    <div class="sp_15"></div>
+                    <div class="item">
+                    	<input type="checkbox" value="1" name="priv3">
+                        <p><span class="fw_bd">Правообладатель</span> разрешает использовать изображения 
+                        и фрагменты произведения в рекламных целях во всех средствах массовой 
+                        информации, включая, но не ограничиваясь бесплатным телевидением и Интернет.</p>
+                    </div>
+                </div>
+                <div class="sp_30"></div>
+                <input type="submit" value="Далее">
+                <div class="sp_80"></div>
+            </form> 
+            </div>
+            
+    </div>
+    <!-- /Add -->
+    <!-- FOOTER -->
+    <div class="sp_footer"></div>
+	<div id="footer">
+    	<div class="wrap">
+        	<div class="_clr sp_10"></div>
+        	<div class="logo"></div>
+            <p class="copy">Copyright © 2013 ФААФ<br/><a href="#">Пример ссылки</a></p>
+            <div class="likes"><img src="pics/socials.png" width="290" height="22" alt=" "></div>
+            <p class="kg">Создание сайта: <a href="#">КГ-Дизайн</a></p>
+        </div>
+    </div>
+    <div id="overlay"></div>
+</div></body>
+</html>

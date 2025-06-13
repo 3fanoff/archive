@@ -1,0 +1,215 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Бригантина-портал :: Личный кабинет</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/slides.jquery.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body class="body">
+	<!-- HEADER -->
+<div id="header">
+        <div class="wrapper">
+            <div id="top_panel">
+                <div class="consultant"><a href="#" class="online">Консультант сайта</a></div>
+                <div class="entersite">
+                        <a href="#" id="enter">Вход</a>
+                        <div class="login_block">
+                            <form action="#" method="get" name="login">
+                                <label for="email">Электронная почта:</label>
+                                <input type="text" name="email" id="email" class="text_typea"/>
+                                <label for="pass">Пароль:</label>
+                                <input type="text" name="pass" id="pass" class="text_typea"/>
+                                <input type="checkbox" name="forgot" id="forgot" />
+                                <label for="forgot">Запомнить меня</label>
+                                <div class="clear"></div>
+                                <input type="submit" value="Войти" class="button"/>
+                            </form>
+                            <a href="#" class="forgot">Забыли?</a>
+                        </div>
+                        <a href="#" id="register">Регистрация</a>
+                </div>
+            </div>
+            <div class="relative_zone">
+                <div class="logo_waves"></div>
+                <div class="logo"><a href="/" title="Главная"></a></div>
+              <div class="contacts_block">
+                    <div class="tel"><span class="fs-12 grey">Санкт-Петербург</span><span>(812) 380-50-18</span></div>
+                    <div class="tel"><span class="fs-12 grey">Москва и регионы</span><span>8 (800) 382-54-19</span><a href="#" class="fs-12">как заказать путевку</a></div>
+              </div>
+                <div class="search_block">
+                    <form id="search" name="search" method="get" action="#">
+                        <span><input type="text" name="search_input" value="Поиск" class="flashing"/></span>
+                        <input type="submit" value="" class="search_button"/>
+                    </form>
+                </div>
+            </div>
+            <div id="menu_main">
+                    <ul>
+                        <li><a href="#">Отдыхайте с нами</a></li>
+                        <li><a href="#">О Компании</a></li>
+                        <li><a href="#">Услуги</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#">Журнал Эксперта</a></li>
+                        <li><a href="#">Форум</a></li>
+                        <li><a href="#">Карта сайта</a></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    <!--/HEADER -->
+    <div id="container">
+    	<div class="wrapper">
+       		<div class="top">
+            	<div id="crumbs">
+            		<ul>
+                    	<li><a href="#">Главная</a></li>
+                        <li class="separator"><span>/</span></li>
+                        <li><a href="#">Речные круизы</a></li>
+                        <li class="separator"><span>/</span></li>
+                        <li><span>Раннее бронирование</span></li>
+                    </ul>
+                </div>
+          	</div>
+       	  	<div class="left_full">
+            	<h1>Личный кабинет</h1>
+                <div class="col_1">
+                	<div class="sp-30"></div>
+                	<h3>Мои данные</h3>
+                    <!--USER INFO --//-->
+                    <div class="user_info">
+                    	<table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td rowspan="4" width="116"><img src="images/central/nophoto.png" alt="photo" /></td>
+                            <td width="85" class="param">Фио.:</td>
+                            <td class="value">Безуглый Алексей Игоревич</td>
+                          </tr>
+                          <tr>
+                            <td class="param">Тел.:</td>
+                            <td class="value"><span class="param">+7</span> 9111608806</td>
+                          </tr>
+                          <tr>
+                            <td class="param">Эл. почта:</td>
+                            <td class="value">a.bezugly@yandex.ru</td>
+                          </tr>
+                          <tr>
+                            <td class="param">Город:</td>
+                            <td class="value">Ялта</td>
+                          </tr>
+                        </table>
+                        <a href="#">Изменить данные</a>
+                    </div>
+                    <!-- USER INFO CHANGES --//
+                    <div class="user_info_changes">
+                    	<form method="get" action="#" id="user_info_changes">
+                    	<div id="user_photo">
+                        	<img src="images/central/nophoto.png" alt="nophoto"/>
+                            <p>Размер изображение должен быть не больше чем 100 x 100 px, в формате gif, jpg или png </p>
+                            <input type="file" value="Загрузить"/>
+                            <div class="clear"></div>
+                        </div>
+                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                          <tr>
+                            <td>Фамилия:</td>
+                            <td><input type="text" class="text_typed"/></td>
+                            <td>Тел.:</td>
+                            <td><input type="text" class="text_typed"/></td>
+                          </tr>
+                          <tr>
+                            <td>Имя:</td>
+                            <td><input type="text" class="text_typed"/></td>
+                            <td>Город:</td>
+                            <td><input type="text" class="text_typed"/></td>
+                          </tr>
+                          <tr>
+                            <td>Отчество:</td>
+                            <td><input type="text" class="text_typed"/></td>
+                            <td>&nbsp;</td>
+                            <td>&nbsp;</td>
+                          </tr>
+                        </table>
+                        <input type="submit" value="Сохранить" class="button"/>
+                        <input type="button" value="Отменить" class="button" />
+                        </form>
+                    </div>
+                    //-->
+                </div>
+                <div class="col_2">
+                	<div class="sp-30"></div>
+                	<h3>Смена пароля</h3>
+                    <!-- NEW PASS FORM //
+                    <form id="newpass" name="newpass" action="#" method="get">
+                    	<div class="sp-18"></div>
+                    	<label for="email">Старый пароль:</label>
+                        <input type="text" name="old_pass" id="old_pass" class="text_typea"/>
+                        <label for="pass">Новый пароль:</label>
+                        <input type="text" name="new_pass" id="new_pass" class="text_typea"/>
+                        <label for="pass">Повторите новый пароль:</label>
+                        <input type="text" name="rep_new_pass" id="rep_new_pass" class="text_typea"/>
+                        <div class="clear"></div>
+                        <input type="submit" value="Сохранить" class="button"/>
+                        <input type="button" value="Отменить" class="button"/>
+                    </form>
+                    //-->
+                    <p>Здесь вы можете изменить пароль для своей авторизации на нашем сайте</p>
+                    <a href="#">Изменить пароль</a>
+                </div>
+                <div class="sp-38 dl"></div>
+                <div class="col_1">
+                	<div class="sp-30"></div>
+                	<h3>Мои рассылки</h3>
+                    <!--MAILING LIST--//
+                    <form id="mailing" action="#" method="get">
+                    	<div class="theme"><input type="checkbox" value="theme-1" name="theme-1" id="theme-1"/><label for="theme-1">отдых в Белоруссии</label></div>
+                        <div class="theme"><input type="checkbox" value="theme-2" name="theme-2" id="theme-2"/><label for="theme-2">морские круизы</label></div>
+                        <div class="theme"><input type="checkbox" value="theme-3" name="theme-3" id="theme-3"/><label for="theme-3">отдых на Мёртвом море </label></div>
+                        <div class="theme"><input type="checkbox" value="theme-4" name="theme-4" id="theme-4"/><label for="theme-4">отдых в Европе</label></div>
+                        <div class="theme"><input type="checkbox" value="theme-5" name="theme-5" id="theme-5"/><label for="theme-5">речные круизы</label></div>
+                        <div class="theme"><input type="checkbox" value="theme-6" name="theme-6" id="theme-6"/><label for="theme-6">отдых в России</label></div>
+                        <div class="theme"><input type="checkbox" value="theme-7" name="theme-7" id="theme-7"/><label for="theme-7">все направления</label></div>
+                        <div class="clear"></div>
+                        <input type="submit" value="Сохранить" class="button"/>
+                        <input type="button" value="Отменить" class="button" />
+                    </form>
+                    //-->
+                    <p>Вы подписаны на следующие новости:<br />отдых в Белоруссии, морские круизы, речные круизы, отдых в России, отдых на Мёртвом море, отдых в Европе.</p>
+					<p class="desc">Вы всегда можете добавить  направления, по которым хотели бы получать новости.</p>
+					<a href="#">Узнавать больше</a>
+                </div>
+                <div class="col_2">
+                	<div class="sp-30"></div>
+                	<h3>Мои скидки</h3>
+                    <p>Ваша гарантированная<br />скидка 3%<br /><a href="#">Как увеличить скидку?</a></p>
+                </div>
+          	</div>
+            <div class="sp-42"></div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+<div id="footer_spacer"></div>
+    <div id="footer">
+    	<div class="contacts_block">
+        	<div class="tel"><span class="fs-12 grey">Санкт-Петербург</span><span class="beige">8 (812) 380-50-18</span></div>
+        	<div class="tel"><span class="fs-12 grey">Москва и регионы</span><span class="beige">8 (800) 382-54-19</span><a href="#" class="fs-12">как заказать путевку</a></div>
+        </div>
+        <div class="sp-42"></div>
+        <div id="menu_bottom">
+        	<ul>
+            	<li><a href="#">О Компании</a></li>
+                <li><a href="#">Отзывы</a></li>
+                <li><a href="#">Контакты</a></li>
+                <li><a href="#">Агентствам</a></li>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="copy">
+        	<span class="beige">&copy; 2009-2012. Туристическая фирма «Бригантина». Все права защищены.<br />Создание сайта, концепция, маркетинг — «Открытая студия»</span>
+        </div>
+</div>
+    <!--/FOOTER -->
+</body>
+</html>

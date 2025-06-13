@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Прессе и партнерам / Фильмы</title>
+    <!--<link rel="stylesheet" href="style_new.css" type="text/css" />-->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="fonts/ptsans.css" type="text/css" /><![endif]-->
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <!-- only for page movie_regform.html & assets_guest -->
+    <script type="text/javascript" src="js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="js/jquery.form.js"></script>
+    <script type="text/javascript" src="js/jquery.validate.min.js"></script>
+	<!--<script type="text/javascript" src="js/additional-methods.min.js"></script>-->
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+<!-- HEADER -->
+<body class="mybody">
+    <div id="wrapper">
+        <div id="header">
+        	<!-- main_content HEADER -->
+            <div class="wrapper">
+                <a class="logo" href="/">Лого</a>
+                <div id="topmenu">
+                    <ul>
+                        <li><a href="#">Фильмы<span></span></a></li>
+                        <li><a href="#">DVD и Blu-ray<span></span></a></li>
+                        <li><a href="#">Кинотеатры<span></span></a></li>
+                        <li><a href="#">Новости<span></span></a></li>
+                        <li class="active"><a href="#">Прессе и партнерам<span></span></a></li>
+                        <li><a href="#">Компания<span></span></a></li>
+                    </ul>
+                    <div class="right_b"></div>
+                </div>
+            </div>
+            <!-- /main_content HEADER -->
+        </div>
+<!--/HEADER -->
+		<div class="wrapper">
+        	<div id="assets">
+            	<!-- AUTH FOR PRESS_BLOCK -->
+                <div id="auth_block" class="open">
+                	<div class="toggle"></div>
+                	<div class="mid_title">Материалы для прессы и партнёров</div>
+                    <div class="container">
+                    	<div class="desc">Материалы к фильмам в высоком качестве доступны только авторизованным пользователям</div>
+                    	<div class="col fl">
+                        	<div class="tac">
+                        		<a href="#" class="ftype reg" data-form="reg"><span class="ico"></span><span class="clear"></span><span class="anchor">Регистрация</span></a>
+                            </div>
+                            <div class="formbox reg">
+                            	<form action="http://3fan.ru/cityjam/west/_test/form.php" method="post" id="registration">
+                                	<div class="title"><label for="r_email">Электронная почта*</label><br />Используется для входа на сайт</div>
+                                	<input type="text" name="r_email" id="r_email" class="req" />
+                                    <div class="title"><label for="r_pass1">Пароль*</label></div>
+                                	<input type="password" name="r_pass1" id="r_pass1" class="i2 req" />
+                                    <div class="title"><label for="r_pass2">Пароль ещё раз*</label></div>
+                                	<input type="password" name="r_pass2" id="r_pass2" class="i2 req" />
+                                    <div class="title"><label for="r_name">Имя*</label></div>
+                                	<input type="text" name="r_name" id="r_name" class="req" />
+                                    <div class="title"><label for="r_job">Место работы</label></div>
+                                	<input type="text" name="r_job" id="r_job" />
+                                    <div class="title"><label for="r_pos">Должность</label></div>
+                                	<input type="text" name="r_pos" id="r_pos" />
+                                    <div class="title"><label for="r_tel">Телефон</label><br />Не забудьте указать код</div>
+                                	<input type="text" name="r_tel" id="r_tel" class="i2" />
+                                    <div class="errorbox">Пожалуйста, правильно заполните все отмеченные поля</div>
+                                    <div class="reminder"><b>*</b> &mdash; обязательно для заполнения</div>
+                                    <input type="submit" value="Отправить" />
+                                </form>
+                            </div>
+                        </div>
+                        <div class="col fr">
+                        	<div class="tac">
+                        		<a href="#" class="ftype log" data-form="log"><span class="ico"></span><span class="clear"></span><span class="anchor">Вход</span></a>
+                            </div>
+                            <div class="formbox log">
+                            	<form action="http://3fan.ru/cityjam/west/_test/form.php" method="post" id="authorization">
+                                	<div class="title"><label for="a_email">Электронная почта</label></div>
+                                	<input type="text" name="a_email" id="a_email" class="req"/>
+                                    <div class="title"><label for="a_pass1">Пароль</label></div>
+                                	<input type="password" name="a_pass1" id="a_pass1" class="i2" />
+                                    <div class="errorbox">Указан неверный адрес электронной почты или неправильный пароль</div>
+                                    <input type="submit" value="Войти"/>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="clear"></div>
+                    </div>
+                </div>
+                <div class="sp-30"></div>
+                <!--/AUTH FOR PRESS_BLOCK -->
+            </div>
+        </div>
+<!-- FOOTER -->
+        <div id="sp_footer"></div>
+    </div>
+    <div id="footer">
+    	<div class="wrapper">
+        	<div class="sp-30"></div>
+        	<div class="w-500 fl pl-40">
+            	<span class="copy">&copy; 1997–2013 «Вест Видео»<br /><a href="#">О компании</a></span>
+                <div class="socials"></div>
+            </div>
+            <div class="w-500 fl pl-10">
+            	<span>Электронная почта: <a href="mailto:info@westvideo.ru">info@westvideo.ru</a></span>
+                <span class="pt-12">121170, Москва <br /><a href="javaScript:void(0);" class="anchor">Кутузовский проспект, дом 36, строение 23</a></span>
+                <span class="pt-12 fl">Телефоны:</span>
+                <span class="pt-12 fl"><span>&nbsp;+7 495 640-27-51</span><span>&nbsp;+7 495 640-27-52</span></span>
+            </div>
+        </div>
+    </div>
+</body>
+<!--/FOOTER -->
+</html>

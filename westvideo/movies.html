@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Westvideo / Фильмы</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <!--[if lte IE 8]><link rel="stylesheet" href="fonts/ptsans.css" type="text/css" /><![endif]-->
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+    <script type="text/javascript" src="scripts.js"></script>
+</head>
+<!-- HEADER -->
+<body class="mybody">
+    <div id="wrapper">
+        <div id="header">
+        	<!-- main_content HEADER -->
+            <div class="wrapper">
+                <a class="logo" href="/">Лого</a>
+                <div id="topmenu">
+                    <ul>
+                        <li class="active"><a href="#">Фильмы<span></span></a></li>
+                        <li><a href="#">DVD и Blu-ray<span></span></a></li>
+                        <li><a href="#">Кинотеатры<span></span></a></li>
+                        <li><a href="#">Новости<span></span></a></li>
+                        <li class="disabled"><a href="#">Прессе и партнерам<span></span></a></li>
+                        <li><a href="#">Компания<span></span></a></li>
+                    </ul>
+                    <div class="right_b"></div>
+                </div>
+            </div>
+            <!-- /main_content HEADER -->
+        </div>
+<!--/HEADER -->
+		<div class="wrapper">
+        	<div id="movies">
+                <div class="movie_tabs">
+                    <ul>                                 
+                        <li id="movies-button">
+                        	<a href="javaScript:void(0);" onclick="show_tab('movies');">Все фильмы</a><span class="b_l"></span><span class="b_r"></span>
+                            <div class="display_mode">
+                    			<a href="#" class="poster_mode active">показать постеры</a>
+                        		<a href="#" class="compact_mode">компактный список</a>
+                    		</div>
+                        </li>
+                        <li id="now-button"><a href="javaScript:void(0);" onclick="show_tab('now');">Премьеры</a><span class="b_l"></span><span class="b_r"></span></li>
+                        <li id="soon-button"><a href="javaScript:void(0);" onclick="show_tab('soon');">В прокате</a><span class="b_l"></span><span class="b_r"></span></li>
+                        <li id="dvd-button">
+                        	<a href="javaScript:void(0);" onclick="show_tab('dvd');">DVD и Blu-ray</a><span class="b_l"></span><span class="b_r"></span>
+                            <div class="display_mode">
+                    			<a href="#" class="poster_mode active">показать постеры</a>
+                        		<a href="#" class="compact_mode">компактный список</a>
+                    		</div>
+                    	</li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <div class="sp-30"></div>
+                <div class="sp-40"></div>
+                <div class="loader"></div>
+                <div id="movies-tab">
+                    <div class="load-box">
+                        <div class="movie_list">
+                            <div class="word_big">А</div>
+                            <ul>
+                                <li>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-01.jpg');"><span class="date yel">16 июня 2013 года<span></span></span></a>
+                                    <div class="title"><a href="#">Шкатулка проклятия</a></div>
+                                    <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                    <div class="genre">ужасы, триллер</div>
+                                </li>
+                                <li>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-02.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                    <div class="title"><a href="#">Самый пьяный округ в мире</a></div>
+                                    <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                    <div class="genre">ужасы, триллер</div>
+                                </li>
+                                <li>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-03.jpg');"><span class="date yel">16 июня<span></span></span></a>
+                                    <div class="title"><a href="#">Веселые каникулы</a></div>
+                                    <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                    <div class="genre">ужасы, триллер</div>
+                                </li>
+                                <li>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-04.jpg');"></a>
+                                    <div class="title"><a href="#">Дом с паранормальными явлениями</a></div>
+                                    <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                    <div class="genre">ужасы, триллер</div>
+                                </li>
+                                <li>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-05.jpg');"><span class="date red">24 июня 2012 года<span></span></span></a>
+                                    <div class="title"><a href="#">Шаг вперед 4</a></div>
+                                    <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                    <div class="genre">ужасы, триллер</div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="movie_list">
+                            <div class="word_big">Б</div>
+                            <ul>
+                                <li>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-02.jpg');"></a>
+                                    <div class="title"><a href="#">Самый пьяный округ в мире</a></div>
+                                    <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                    <div class="genre">ужасы, триллер</div>
+                                </li>
+                                <li>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-04.jpg');"><span class="date red">9 июня 2013 года<span></span></span></a>
+                                    <div class="title"><a href="#">Дом с паранормальными явлениями</a></div>
+                                    <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                    <div class="genre">ужасы, триллер</div>
+                                </li>
+                                <li>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-05.jpg');"></a>
+                                    <div class="title"><a href="#">Шаг вперед 4</a></div>
+                                    <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                    <div class="genre">ужасы, триллер</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div id="now-tab">
+                    <div class="movie_list">
+                        <div class="month_big">Март</div><div class="month_big year">2013</div>
+                        <ul>
+                        	<li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-05.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Шаг вперед 4</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-01.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Шкатулка проклятия</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-03.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Веселые каникулы</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-02.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Самый пьяный округ в мире</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                            
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-04.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Дом с паранормальными явлениями</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-06.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Веселые каникулы</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-04.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Дом с паранормальными явлениями</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-05.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Шаг вперед 4</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="movie_list">
+                        <div class="month_big">Сентябрь</div>
+                        <ul>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-02.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Самый пьяный округ в мире</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-05.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Шаг вперед 4</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-03.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Веселые каникулы</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-02.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Самый пьяный округ в мире</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-04.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Дом с паранормальными явлениями</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="movie_list">
+                    	<div class="month_big year">2014</div>
+                        <ul>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-02.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Самый пьяный округ в мире</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-03.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Веселые каникулы</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/postermin-02.jpg');"><span class="date yel">19 июля 2013 года<span></span></span></a>
+                                <div class="title"><a href="#">Самый пьяный округ в мире</a></div>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="soon-tab">
+                	<div class="film_list posters">
+                    	<ul>
+                        	<li>
+                                <a href="#" class="img" style="background-image:url('pics/movie_poster-01.jpg');"><span class="date red">с 20 августа<span></span></span></a>
+                                <a href="#" class="title">Шаг вперед 4</a>
+                                <div class="eng-title">Silent Hill: Revelation 3D</div>
+                                <div class="genre">ужасы, триллер</div>
+                                <div class="actors"><span>Режиссер:</span> Майкл Бассет <br /><span>В ролях:</span> Аделаида Клеменс, Кит Харрингтон, Шон Бин, Рада Митчел</div>
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/movie_poster-02.jpg');"><span class="date red">с 19 августа<span></span></span></a>
+                                <a href="#" class="title">Железный рыцарь</a>
+                                <div class="eng-title">Ironclad</div>
+                                <div class="genre">ужасы, триллер</div>
+                                <div class="actors"><span>Режиссер:</span> Джерри Брукхаймер<br /><span>В ролях:</span> Сет Роген, Адам Сэндлер</div>
+                                
+
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/movie_poster-03.jpg');"><span class="date red">с 14 августа<span></span></span></a>
+                                <a href="#" class="title">Погоня</a>
+                                <div class="eng-title">Lother's Escape</div>
+                                <div class="genre">ужасы, триллер</div>
+                                <div class="actors"><span>Режиссер:</span> Стивен Спилберг<br /><span>В ролях:</span> Кристен Стюарт, Сильвестр Сталлоне, Джеки Чан, Чак Норрис,
+                                 Майкл Дудикофф, Джет Ли, Марк Дакаскос, Жан-Клод Ван Дамм, Дольф Лундгрен</div>
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/movie_poster-04.jpg');"><span class="date red">с 14 августа<span></span></span></a>
+                                <a href="#" class="title">Черное золото</a>
+                                <div class="eng-title">Black Gold</div>
+                                <div class="genre">ужасы, триллер</div>
+                                <div class="actors"><span>Режиссер:</span> Майкл Бассет <br /><span>В ролях:</span> Аделаида Клеменс, Кит Харрингтон, Шон Бин, Рада Митчел</div>
+                            </li>
+                            
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/movie_poster-05.jpg');"><span class="date red">с 14 августа<span></span></span></a>
+                                <a href="#" class="title">Тепло наших тел</a>
+                                <div class="eng-title">Warm Bodies</div>
+                                <div class="genre">ужасы, триллер</div>
+                                <div class="actors"><span>Режиссер:</span> Майкл Бассет <br /><span>В ролях:</span> Аделаида Клеменс, Кит Харрингтон, Шон Бин, Рада Митчел</div>
+                            </li>
+                            <li>
+                                <a href="#" class="img" style="background-image:url('pics/movie_poster-06.jpg');"><span class="date red">с 11 августа<span></span></span></a>
+                                <a href="#" class="title">Самый пьяный округ в мире</a>
+                                <div class="eng-title">Lawless</div>
+                                <div class="genre">ужасы, триллер</div>
+                                <div class="actors"><span>Режиссер:</span> Морган Фримен<br /><span>В ролях:</span> Морган Фримен</div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="dvd-tab">
+                    <div class="movie_list releaze">
+                        <div class="s_title">Новые релизы</div>
+                        <ul>
+                            <li>
+                                    <div class="badge red">Вышел</div>
+                                    <div class="date-out">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-01.jpg');"></a>
+                                    <span class="bd"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Шкатулка проклятия</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                                <li>
+                                    <div class="pre-out">Выходит</div>
+                                    <div class="badge yel">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-02.jpg');"></a>
+                                    <span class="bd blu"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Самый пьяный округ в мире</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                                <li>
+                                    <div class="badge red">Вышел</div>
+                                    <div class="date-out">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-04.jpg');"></a>
+                                    <span class="bd"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Дом с паранормальными явлениями</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                                <li>
+                                    <div class="pre-out">Выходит</div>
+                                    <div class="badge yel">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-03.jpg');"></a>
+                                    <span class="bd dvd"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Веселые каникулы</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                                <li>
+                                    <div class="badge red">Вышел</div>
+                                    <div class="date-out">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-05.jpg');"></a>
+                                    <span class="bd"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Шаг вперед 4</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                        </ul>
+                        <div class="s_title">Готовятся к выходу</div>
+                    </div>
+                    <div class="inner-video">
+                    	<div class="dvd_list">
+                            <ul>
+                                <li>
+                                    <div class="badge red">Вышел</div>
+                                    <div class="date-out">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-01.jpg');"></a>
+                                    <span class="bd"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Шкатулка проклятия</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                                <li>
+                                    <div class="pre-out">Выходит</div>
+                                    <div class="badge yel">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-02.jpg');"></a>
+                                    <span class="bd blu"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Самый пьяный округ в мире</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                                <li>
+                                    <div class="pre-out">Выходит</div>
+                                    <div class="badge yel">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-03.jpg');"></a>
+                                    <span class="bd dvd"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Веселые каникулы</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                                <li>
+                                    <div class="badge red">Вышел</div>
+                                    <div class="date-out">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-04.jpg');"></a>
+                                    <span class="bd"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Дом с паранормальными явлениями</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                                <li>
+                                    <div class="badge red">Вышел</div>
+                                    <div class="date-out">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-05.jpg');"></a>
+                                    <span class="bd"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Шаг вперед 4</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                            </ul>
+                		</div>
+                        <div class="shadow"></div>
+                	</div>
+                    <div class="sp-40"></div>
+                    <div class="sp-30"></div>
+                    <div class="load-box">
+                		<div class="movie_list">
+                            <div class="word_big">К</div>
+                            <ul>
+                                <li>
+                                    <div class="badge red">Вышел</div>
+                                    <div class="date-out">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-05.jpg');"></a>
+                                    <span class="bd"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Шаг вперед 4</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                                <li>
+                                    <div class="badge red">Вышел</div>
+                                    <div class="date-out">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-04.jpg');"></a>
+                                    <span class="bd"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Дом с паранормальными явлениями</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                                <li>
+                                    <div class="pre-out">Выходит</div>
+                                    <div class="badge yel">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-02.jpg');"></a>
+                                    <span class="bd blu"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Самый пьяный округ в мире</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                            </ul>
+                    	</div>
+                    	<div class="movie_list">
+                            <div class="word_big">Л</div>
+                            <ul>
+                                <li>
+                                    <div class="badge red">Вышел</div>
+                                    <div class="date-out">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-01.jpg');"></a>
+                                    <span class="bd"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Шкатулка проклятия</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                                <li>
+                                    <div class="pre-out">Выходит</div>
+                                    <div class="badge yel">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-02.jpg');"></a>
+                                    <span class="bd blu"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Самый пьяный округ в мире</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                                <li>
+                                    <div class="badge red">Вышел</div>
+                                    <div class="date-out">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-04.jpg');"></a>
+                                    <span class="bd"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Дом с паранормальными явлениями</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                                <li>
+                                    <div class="pre-out">Выходит</div>
+                                    <div class="badge yel">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-03.jpg');"></a>
+                                    <span class="bd dvd"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Веселые каникулы</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                                <li>
+                                    <div class="badge red">Вышел</div>
+                                    <div class="date-out">31 мая 2012 года</div>
+                                    <a href="#" class="img" style="background-image:url('pics/postermin-05.jpg');"></a>
+                                    <span class="bd"><span class="badge blu">Blu-ray</span><span class="badge dvd">DVD</span></span>
+                                    <div class="title"><a href="#">Шаг вперед 4</a></div>
+                                    <div class="eng-title">Babel</div>
+                                    <div class="genre">триллер, мистика</div>
+                                </li>
+                            </ul>
+                    	</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- FOOTER -->
+        <div id="sp_footer"></div>
+    </div>
+    <div id="footer">
+    	<div class="wrapper">
+        	<div class="sp-30"></div>
+        	<div class="w-500 fl pl-40">
+            	<span class="copy">&copy; 1997–2013 «Вест Видео»<br /><a href="#">О компании</a></span>
+                <div class="socials"></div>
+            </div>
+            <div class="w-500 fl pl-10">
+            	<span>Электронная почта: <a href="mailto:info@westvideo.ru">info@westvideo.ru</a></span>
+                <span class="pt-12">121170, Москва <br /><a href="javaScript:void(0);" class="anchor">Кутузовский проспект, дом 36, строение 23</a></span>
+                <span class="pt-12 fl">Телефоны:</span>
+                <span class="pt-12 fl"><span>&nbsp;+7 495 640-27-51</span><span>&nbsp;+7 495 640-27-52</span></span>
+            </div>
+        </div>
+    </div>
+</body>
+<!--/FOOTER -->
+</html>

@@ -1,0 +1,529 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Прайс лист</title>
+<link rel="stylesheet" type="text/css" href="style.css"/>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+<script type="text/javascript" src="js/jcarousellite.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+</head>
+
+<body class="mybody">
+	<div id="wrapper">
+    	<!-- HEADER -->
+    	<div id="header">
+        	<div class="topmenu">
+            	<div class="_wrap">
+                	<!--TOPMENU-->
+                	<ul id="topmenu">
+                    	<li class="first"><a href="#">О компании</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Клиенты</a></li>
+                        <li><span class="current">Полезная информация<i>&darr;</i></span>
+                        	<ul>
+                            	<li><a href="#">Выпадающее меню</a></li>
+                                <li><a href="#">Выпадающее меню</a></li>
+                                <li><a href="#">Выпадающее меню</a></li>
+                                <li><a href="#">Выпадающее меню</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">Прайс-лист</a></li>
+                        <li class="last"><a href="#">Контакты</a></li>
+                    </ul>
+                    <div class="person_box">
+                    	<div class="cab"><a href="#">Личный кабинет</a></div>
+                        <div class="lang">
+                        	<a href="#">рус</a>
+                            <a href="#" class="anoth">eng</a>
+                        </div>
+                    </div>
+                    <!--/TOPMENU-->
+                </div>
+            </div>
+            <div class="center _wrap">
+            	<div class="logo">
+                	<a href="#">&nbsp;</a>
+                	<div class="name">Бюро переводов. <span>Перевод. Заверение. Легализация</span></div>
+                </div>
+                <div class="tel">
+                	+7 (987) <span>555-67-76</span>
+                    <div class="_clear"></div>
+                    <a href="javascript:void(0);" class="more" onclick="modal.init('#callback_form');">Позвоните мне</a>
+                </div>
+                <div class="address">
+                	г. Москва, ул. Пятницкая, д.14
+                    <span class="metro">Новокузнецкая</span>
+                    <span class="metro">Третьяковская</span>
+                    <div class="_clear"></div>
+                    <a href="javascript:void(0);" class="more">Еще контакты</a>
+                </div>
+            </div>
+        	<div class="tabmenu">
+            	<div class="_wrap">
+                	<ul id="tabmenu">
+                        <li>
+                        	<a href="javascript:void(0);" onclick="showSub(this);">Локализация</a>
+                            <div class="sub">
+                            	<div><a href="#" class="icset _i07">Перевод сайтов<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i08">Перевод видео и Аудиозаписей<i>&nbsp;</i></a></div>
+                                <div class="null" style="width:50%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" onclick="showSub(this);">Апостиль и нотариус</a>
+                            <div class="sub">
+                                <div><a href="#" class="icset _i09">Легализация документов<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i11">Перевод паспорта<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i12">Перевод диплома<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i13">Перевод свидетельства<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i14">Перевод аттестата<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i10">Апостиль<i>&nbsp;</i></a></div>
+                            	<div class="null"></div>
+                            </div>
+                        </li>
+                        <li>
+                        	<a href="javascript:void(0);" onclick="showSub(this);">Устный перевод</a>
+                            <div class="sub">
+                            	<div><a href="#" class="icset _i15">Синхронный перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i16">Последовательный перевод<i>&nbsp;</i></a></div>
+                                <div class="null" style="width:50%;"></div>
+                            </div>
+                        </li>
+                        <li class="over">
+                        	<a href="javascript:void(0);" onclick="showSub(this);">Писменный перевод</a>
+                            <div class="sub">
+                            	<div><a href="#" class="icset _i01">Юридический перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i02">Технический перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i03">Медицинский перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i04">Финансовый перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i05">Деловой перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i06">Художественный перевод<i>&nbsp;</i></a></div>
+                                <div><a href="#" class="icset _i17">Бесплатный перевод<i>&nbsp;</i></a></div>
+                                <div class="null"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--/HEADER -->
+        <!--[if IE 9 ]>
+        <style type="text/css">
+        ._price {font-family:Arial;}
+        .price_nav .download { font-size:17px;}
+        </style>
+        <![endif]-->
+        <div class="bread_crumbs">
+                <ul>
+                    <li><a href="#">Главная</a></li>
+                    <li> &raquo; </li>
+                    <li><a href="#">Внутренняя</a></li>
+                </ul>
+                <div class="shares_box">Поделиться:</div>
+        </div>
+        <div class="main_body _inner _price">
+        	<div class="_sp10"></div>
+            <div class="pagetitle"><div><h1>Прайс лист</h1></div></div>
+            <div class="price_nav">
+            	<ul>
+                	<li><a href="#pismperevod">Письменный перевод</a></li>
+                    <li><a href="#ustnperevod">Устный перевод</a></li>
+                    <li><a href="#docperevod">Перевод личных документов</a></li>
+                    <li><a href="#apostil">Апостиль и легализация</a></li>
+                    <li><a href="#localizatia">Локализация</a></li>
+                    <li><a href="#dopuslugi">Дополнительные услуги</a></li>
+                </ul>
+                <a href="#" target="_blank" class="download"><span>Отдельные условия для клиентов</span> Скачать коммерческое предложение</a>
+                <div class="_clear"></div>
+            </div>
+            <div class="_clear _sp10"></div>
+            <div class="content">
+            	<div class="head" id="pismperevod"><div class="icprice _i01"></div><h2>Письменный перевод</h2></div>
+                <div class="tariffs">
+                	<p><span>Тариф "Базовый"</span> - перевод, выполненный профессиональным переводчиком. Рекомендуется для документов и текстов где важна скорость и цена.</p>
+                    <p><span>Тариф "Особый"</span> - Тариф "Базовый" + редакция носителем языка. Рекомендуется для документов и текстов, имеющих особую важность или если 
+                    Вы планируете публиковать перевод.	</p>
+                </div>
+                <table width="100%" border="0" cellspacing="0" cellpadding="0" class="discounts">
+                    <thead>
+                        <tr>
+                        	<td></td>
+                            <td>Скидки</td>
+                            <td>&nbsp;</td>
+                            <td>Надбавки</td>
+                            <td>&nbsp;</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        	<td width="44"></td>
+                            <td width="194">Объем свыше 50 страниц</td>
+                            <td width="205">- 5%</td>
+                            <td width="352"><span class="help" title="Подсказка">Срочный перевод</span></td>
+                            <td>+ 100%</td>
+                        </tr>
+                        <tr>
+                        	<td></td>
+                            <td>Объем свыше 100 страниц</td>
+                            <td>- 7%</td>
+                            <td>Перевод рукописных текстов</td>
+                            <td>+ 25%</td>
+                        </tr>
+                        <tr>
+                        	<td></td>
+                            <td>Объем свыше 500 страниц</td>
+                            <td>- 10%</td>
+                            <td><span class="help" title="Подсказка">Перевод специализированных текстов</span></td>
+                            <td>+ от 50 до 100 %</td>
+                        </tr>
+                    </tbody>
+                </table>
+            	<table width="100%" cellspacing="0" cellpadding="0" class="price">
+                	<col align="left" />
+   					<col width="236" align="center" />
+                    <col width="236" align="center" />
+                	<thead>
+                        <tr>
+                        <td align="center">Язык</td>
+                        <td class="fs-14">Тариф "Базовый" *<br />(с\на)"</td>
+                        <td class="fs-14">Тариф "Особый" *<br />(с\на)"</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Азербайджанский</td>
+                        <td>400р.\500р.</td>
+                        <td>400р.\500р.</td>
+                        </tr>
+                        <tr>
+                        <td>Албанский</td>
+                        <td>500р.\600р.</td>
+                        <td>500р.\600р.</td>
+                        </tr>
+                        <tr>
+                        <td>Английский</td>
+                        <td>350р.\450р.</td>
+                        <td>350р.\450р.</td>
+                        </tr>
+                        <tr>
+                        <td>Арабский</td>
+                        <td>500р.\600р.</td>
+                        <td>500р.\600р.</td>
+                        </tr>
+                        <tr>
+                        <td>Армянский</td>
+                        <td>400р.\500р.</td>
+                        <td>400р.\500р.</td>
+                        </tr>
+                        <tr>
+                        <td>Белорусский</td>
+                        <td>400р.\500р.</td>
+                        <td>400р.\500р.</td>
+                        </tr>
+                        <tr>
+                        <td>Болгарский</td>
+                        <td>500р.\600р.</td>
+                        <td>500р.\600р.</td>
+                        </tr>
+                        <tr>
+                        <td>Венгерский</td>
+                        <td>500р.\600р.</td>
+                        <td>500р.\600р.</td>
+                        </tr>
+                        <tr>
+                        <td colspan="3" class="full">* Цены приведены для неспециализированных текстов со скоростью перевод 6 нормативных страниц в день.
+                        Нормативная страница содержит 1800 знаков исходного текста, включая пробелы. Для переводов с восточных языков расчет 
+                        производится по русскому тексту		
+						</td>
+                        </tr>
+                    </tbody>
+				</table>
+                <!-- Устный перевод -->
+                <div class="head" id="ustnperevod"><div class="icprice _i02"></div><h2>Устный перевод</h2></div>
+                <table width="100%" cellspacing="0" cellpadding="0" class="price">
+   					<col width="50%" align="left" />
+                    <col width="50%" align="center" />
+                	<thead>
+                        <tr>
+                        <td align="center">Последовательный перевод</td>
+                        <td>Цена в час</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Азербайджанский</td>
+                        <td> </td>
+                        </tr>
+                        <tr>
+                        <td>Албанский</td>
+                        <td> </td>
+                        </tr>
+                        <tr>
+                        <td>Английский</td>
+                        <td> </td>
+                        </tr>
+                        <tr>
+                        <td>&nbsp;</td>
+                        <td>&nbsp;</td>
+                        </tr>
+                     </tbody>
+                     <thead>
+                        <tr>
+                        <td align="center">Синхронный перевод</td>
+                        <td>Цена в час</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Азербайджанский</td>
+                        <td> </td>
+                        </tr>
+                        <tr>
+                        <td>Албанский</td>
+                        <td> </td>
+                        </tr>
+                        <tr>
+                        <td>Английский</td>
+                        <td> </td>
+                        </tr>
+                     </tbody>
+            	</table>
+                <div class="_sp20"></div>
+                <!-- Перевод личных документов -->
+                <div class="head" id="docperevod"><div class="icprice _i03"></div><h2>Перевод личных документов</h2></div>
+                <table width="100%" cellspacing="0" cellpadding="0" class="price gray">
+                	<col align="left" />
+   					<col width="228" align="center" />
+                    <col width="228" align="center" />
+                	<thead>
+                        <tr>
+                        <td align="center">Паспорт иностранного государства</td>
+                        <td colspan="2">Цена *, руб.</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td> </td>
+                        <td class="_br">Завтра</td>
+                        <td>Сегодня</td>
+                        </tr>
+                        <tr>
+                        <td>Белоруссия, Украина, Молдавия, Киргизия, Казахстан, Таджикистан, 
+                        Туркменистан, Узбекистан, Эстония, Латвия, Литва, Великобритания, 
+                        Германия, Канада, Ирландия, США, Филиппины, Норвегия, Кипр, 
+                        Австралия, Турция (загранпаспорт)</td>
+                        <td class="_br">900</td>
+                        <td>900</td>
+                        </tr>
+                        <tr>
+                        <td>все остальные</td>
+                        <td class="_br">1200</td>
+                        <td>1200</td>
+                        </tr>
+                   	</tbody>
+            	</table>
+                <p style="padding:4px 0 6px 18px;">* Цены приведены с учетом нотариального заверения подлинности подписи переводчика</p>
+                <table width="100%" cellspacing="0" cellpadding="0" class="price">
+   					<col width="50%" align="left" />
+                    <col width="50%" align="center" />
+                	<thead>
+                        <tr>
+                        <td align="center">Паспорт РФ</td>
+                        <td>Цена, руб.</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Перевод выписки из паспорта РФ<br />(первая страница + страница с пропиской)</td>
+                        <td>400</td>
+                        </tr>
+                        <tr>
+                        <td>Перевод всех страниц паспорта РФ</td>
+                        <td>500</td>
+                        </tr>
+                        <tr>
+                        <td>Нотариальное заверение выписки из паспорта,  1стр.</td>
+                        <td>100</td>
+                        </tr>
+                        <tr>
+                        <td>Нотариальное заверение всех страниц паспорта</td>
+                        <td>800</td>
+                        </tr>
+                        <tr>
+                        <td>Нотариальное заверение подлинности подписи переводчика</td>
+                        <td>500</td>
+                        </tr>
+                     </tbody>
+            	</table>
+                <!-- Апостиль и легализация -->
+                <div class="head" id="apostil"><div class="icprice _i04"></div><h2>Апостиль и легализация</h2></div>
+                <table width="100%" cellspacing="0" cellpadding="0" class="price">
+   					<col align="left" />
+                    <col width="136" align="left" />
+                    <col width="233" align="left" />
+                	<thead>
+                        <tr>
+                        <td align="center">Наименование услуги</td>
+                        <td> </td>
+                        <td>Цена</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Проставление штампа «Апостиль» в Главном Управлении Министерства Юстиции России по г. Москве</td>
+                        <td> </td>
+                        <td>400</td>
+                        </tr>
+                        <tr>
+                        <td>Проставление штампа «Апостиль» на оригиналы документов в органах ЗАГС по г. Москве, Московской области и МВД</td>
+                        <td> </td>
+                        <td>500</td>
+                        </tr>
+                        <tr>
+                        <td>Проставление штампа «Апостиль» в Главном Управлении Министерства Юстиции России по Москвой области</td>
+                        <td> </td>
+                        <td>100</td>
+                        </tr>
+                        <tr>
+                        <td>Консульская Легализация* (МинЮСТ, КД МИДа) (с учетом<br />госпошлины)</td>
+                        <td> </td>
+                        <td>800</td>
+                        </tr>
+                        <tr>
+                        <td>Консульская служба Посольства страны<br />назначения документа</td>
+                        <td> </td>
+                        <td>500</td>
+                        </tr>
+                     </tbody>
+            	</table>
+                <!-- Локализация -->
+                <div class="head" id="localizatia"><div class="icprice _i05"></div><h2>Локализация</h2></div>
+                <table width="100%" cellspacing="0" cellpadding="0" class="price">
+   					<col align="left" />
+                    <col width="136" align="left" />
+                    <col width="270" align="left" />
+                	<thead>
+                        <tr>
+                        <td align="center">Перевод видео- и аудиоматериалов</td>
+                        <td> </td>
+                        <td>Цена</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Проставление штампа «Апостиль» в Главном Управлении Министерства Юстиции России по г. Москве</td>
+                        <td> </td>
+                        <td>400</td>
+                        </tr>
+                        <tr>
+                        <td>Проставление штампа «Апостиль» на оригиналы документов в органах ЗАГС по г. Москве, Московской области и МВД</td>
+                        <td> </td>
+                        <td>500</td>
+                        </tr>
+                        <tr>
+                        <td>Проставление штампа «Апостиль» в Главном Управлении Министерства Юстиции России по Москвой области</td>
+                        <td> </td>
+                        <td>100</td>
+                        </tr>
+                        <tr>
+                        <td><span class="help" title="Перевод звуковой дорожки с предоставлением прямой начитки">Перевод звуковой дорожки с 
+                        предоставлением прямой начитки перевода на диктофон</span></td>
+                        <td> </td>
+                        <td>800</td>
+                        </tr>
+                        <tr>
+                        <td>Консульская служба Посольства страны<br />назначения документа</td>
+                        <td> </td>
+                        <td>500</td>
+                        </tr>
+                     </tbody>
+            	</table>
+                <div class="_sp20"></div>
+                <table width="100%" cellspacing="0" cellpadding="0" class="price">
+   					<col align="left" />
+                    <col width="136" align="left" />
+                    <col width="270" align="left" />
+                	<thead>
+                        <tr>
+                        <td align="center">Перевод сайта</td>
+                        <td> </td>
+                        <td>Цена</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Перевод основного контента сайта</td>
+                        <td> </td>
+                        <td>Стоимость письменного перевода по тарифу "Особый"</td>
+                        </tr>
+                        <tr>
+                        <td>Перевод текстовых  элементов интерфейса, графических элементов интерфейса и скрытого кода</td>
+                        <td> </td>
+                        <td>500</td>
+                        </tr>
+                        <tr>
+                        <td>Верстка и перенос на CMS переведенной версии</td>
+                        <td> </td>
+                        <td>Звоните</td>
+                        </tr>
+                     </tbody>
+            	</table>
+                <!-- Дополнительные услуги -->
+                <div class="head" id="dopuslugi"><div class="icprice _i06"></div><h2>Дополнительные услуги</h2></div>
+                <table width="100%" cellspacing="0" cellpadding="0" class="price">
+   					<col align="left" />
+                    <col width="136" align="left" />
+                    <col width="270" align="left" />
+                	<thead>
+                        <tr>
+                        <td align="center">Наименование</td>
+                        <td> </td>
+                        <td>Стоимость</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                        <td>Ксерокопия</td>
+                        <td> </td>
+                        <td>10 руб.</td>
+                        </tr>
+                        <tr>
+                        <td>Техническая копия документа</td>
+                        <td> </td>
+                        <td>500 руб. / документ</td>
+                        </tr>
+                        <tr>
+                        <td>Сканирование и распознавание текста</td>
+                        <td> </td>
+                        <td>500 руб. /час</td>
+                        </tr>
+                        <tr>
+                        <td>Верстка текста (вставка рисунков, фотографий, логотипов и т. д.)</td>
+                        <td> </td>
+                        <td>150 руб. / физическая страница</td>
+                        </tr>
+                        <tr>
+                        <td>Заверение перевода печатью компании</td>
+                        <td> </td>
+                        <td>150 руб. / физическая страница</td>
+                        </tr>
+                        <tr>
+                        <td>Выезд курьера</td>
+                        <td> </td>
+                        <td>по договоренности / за МКАД</td>
+                        </tr>
+                     </tbody>
+            	</table>
+            </div>
+        </div>
+        <!-- FOOTER -->
+    	<div id="sp_footer"></div>
+    </div>
+	<div id="footer">
+    	<div class="_wrap">&copy; 2013, Интернота. Все права защищены. Полное или частичное копирование материалов запрещено</div>
+    </div>
+</body>
+</html>

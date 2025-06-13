@@ -1,0 +1,177 @@
+/********HEADER********/
+#header {
+	width:960px;
+	height:184px;
+	margin:auto;
+}
+#header #logo {
+	background:url("../images/interface.png") 0 0 no-repeat;
+	width:181px;
+	height:40px;
+	display:block;
+	margin:35px 70px 0 0;
+	float:left;
+}
+#header .slogan {
+	font-size:18px;
+	line-height:38px;
+	color:#193441;
+	float:left;
+	padding:0 0 0 38px;
+	margin:39px 0 0;
+	height:38px;
+	background:url("../images/interface.png") -296px -39px no-repeat;
+}
+#header .telephones {
+	float:right;
+	color:#193441;
+	font-size:18px;
+	line-height:38px;
+	margin:39px 6px 0 0;
+}
+#header .telephones span {
+	font-size:16px;
+}
+/*****TOPMENU STYLE*****/
+#top_menu {
+	padding-top:36px;
+}
+#top_menu ul {
+	margin:auto;
+}
+.menustyle ul li {
+	float:left;
+	padding:13px 16px 0;
+	height:33px;
+	position:relative;
+}
+.menustyle ul li sup {
+	font-size:10px;
+	line-height:10px;
+}
+.menustyle ul li.parent ul {display:none;}
+.menustyle ul li.parent.over ul {display:block;}
+.menustyle ul li.parent.over {
+	background:url("../images/interface.png") right -199px no-repeat;
+	border-bottom:1px solid #E8EFF0;
+	padding:0;
+	height:46px;
+}
+.menustyle ul li.parent.over a {
+	background:url("../images/over_box_angle.gif") 0 0 no-repeat;
+	padding:13px 16px 0 16px;
+	height:33px;
+	display:block;
+	color:#121212;
+	text-decoration:none;
+}
+.menustyle ul li.parent.over span.arrow {
+	position:absolute;
+	background:url("../images/interface.png") -105px -104px no-repeat;
+	width:8px;
+	height:4px;
+	display:block;
+	top:47px;
+	left:50%;
+	margin-left:-4px;
+	z-index:100;
+	font-size:0;
+}
+.menustyle ul ul {
+	position:absolute;
+	width:460px;
+	margin-top:0;
+	left:0;
+	top:47px;
+	z-index:40;
+}
+.menustyle ul li li {
+	font-size:14px;
+	background-color:#EFF7FA;
+	padding-right:0;
+}
+.menustyle ul li.parent.over li a {
+	padding:0;
+	height:auto;
+	background:none;
+	color:#3A8AAD;
+	text-decoration:underline;
+}
+.menustyle ul li.parent.over li a:hover {
+	text-decoration:none;
+}
+.menustyle ul li.parent.over li a.current {
+	color:#000;
+	text-decoration:none;
+}
+.menustyle ul li li.last {
+	padding-right:16px;
+}
+/***********************/
+/******FOOTER***********/
+#gap_footer {
+	height:200px;
+	clear:both;
+}
+#footer {
+	width:100%;
+	height:184px;
+	padding:16px 0 0;
+	position:absolute;
+	bottom:0;
+}
+#footer .wrapper {
+	width:960px;
+	margin:auto;
+	height:184px;
+}
+#foot_menu {
+	width:650px;
+	float:left;	
+}
+#foot_menu ul li {
+	list-style:none;
+	float:left;
+	font-size:12px;
+	line-height:14px;
+	padding:0 18px;
+	background: url("../images/separator_v.png") right 50% no-repeat;
+}
+#foot_menu ul li a.current {
+	color:#193441;
+	text-decoration:none;
+}
+#foot_menu ul li.first {
+	padding-left:0;
+}
+#foot_menu ul li.last {
+	background:none;
+}
+.socials {
+	width:288px;
+	float:right;
+	height:48px;
+	/***TEMP***/
+	background:url("../images/likes.png") 0 0 no-repeat;
+}
+.copyright {
+	width:339px;
+	float:left;
+}
+.copyright p,
+#footer .address p {
+	padding-bottom:10px;
+	font-size:12px;
+	line-height:16px;
+}
+#footer .address span.tel {
+	font-size:16px;
+	line-height:22px;
+}
+#footer .address {
+	width:288px;
+	float:left;
+}
+#footer .address.msc {float:right;}
+
+

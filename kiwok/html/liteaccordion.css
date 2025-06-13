@@ -1,0 +1,98 @@
+@charset 'utf-8';
+/*************************************************!
+*
+*   project:    liteAccordion - a horizontal accordion plugin for jQuery
+*   author:     Nicola Hibbert
+*   url:        http://nicolahibbert.com/liteaccordion-v2/
+*   demo:       http://www.nicolahibbert.com/demo/liteAccordion/
+*
+*   Version:    2.1.1
+*   Copyright:  (c) 2010-2012 Nicola Hibbert
+*   Licence:    MIT
+*
+**************************************************/
+/****************************************** Core */
+.liteAccordion {
+	text-align:left;
+	-webkit-tap-highlight-color:transparent;
+}
+.liteAccordion > ol {
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	z-index:1;
+}
+.liteAccordion .slide > h2 {
+	background:#FA3139 url("images/textures/texture_accordion.jpg") repeat;
+    color:#FFF;
+    font:25px Calibri, Arial;
+    z-index:100; 
+    position:absolute; 
+    top:0; 
+    left:0;    
+    -webkit-backface-visibility: hidden; /* fixes chrome bug */
+    -webkit-transform: translateX(-100%) rotate(-90deg); 
+    -webkit-transform-origin: right top; 
+    -moz-transform: translateX(-100%) rotate(-90deg);
+    -moz-transform-origin: right top; 
+    -o-transform: translateX(-100%) rotate(-90deg); 
+    -o-transform-origin: right top; 
+    transform: translateX(-100%) rotate(-90deg); 
+    transform-origin: right top; 
+}
+.liteAccordion .slide > h2.s1 {background-position:0 -10px;}
+.liteAccordion .slide > h2.s2 {background-position:0 -80px;}
+.liteAccordion .slide > h2.s3 {background-position:0 -150px;}
+.liteAccordion .slide > h2.s4 {background-position:0 -220px;}
+.liteAccordion .slide > h2.s5 {background-position:0 -290px;}
+.liteAccordion .slide > h2 span {
+	background-color:#F93038;
+	box-shadow:-4px 2px #000;
+	-moz-box-shadow:-4px 2px #000;
+	-webkit-box-shadow:-4px 2px #000;
+    display: block; 
+    height: 49px;
+	line-height:49px;
+	margin:10px 0 0 16px;
+	padding:0 0 0 12px;
+	text-align: left;
+	-webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+	width:147px;
+}
+.liteAccordion .slide > h2.selected {background:none;}
+.liteAccordion .slide > h2.selected span {
+	background:none;
+	border-bottom:2px solid #FFF;
+	box-shadow:none;
+	-moz-box-shadow:none;
+	-webkit-box-shadow:none;
+	width:127px;
+}
+.liteAccordion .slide img {margin-left:-70px;}
+.liteAccordion .slide > h2:hover {cursor:pointer}
+.liteAccordion .slide > div {
+	height:100%;
+	position:absolute;
+	top:0;
+	z-index:10;
+	overflow:hidden;
+	background-color:#F93038;
+	margin-top:0;
+}
+.liteAccordion .slide p.title {
+	color:#FFF;
+	font:bold 18px Arial;
+	left:90px;
+	position:absolute;
+	top:20px;
+	width:80%;
+}
+/******************************************** IE */
+/* transforms */
+.liteAccordion.ie7 .slide > h2 {filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);}
+.liteAccordion.ie8 .slide > h2 {filter: none; -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)"; -ms-transform:none;}
+.liteAccordion.ie9 .slide > h2 {filter: none; -ms-filter: none; -ms-transform: translateX(-100%) rotate(-90deg); -ms-transform-origin: right top; }

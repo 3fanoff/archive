@@ -1,0 +1,85 @@
+#slides {
+	position:absolute;
+	top:-39px;
+	z-index:100;
+}
+.slides_container {
+	width:920px;
+	overflow:hidden;
+	position:relative;
+	/*display:none;*/
+}
+.slides_container div.slide {
+	width:920px;
+	display:block;
+	height:355px;
+}
+
+
+/***********************
+	NEXT&PREV BUTTONS
+***********************/
+#slides .next,
+#slides .prev {
+	background:url("images/slider/slider_arrows.png") -25px 0 no-repeat;
+	height:42px;
+	width:24px;
+	display:block;
+	position:absolute;
+	top:174px;
+	z-index:101;
+}
+#slides .prev {
+	left:-31px;	
+}
+#slides .prev:hover {
+	background-position: 0 0;
+}
+
+#slides .next {
+	left:927px;
+	background-position: -50px 0;
+}
+#slides .next:hover {
+	background-position: -75px 0;
+}
+
+/*******************
+	NAVIGATION
+*******************/
+.higher_body .navigation {
+	margin:0;
+	position:absolute;
+	z-index:190;
+	bottom:-30px;
+	left:50%;
+}
+
+.higher_body .navigation li {
+	float:left;
+	margin:0 2px 0 3px;
+	list-style:none;
+	position:relative;
+	left:-50%;
+}
+
+.higher_body .navigation li a {
+	display:block;
+	width:12px;
+	height:12px;
+	background: url("images/slider/slider_navigation.png") 0 0 no-repeat;
+	float:left;
+	overflow:hidden;
+	text-indent:-100px;
+}
+.higher_body .navigation li a:hover {
+	background-position:-24px 0;
+}
+
+.higher_body .navigation li.current a {
+	background-position:-12px 0;
+}
+
+/*****************
+	CAPTION
+*****************/

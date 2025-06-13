@@ -1,0 +1,33 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="css/body.css" rel="stylesheet" type="text/css" />
+<link href="css/main.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="js/popup.js"></script>
+<title>POPUP</title>
+</head>
+
+<body style="position:relative; height:100%;">
+<div class="zadat"><a href="javaScript:void(0);">открыть попуп</a></div>
+<div id="overlay" style="display:none;"></div>
+<div class="popup_question" style="display:none;">
+    <a class="close" href="javaScript:void(0);"></a>
+    <h4>Задать вопрос</h4>
+  <div class="form">
+    <form id="form_popup" method="post" action="#">
+        <label for="name">Представьтесь</label><input type="text" id="name" class="standart"/>
+        <label for="email_tel">Эл.почта или телефон для связи</label><input type="text" id="email_tel" class="standart"/>
+        <label for="comment_text">Сообщение<span class="required">*</span></label><textarea id="comment_text"></textarea>
+            <!--<div class="code_this"><label for="code">Проверочный код</label><input type="text" class="standart minimal" id="code"/></div>
+            <div class="captcha"><img src="images/temporary/captcha_code.png" alt="captcha" /><a href="#">обновить картинку</a></div>
+            <div class="clear"></div>-->
+        <p class="note"><span class="required">*</span><span> &mdash; обязательно к заполнению</span></p>
+            <input type="submit" value="Отправить" class="greenbutton"/>
+            <div class="clear"></div>
+    </form> 
+  </div>
+</div>
+</body>
+</html>

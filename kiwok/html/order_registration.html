@@ -1,0 +1,241 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Регистрация заказа</title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Days+One" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/carouselme.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body class="my">
+	<div id="header">
+    	<div class="wrapper">
+        	<div class="top">
+            	<ul>
+                	<li><a href="#">О компании</a></li>
+                    <li><a href="#">Сотрудничество и обучение</a></li>
+                    <li><a href="#">Контактная информация</a></li>
+                </ul>
+                <div class="auth-on">
+                	<span class="ent"><a href="#" class="jslink">Войти</a></span>
+                    <span class="sep">|</span>
+                    <span class="reg"><a href="#">Регистрация</a></span>
+                    <div class="box">
+                    	<form id="auth-form" name="auth-form" action="" method="post">
+                        	<span class="fs-12">Электронная почта</span>
+                        	<div class="field"><input type="text" name="email" id="email"/></div>
+                            <span class="fs-12">Пароль</span>
+                            <a href="#" class="fs-12">Забыли пароль?</a>
+                            <div class="field"><input type="password" name="pass" id="pass"/></div>
+                            <input type="checkbox" id="remember" name="remember"/><label for="remember">Запомнить меня</label>
+                            <input type="submit" name="enter" id="enter" value="Войти"/>
+                        </form>	
+                    </div>
+                </div>
+            </div>
+            <div class="bot">
+            	<div id="logo"><a href="#"></a><span>&nbsp;</span></div>
+                <div class="address">
+                	<span class="c-grn it">Санкт-Петербург, Лиговский пр.</span>
+                    <a class="seemap" href="#">Посмотреть на карте</a>
+                </div>
+                <div id="cart">
+                	<a href="#" class="fs-25 bd">Моя корзина</a>
+                    <span class="num c-grn">(3)</span><br />
+                    <p>Стоимость всех товаров: <span class="c-red">1600 руб.</span></p>
+                </div>
+                <div class="tel"><span class="c-red">(+7 812)</span> 244-24-42</div>
+                <div class="time">
+                    <p>Принимаем заказы<br />
+                    <span>10:00 — 23:00</span><sup class="fs-12">пн — чт</sup><br />
+                    <span>10:00 — 01:00</span><sup class="fs-12">пт — вс</sup></p>
+                </div>
+                <div id="topmenu">
+                	<ul>
+                    	<li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Сотрудничество и обучение</a></li>
+                        <li><a href="#">Контактная информация</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/HEADER -->
+    <div id="main_body">
+    	<div class="wrapper">
+        	<div class="col-l"></div>
+            <div class="col-r">
+            	<!-- CRUMBS -->
+            	<div class="crumbs none">
+                	<ul>
+                    	<li><a href="#">Главная</a></li>
+                        <li class="sep">&ndash;</li>
+                        <li>Воки: готовые наборы</li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            	<!-- ORDER_REG -->
+                <h1>Оформление заказа</h1>
+                <div id="order_reg">
+                	<p class="c-red">Поле "Электронная почта" заполнено неверно</p>
+                    <div class="params">
+                    	<a href="#" class="fs-16">Ваш заказ (4)</a>
+                        <span class="c-grn">Профиль заказа:&nbsp;&nbsp;</span>
+                        <select name="profile" id="profile">
+                        	<option value="на работу">На работу</option>
+                            <option value="на работу">На работу</option>
+                            <option value="на работу">На работу</option>
+                        </select>
+                        <span class="fs-16 bd">Итого: 10600 руб</span>
+                    </div>
+                	<div class="sp-24 bts"></div>
+                    <form id="order-registration" method="post" action="">
+                        <!-- ЛИЧНЫЕ ДАННЫЕ -->
+                        <h2><span>1</span>Личные данные</h2>
+                        <div class="w-60">
+                            <span>Имя<span class="req">*</span></span>
+                            <div class="field"><input type="text" name="cfio" id="cfio"/></div>
+                            <span>Электронная почта<span class="req">*</span></span>
+                            <div class="field">
+                                <input type="text" name="cemail" id="cemail"/>
+                                <p class="help w-100">После оформления заказа вы получите письмо<br />с информациейо заказе.</p>
+                            </div>
+                            <span>Контактный телефон<span class="req">*</span></span>
+                            <div class="field">
+                                <input type="text" name="ctel" id="ctel"/>
+                                <p class="help w-100">После оформления заказа наш менеджер свяжется с вами<br />для уточнения заказа.</p>
+                            </div>
+                        </div>
+                        <div class="sp-18"></div>
+                        <div class="sp-24 bts"></div>
+                        <!-- ДОСТАВКА -->
+                        <h2><span>2</span>Доставка</h2>
+                        <div class="box w-60">
+                            <div class="box w-40"><input type="radio" name="dostavka[1]" id="dos" /><span><label for="dos">Доставка по адресу</label></span></div>
+                            <div class="box w-60">
+                                <input type="radio" name="dostavka[1]" id="sam" /><span><label for="sam">Забрать самостоятельно</label></span>
+                                <p class="c-grn fs-12 pt-6 pl-12"><i>Вы можете самостоятельно забрать свой заказ по адресу:<br />Санкт-Петербург, Невский пр-т, д.50</i></p>
+                            </div>
+                            <div class="sp-18"></div>
+                            <span>Город<span class="req">*</span></span>
+                            <div class="field"><input type="text" name="ccity" id="ccity"/></div>
+                            <span>Улица<span class="req">*</span></span>
+                            <div class="field"><input type="text" name="cstreet" id="cstreet"/></div>
+                            <div class="box w-25">
+                                <span>Дом<span class="req">*</span></span><div class="field"><input type="text" name="chouse" id="chouse"/></div>
+                            </div>
+                            <div class="box w-25">
+                                <span>Квартира / офис<span class="req">*</span></span><div class="field"><input type="text" name="croom" id="croom"/></div>
+                            </div>
+                            <div class="clear"></div>
+                            <div class="box w-25">
+                                <span>Подъезд</span><div class="field"><input type="text" name="ccorp" id="ccorp"/></div>
+                            </div>
+                            <div class="box w-25">
+                                <span>Домофон</span><div class="field"><input type="text" name="cdom" id="cdom"/></div>
+                            </div>
+                            <div class="box w-25">
+                                <span>Этаж</span><div class="field"><input type="text" name="clevel" id="clevel"/></div>
+                            </div>
+                        </div>
+                        <div class="sp-18"></div>
+                        <div class="sp-24 bts"></div>
+                        <!-- ОПЛАТА -->
+                        <h2><span>3</span>Оплата</h2>
+                        <div class="w-60">
+                            <div class="box w-33"><input type="radio" name="oplata[1]" id="nal" /><span><label for="nal">Наличные курьеру</label></span></div>
+                            <div class="box w-33"><input type="radio" name="oplata[1]" id="elm" /><span><label for="elm">Электронные деньги</label></span></div>
+                            <div class="box w-33"><input type="radio" name="oplata[1]" id="bnk" /><span><label for="bnk">Банковская карта</label></span></div>
+                            <div class="clear"></div>
+                            <div class="w-50 pt-12">
+                                <span>С какой купюры приготовить сдачу?</span><div class="field"><input type="text" name="ccup" id="ccup"/></div>
+                            </div>
+                        </div>
+                        <div class="sp-18"></div>
+                        <div class="sp-24 bts"></div>
+                        <!-- КОММЕНТАРИЙ -->
+                        <h2>Комментарий</h2>
+                        <div class="clear"></div>
+                        <input type="checkbox" name="addcomm[1]" id="addcomm" /><span><label for="addcomm">Добавить комментарий к заказу</label></span>
+                        <div class="clear pt-6"></div>
+                        <div class="field">
+                            <textarea name="comment" id="comment"></textarea>
+                            <p class="help">После оформления заказа наш менеджер<br />свяжется с вами в течение 5 минут.</p>
+                        </div>
+                        <div class="sp-24"></div>
+                        <div class="clear bts"></div>
+                        <a class="but but-b" href="javaScript:void(0);"><span>Оформить заказ</span></a>
+                    </form>
+                </div>
+            </div>
+            <div class="sp-50"></div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div id="footer_sp"></div>
+    <div id="footer">
+    	<div class="wrapper">
+        	<div class="box-l">
+            	<ul>
+                	<li><span class="parent">Воки</span>
+                    	<ul>
+                        	<li><a href="#">Готовые наборы</a></li>
+                            <li><a href="#">Конструктор</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="parent">Суши и роллы</span>
+                    	<ul>
+                        	<li><a href="#">Суши</a></li>
+                            <li><a href="#">Роллы</a></li>
+                            <li><a href="#">Горячее</a></li>
+                            <li><a href="#">Готовые наборы</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="parent">Вкусное здоровье</span>
+                    	<ul>
+                        	<li><a href="#">Супы</a></li>
+                            <li><a href="#">Салаты</a></li>
+                            <li><a href="#">Напитки</a></li>
+                            <li><a href="#">Десерты</a></li>
+                            <li><a href="#">Горячее</a></li>
+                        </ul>
+                   	</li>
+                </ul>
+            </div>
+            <div class="box-r">
+            	<ul>
+                	<li>
+                    	<ul>
+                        	<li><a href="#">Главная</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Полезно знать</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<ul>
+                        	<li><a href="#">О компании</a></li>
+                            <li><a href="#">Контактная информация</a></li>
+                            <li><a href="#">Сотрудничество и обучение</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <p class="copy">&copy; &laquo;Кивок&raquo;. Первые макарошки в коробочке</p>
+            <div class="box-r stamp">
+            	<div class="tel">
+                	<span class="c-grn">Звоните и задавайте вопросы:</span><br />
+                    <span class="fs-18 bd"><span class="c-red">(+7 812)</span> 981 42 24</span>
+                </div>
+                <a href="#" id="openstud" target="_blank" title="Открытая студия">Создание и продвижение сайта</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

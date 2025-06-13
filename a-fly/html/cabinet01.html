@@ -1,0 +1,380 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>A-FLY: Личный кабинет - Оформление заказа</title>
+<script type="text/javascript" src="js/jquery-1.7.2.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+<link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body class="mybody">
+	<!-- HEADER -->
+	<div id="header">
+    	<div class="wrapper">
+        	<div class="header_top">
+            	<div class="pref a_ic">бесплатная доставка</div>
+                <div class="pref b_ic">15 дней на возврат</div>
+                <div class="pref c_ic">бесплатная проверка</div>
+                <div class="pref d_ic">100% гарантия подлинности</div>
+                <div class="contacts"><span class="skype">lenalpsport.ru</span><span>info@lenalpsport.ru</span></div>
+            </div>
+            <div class="header_middle">
+            	<div class="enter_site">
+                	<ul>
+                    	<li class="enter"><a href="javaScript:void(0);" class="javalink">Вход</a></li>
+                        <li class="separator">&nbsp;</li>
+                        <li><a href="#">Регистрация</a></li>
+                    </ul>
+                </div>
+                <div class="search_block">
+                	<div class="l_side"></div>
+                    <div class="r_side"></div>
+                    <input type="text" name="search-this" class="placeholder" id="serach-this" value="поиск" />
+                    <div class="extended_search"><span>+</span><a href="#">расширенный</a></div>
+                </div>
+                <!--BASKET_BLOCKS-->
+                <div class="basket_block_top u_basket">
+                	<div class="clicker">
+                		<div class="purchases_amount">(6)</div>
+                    	<div class="purchases_cost">19 250 руб.</div>
+                    </div>
+                    <div class="dropdown_box">
+                    	<p>В вашей корзине 6 товаров на сумму 19 250 руб.</p>
+                        <a href="#" class="dropdown_box_button">просмотреть</a>
+                        <a href="#" class="dropdown_box_button">расплатиться</a>
+                    </div>
+                </div>
+                <div class="basket_block_right u_basket">
+                	<div class="clicker">
+                		<div class="purchases_amount">(6)</div>
+                    </div>
+                    <div class="dropdown_box">
+                    	<p>Ваша корзина на данный момент пуста.</p> 
+                        <p>Чтобы выбрать товары, воспользуйтесь нашим каталогом.</p>
+                        <p>Удачных покупок!</p>
+                        <!--<a href="#" class="dropdown_box_button">просмотреть</a>
+                        <a href="#" class="dropdown_box_button">расплатиться</a>-->
+                    </div>
+                </div>
+                <!--BASKET_BLOCKS-->
+                <div class="contacts">
+                	<span class="code">+7 (812)</span><span class="tel">567-95-51</span><span class="separator">&nbsp;</span><span class="tel">567-98-34</span>
+                </div>
+            </div>
+            <div class="header_bottom">
+            	<a href="/" class="logo"></a>
+                <div id="menu_top">
+                	<ul>
+                    	<li><a href="#">о компании</a></li>
+                        <li><a href="#">каталог</a></li>
+                        <li><a href="#">наши бренды</a></li>
+                        <li><a href="#">новости</a></li>
+                        <li><a href="#">акции</a></li>
+                        <li><a href="#">контакты</a></li>                   
+                	</ul>
+                </div>
+                <div class="order_call"><a href="javaScript:void(0);" class="javalink">Заказать звонок</a></div>
+            </div>
+        </div>
+    </div>
+    <!--/HEADER -->
+    <div id="main_body">
+    	<div class="wrapper">
+            <div class="l_side">
+            	<ul class="bread-crumbs">
+                	<li class="home"><a href="/" title="Главная">Главная</a>/</li>
+                    <li><a href="#" title="Каталог">Каталог</a>/</li>
+                    <li><a href="#" title="Одежда">Одежда</a></li>
+                </ul>
+                <div class="clear"></div>
+                <h1>Личный кабинет</h1>
+                <!-- CABINET -->
+                <div class="tab-wrapper">
+                	<ul class="tab-set">
+                        <li class="active"><a href="/personal/cart/" style="z-index:5;" id="cart">Корзина</a></li>
+                    	<li><a href="/personal/profile/" style="z-index:4;" id="profile">Реквизиты</a></li>
+                    	<li><a href="/personal/docs/" style="z-index:3;" id="docs">Документы</a></li>
+                    	<li><a href="/personal/order/" style="z-index:2;" id="order">Заказы</a></li>
+                    	<li><a href="/personal/subscribe/" style="z-index:1;" id="subscribe">Подписка и рассылка</a></li>
+                  	</ul>
+					<div class="tab-holder">
+                    	<div id="form_new">
+                    		<form id="ORDER_FORM_ID_NEW" name="ORDERFORM_9azwr" action="" method="POST">
+                            <div id="order_form_id">
+								<h3>Тип плательщика</h3>
+								<table class="sale_order_full_table">
+									<tbody>
+                                    	<tr>
+											<td>
+                                            	<input id="PERSON_TYPE_1" name="PERSON_TYPE" value="1" checked="checked" onclick="submitForm()" type="radio">
+                                            	<label for="PERSON_TYPE_1">Физическое лицо</label><br />
+                                            	<input id="PERSON_TYPE_2" name="PERSON_TYPE" value="2" onclick="submitForm()" type="radio">
+                                                <label for="PERSON_TYPE_2">Юридическое лицо</label><br />
+                                                <input name="PERSON_TYPE_OLD" value="1" type="hidden">
+											</td>
+                                    	</tr>
+                                	</tbody>
+								</table>
+								<br/><br/>
+								<h3>Информация для оплаты и доставки заказа</h3>
+								<table class="sale_order_full_table">
+									<tbody>
+                                    	<tr>
+                                        	<td>
+												Выберите информацию, указанную вами ранее:<br>
+												<select name="PROFILE_ID" id="ID_PROFILE_ID" onchange="SetContact(this.value)">
+													<option value="0">Новый профиль</option>
+													<option value="1" selected="selected">Дмитрий Васильев</option>
+												</select>
+												<br />
+												<br />
+												<div style="display:none;">
+                                                    <div id="LOCATION_tmp">
+                                                        <select name="COUNTRY_tmp" onchange="">
+                                                            <option>(выберите страну)</option>
+                                                            <option value="1">Россия</option>
+                                                        </select>
+                                                    </div>
+                                                	<div id="wait_container_tmp" style="display: none;"></div>
+                                                </div>
+                                                <div class="form-horizontal">
+                                                <h4>Личные данные</h4>
+                                                    <div class="control-group">
+                                                        <label class="control-label" for="inputFIO">Ф.И.О.:<span class="sof-req">*</span></label>
+                                                        <div class="controls">
+                                                            <input class="" maxlength="250" size="40" value="Дмитрий Васильев" name="ORDER_PROP_1" id="inputFIO" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <label class="control-label" for="inputEmail">E-Mail:<span class="sof-req">*</span></label>
+                                                        <div class="controls">
+                                                            <input class="" maxlength="250" size="40" value="dima-vas@yandex.ru" name="ORDER_PROP_2" id="inputEmail" type="text">
+                                                        </div>
+                                                    </div>
+                                                    <div class="control-group">
+                                                        <label class="control-label" for="inputTel">Телефон:<span class="sof-req">*</span></label>
+                                                        <div class="controls">
+                                                            <input class="" maxlength="250" size="0" value="12345125" name="ORDER_PROP_3" id="inputTel" type="text">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="form-horizontal">
+                                                    <h4>Данные для доставки</h4>
+                                                    <div class="form-inline">
+                                                    	<label class="control-label" for="inputTel">Местоположение:<span class="sof-req">*</span></label>
+                                                    	<select name="COUNTRY_ORDER_PROP_5" onchange="">
+                                                                <option>(выберите страну)</option>
+                                                                <option value="1" selected="selected">Россия</option>
+                                                        </select>
+                                                        <select name="ORDER_PROP_5" onchange="submitForm()">
+                                                                <option>(выберите город)</option>
+                                                                <option value="2">Москва</option>
+                                                                <option value="1" selected="selected">Санкт-Петербург</option>
+                                                        </select>
+                                                    </div>
+                                                    <label for="ORDER_PROP_7">Адрес доставки:<span class="sof-req">*</span></label>
+                                                    <textarea class=" " style="width: 199px; height: 179px;" rows="3" cols="30" name="ORDER_PROP_7" id="ORDER_PROP_7">234523452345</textarea>
+                                                </div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+								<br/><br/>			
+								<h3>Способы доставки</h3>
+								<table class="sale_order_full_table">
+									<tbody>
+                                    	<tr>
+                                            <td valign="top" width="0%">
+                                                <input id="ID_DELIVERY_ID_1" name="DELIVERY_ID" value="1" checked="checked" onclick="submitForm();" type="radio">
+                                            </td>
+                                            <td valign="top" width="100%">
+                                                <label for="ID_DELIVERY_ID_1">
+                                                	<b>Доставка курьером</b><br/>Стоимость 500,00 руб.<br>Доставка осуществляется в течение дня в удобное для вас время.<br>
+                                                </label>
+                                            </td>
+										</tr>
+										<tr>
+                                            <td valign="top" width="0%">
+                                                <input id="ID_DELIVERY_ID_2" name="DELIVERY_ID" value="2" onclick="submitForm();" type="radio">
+                                            </td>
+                                            <td valign="top" width="100%">
+                                                <label for="ID_DELIVERY_ID_2"><b>Самовывоз</b><br />Стоимость 0,00 руб.<br />Вы можете самостоятельно забрать заказ из нашего магазина.<br /></label>
+                                            </td>
+										</tr>
+									</tbody>
+								</table>
+								<br /><br />
+								<h3>Платежная система</h3>
+								<table class="sale_order_full_table">
+									<tbody>
+                                    	<tr>
+                                            <td valign="top" width="0%">
+                                                <input id="ID_PAY_SYSTEM_ID_1" name="PAY_SYSTEM_ID" value="1" checked="checked" type="radio">
+                                            </td>
+                                            <td valign="top" width="100%">
+                                                <label for="ID_PAY_SYSTEM_ID_1"><b>Наличные курьеру</b><br>Оплата наличными при получении заказа курьеру.<br></label>
+                                            </td>
+										</tr>
+										<tr>
+                                            <td valign="top" width="0%">
+                                                <input id="ID_PAY_SYSTEM_ID_5" name="PAY_SYSTEM_ID" value="5" type="radio">
+                                            </td>
+                                            <td valign="top" width="100%">
+                                                <label for="ID_PAY_SYSTEM_ID_5">
+                                                    <b>Сбербанк</b><br>Вы можете оплатить заказ в любом отделении Сбербанка. 
+                                                    За услугу по переводу денег с Вас возьмут от 3 до 7% от стоимости заказа, в зависимости от региона. 
+                                                    Перечисление денег займет порядка 10 дней.<br>
+                                                </label>
+                                            </td>
+										</tr>
+									</tbody>
+                				</table>
+                                <div align="right">
+                                    <input name="submitbutton" onclick="submitForm('Y');" value="Оформить заказ" type="button" class="btncls tocart">
+                                </div>
+							</div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <!--/CABINET -->
+                <div class="clear"></div>
+            </div>
+            <div class="r_side">
+            	<!-- CATALOG -->
+            	<div id="catalog_menu" class="right_box_shell">
+                	<div class="top"><h2>Каталог</h2></div>
+                    <div class="bot"></div>
+                    <ul class="list">
+						<li><a class="selected" href="/catalog/21/">
+                				<span class="ico">
+                            		<img src="images/catalog/icons/ico08-1.png" alt="Одежда" height="26" width="27"/>
+                                	<img src="images/catalog/icons/ico08.png" alt="Одежда " class="active-ico" height="26" width="27"/>
+                                </span>
+                				<span class="text">Одежда</span>
+                            </a>
+            			</li>
+						<li>
+                        	<a href="/catalog/1/">
+                				<span class="ico">
+                                	<img src="images/catalog/icons/ico10.png" alt="Для мужчин" height="26" width="27"/>
+                                	<img src="images/catalog/icons/ico10-1.png" alt="Для мужчин " class="active-ico" height="26" width="27"/>
+                                </span>
+                				<span class="text">Для мужчин</span>
+                       		</a>
+            			</li>
+						<li class="current">
+                        	<a href="/catalog/22/">
+                				<span class="ico">
+                                	<img src="images/catalog/icons/ico12.png" alt="Обувь" height="26" width="27"/>
+                                    <img src="images/catalog/icons/ico12-1.png" alt="Обувь " class="active-ico" height="26" width="27"/>
+                                </span>
+                				<span class="text">Обувь</span>
+                           	</a>
+            			</li>
+						<li>
+                        	<a href="/catalog/20/">
+                				<span class="ico">
+                                	<img src="images/catalog/icons/ico07.png" alt="Снаряжение" height="26" width="27"/>
+                                    <img src="images/catalog/icons/ico07-1.png" alt="Снаряжение " class="active-ico" height="26" width="27"/>
+                                </span>
+                				<span class="text">Снаряжение</span>
+                           	</a>
+						</li>
+						<li>
+                        	<a href="/catalog/10/">
+                				<span class="ico">
+                                	<img src="images/catalog/icons/ico08-1.png" alt="Для женщин" height="26" width="27"/>
+                                    <img src="images/catalog/icons/ico08.png" alt="Для женщин " class="active-ico" height="26" width="27"/>
+                               	</span>
+                				<span class="text">Для женщин</span>
+                            </a>
+            			</li>
+                    </ul>
+                </div>
+                <!--/CATALOG -->
+                <div class="clear"></div>
+                <!--NEWS_RIGHT-->
+            	<div id="news_right" class="news_style">
+                	<h2>Новости</h2>
+                    <a href="#" class="more">все новости</a>
+            		<ul>
+                        <li class="open">
+                        	<p class="title"><a href="#">Мир автомобиля 2012</a></p>
+                            <p class="date">03.04</p>
+                        </li>
+                        <li>
+                            <p class="title"><a href="#">Смотрите видеоролики</a></p>
+                            <p class="date">28.03</p>
+                        </li>
+                        <li>
+                            <p class="title"><a href="#">TrangoWorld CUP cоревнования по болдерингу</a></p>
+                            <p class="date">08.03</p>
+                        </li>
+                        <li>
+                            <p class="title"><a href="#">ОХОТА И РЫБОЛОВСТВО НА РУСИ 2012</a></p>
+                            <p class="date">24.02</p>
+                        </li>
+                        <li>
+                            <p class="title"><a href="#">ISPO Munich</a></p>
+                            <p class="date">01.22</p>
+                        </li>
+                	</ul>
+                </div>
+                <!--NEWS_RIGHT-->
+                <div class="clear"></div>
+            </div>
+            <div class="space-36"></div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div id="sub_footer"></div>
+    <div id="footer">
+    	<div class="wrapper">
+        	<div class="footer_box first">
+            	<p class="copy">2012 Компания <b>ЛенАльпСпорт</b><br /><span>Все права защищены</span></p>
+                <div class="enter_site">
+                	<ul>
+                    	<li class="enter"><a href="javaScript:void(0);" class="javalink">Вход</a></li>
+                        <li class="separator">&nbsp;</li>
+                        <li><a href="#">Регистрация</a></li>
+                    </ul>
+                </div>
+                <ul class="network">
+                	<li><a href="#"><img src="images/footer/ico14.png" alt="facebook" /></a></li>
+                    <li><a href="#"><img src="images/footer/ico15.png" alt="twitter" /></a></li>
+                    <li><a href="#"><img src="images/footer/ico16.png" alt="vkcom" /></a></li>
+                    <li><a href="#"><img src="images/footer/ico17.png" alt="googleplus" /></a></li>
+				</ul>
+            </div>
+            <div class="footer_box">
+                <p class="contacts">192029 г. Санкт-Петербург,<br /> 
+                Б. Смоленский пр., д.2, <br />
+                <i><a href="#">схема проезда</a></i></p>
+                <p class="contacts">+7 (812) <b>567-95-51, 567-98-34</b></p>
+                <p class="contacts"><span class="skype">lenalpsport.ru</span><br /><i><a href="#">info@lenalpsport.ru</a></i></p> 
+            </div>
+            <div class="footer_box">
+            	<div id="menu_bottom">
+                	<ul>
+                    	<li><a href="#">О компании</a></li>
+                        <li><a href="#">Каталог</a></li>
+                        <li><a href="#">Наши бренды</a></li>
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Акции</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer_box last">
+            	<div class="subscribe_block">
+                	<h4>Подписка на рассылку</h4>
+                	<input type="text" name="subscribe-this" class="placeholder" id="subscribe-this" value="e-mail"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/FOOTER -->
+</body>
+</html>

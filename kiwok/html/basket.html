@@ -1,0 +1,379 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Корзина</title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Days+One" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/carouselme.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body class="my">
+	<div id="header">
+    	<div class="wrapper">
+        	<div class="top">
+            	<ul>
+                	<li><a href="#">О компании</a></li>
+                    <li><a href="#">Сотрудничество и обучение</a></li>
+                    <li><a href="#">Контактная информация</a></li>
+                </ul>
+                <div class="auth-on">
+                	<span class="ent"><a href="#" class="jslink">Войти</a></span>
+                    <span class="sep">|</span>
+                    <span class="reg"><a href="#">Регистрация</a></span>
+                    <div class="box">
+                    	<form id="auth-form" name="auth-form" action="" method="post">
+                        	<span class="fs-12">Электронная почта</span>
+                        	<div class="field"><input type="text" name="email" id="email"/></div>
+                            <span class="fs-12">Пароль</span>
+                            <a href="#" class="fs-12">Забыли пароль?</a>
+                            <div class="field"><input type="password" name="pass" id="pass"/></div>
+                            <input type="checkbox" id="remember" name="remember"/><label for="remember">Запомнить меня</label>
+                            <input type="submit" name="enter" id="enter" value="Войти"/>
+                        </form>	
+                    </div>
+                </div>
+            </div>
+            <div class="bot">
+            	<div id="logo"><a href="#"></a><span>&nbsp;</span></div>
+                <div class="address">
+                	<span class="c-grn it">Санкт-Петербург, Лиговский пр.</span>
+                    <a class="seemap" href="#">Посмотреть на карте</a>
+                </div>
+                <div id="cart">
+                	<a href="#" class="fs-25 bd">Моя корзина</a>
+                    <span class="num c-grn">(3)</span><br />
+                    <p>Стоимость всех товаров: <span class="c-red">1600 руб.</span></p>
+                </div>
+                <div class="tel"><span class="c-red">(+7 812)</span> 244-24-42</div>
+                <div class="time">
+                    <p>Принимаем заказы<br />
+                    <span>10:00 — 23:00</span><sup class="fs-12">пн — чт</sup><br />
+                    <span>10:00 — 01:00</span><sup class="fs-12">пт — вс</sup></p>
+                </div>
+                <div id="topmenu">
+                	<ul>
+                    	<li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Сотрудничество и обучение</a></li>
+                        <li><a href="#">Контактная информация</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/HEADER -->
+    <div id="main_body">
+    	<div class="wrapper">
+            <div class="col">
+            	<!-- CRUMBS -->
+            	<div class="crumbs">
+                	<ul>
+                    	<li><a href="#">Главная</a></li>
+                        <li class="sep">&ndash;</li>
+                        <li>Моя корзина</li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+                <!--/CRUMBS -->
+                <h1>Моя корзина (2 товара)</h1>
+                <!-- BASKET -->
+                <a class="but but-b"><span>Оформить заказ</span></a>
+                <div class="clear"></div>
+                <div class="basket">
+                	<div class="sp-18"></div>
+                    <table border="0" cellspacing="0" cellpadding="0">
+                    	<thead>
+                        <tr>
+                            <td width="50"><input type="checkbox" name="pos" id="pos"/></td>
+                            <td colspan="2" width="198">Ваши покупки</td>
+                            <td width="74">Вес</td>
+                            <td width="157">Состав</td>
+                            <td width="80">Цена</td>
+                            <td width="131">Количество</td>
+                            <td width="132">Стоимость</td>
+                            <td width="87">Действия</td>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td><input type="checkbox" name="pos" id="pos1" /></td>
+                            <td><img src="pics/demopic35.jpg" alt="btimg" /></td>
+                            <td><p class="name"><a href="#" class="l-red">КИВОК драйв</a></p>
+                            	<p class="cat"><a href="#" class="l-blu">Воки</a></p>
+                            </td>
+                            <td><p class="sizes">
+                                    <a href="#" class="selected">L (450 гр)</a>
+                                    <a href="#">M (450 гр)</a>
+                                    <a href="#">S (450 гр)</a>
+                            	</p>
+                            </td>
+                            <td>
+                            	<ul class="consist">
+                                	<li>Картофель</li>
+                                    <li>Рыба</li>
+                                    <li>Лапша удон.</li>
+                                </ul>
+                            </td>
+                            <td>290 руб</td>
+                            <td><div class="changenum">
+                                	<a href="#" class="m">minus</a>
+                                	<a href="#" class="p">plus</a>
+                                	<input type="text" size="1" value="0"/>
+                            	</div>
+                            </td>
+                            <td><span class="fs-16 bd">518 руб</span></td>
+                            <td><a href="javaScript:void(0);" class="l-red">удалить</a></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="3"><textarea name="comment" id="comment1"></textarea></td>
+                            <td colspan="5">&nbsp;</td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" name="pos" id="pos2" /></td>
+                            <td><img src="pics/demopic35.jpg" alt="btimg" /></td>
+                            <td><p class="name"><a href="#" class="l-red">КИВОК драйв</a></p>
+                            	<p class="cat"><a href="#" class="l-blu">Воки</a></p>
+                            </td>
+                            <td><p class="sizes">
+                                    <a href="#">L (450 гр)</a>
+                                    <a href="#" class="selected">M (450 гр)</a>
+                                    <a href="#">S (450 гр)</a>
+                            	</p>
+                            </td>
+                            <td>
+                            	<ul class="consist">
+                                	<li>Картофель</li>
+                                    <li>Рыба</li>
+                                    <li>Лапша удон.</li>
+                                </ul>
+                            </td>
+                            <td>290 руб</td>
+                            <td><div class="changenum">
+                                	<a href="#" class="m">minus</a>
+                                	<a href="#" class="p">plus</a>
+                                	<input type="text" size="1" value="0"/>
+                            	</div>
+                            </td>
+                            <td><span class="fs-16 bd">518 руб</span></td>
+                            <td><a href="javaScript:void(0);" class="l-red">удалить</a></td>
+                        </tr>
+                        <tr>
+                            <td>&nbsp;</td>
+                            <td colspan="3"><textarea name="comment" id="comment2"></textarea></td>
+                            <td colspan="5">&nbsp;</td>
+                        </tr>
+                        <tfoot>
+                        <tr>
+                            <td colspan="2"></td>
+                            <td colspan="5"><a href="javaScript:void(0);" class="l-red">удалить выбранное</a></td>
+                            <td colspan="2"><span id="summary" class="fs-18"><b>Итого:</b> 16 890 руб</span></td>
+                        </tr>
+                        </tfoot>
+                    </table>
+                    <a class="but but-b"><span>Оформить заказ</span></a>
+                    <!-- RECOMMEND -->
+                    <div id="recommend">
+                    	<div class="arr"></div>
+                    	<p class="fs-25 lh-24 ff-c c-red"><b>Рекомендуем к заказу</b></p>
+                    	<div class="card_list">
+                        <ul>
+                            <li>
+                                <a href="#"><img src="pics/demopic10.jpg" alt="dp" /></a>
+                                <div class="badge none"></div>
+                                <p class="title"><a href="#" class="l-red">Кивок драйв</a></p>
+                                <input type="hidden" name="size" id="size-card1" value=""/>
+                                <p class="sizes">
+                                    <a href="#">L (450 гр)</a>
+                                    <a href="#">M (450 гр)</a>
+                                    <a href="#" class="selected">S (450 гр)</a>
+                                </p>
+                                <p class="cost">650 руб.</p>
+                                <div class="changenum">
+                                    <a href="#" class="m">minus</a>
+                                    <a href="#" class="p">plus</a>
+                                    <input type="text" size="1" value="0"/>
+                                </div>
+                                <a href="#" class="but-a">Заказать</a>
+                            </li>
+                            <li>
+                                <a href="#"><img src="pics/demopic11.jpg" alt="dp" /></a>
+                                <p class="title"><a href="#" class="l-red">Кивок драйв</a></p>
+                                <input type="hidden" name="size" id="size-card2" value=""/>
+                                <p class="sizes">
+                                    <a href="#">L (450 гр)</a>
+                                    <a href="#">M (450 гр)</a>
+                                    <a href="#">S (450 гр)</a>
+                                </p>
+                                <p class="cost">650 руб.</p>
+                                <div class="changenum">
+                                    <a href="#" class="m">minus</a>
+                                    <a href="#" class="p">plus</a>
+                                    <input type="text" size="1" value="0"/>
+                                </div>
+                                <a href="#" class="but-a">Заказать</a>
+                            </li>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                    </div>
+                    <!--/RECOMMEND -->
+                </div>
+                <!--/BASKET -->
+                <div class="sp-50"></div>
+                <div class="basket assoc">
+                	<h2>Также вам может быть интересно</h2>
+                    <div class="sp-18"></div>
+                    <table border="0" cellspacing="0" cellpadding="0">
+                    	<thead>
+                        <tr>
+                            <td width="50"></td>
+                            <td colspan="2" width="198">Ваши покупки</td>
+                            <td width="74">Вес</td>
+                            <td width="157">Состав</td>
+                            <td width="80">Цена</td>
+                            <td width="131">Количество</td>
+                            <td width="132">Стоимость</td>
+                            <td width="87">Действия</td>
+                        </tr>
+                        </thead>
+                        <tr>
+                            <td></td>
+                            <td><img src="pics/demopic35.jpg" alt="btimg" /></td>
+                            <td><p class="name"><a href="#" class="l-red">КИВОК драйв</a></p>
+                            	<p class="cat"><a href="#" class="l-blu">Воки</a></p>
+                            </td>
+                            <td><p class="sizes">
+                                    <a href="#" class="selected">L (450 гр)</a>
+                                    <a href="#">M (450 гр)</a>
+                                    <a href="#">S (450 гр)</a>
+                            	</p>
+                            </td>
+                            <td>
+                            	<ul class="consist">
+                                	<li>Картофель</li>
+                                    <li>Рыба</li>
+                                    <li>Лапша удон.</li>
+                                </ul>
+                            </td>
+                            <td>290 руб</td>
+                            <td><div class="changenum">
+                                	<a href="#" class="m">minus</a>
+                                	<a href="#" class="p">plus</a>
+                                	<input type="text" size="1" value="0"/>
+                            	</div>
+                            </td>
+                            <td><span class="fs-16 bd">518 руб</span></td>
+                            <td><a href="javaScript:void(0);" class="l-red">Добавить к заказу</a></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="3"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td><img src="pics/demopic35.jpg" alt="btimg" /></td>
+                            <td><p class="name"><a href="#" class="l-red">КИВОК драйв</a></p>
+                            	<p class="cat"><a href="#" class="l-blu">Воки</a></p>
+                            </td>
+                            <td><p class="sizes">
+                                    <a href="#">L (450 гр)</a>
+                                    <a href="#" class="selected">M (450 гр)</a>
+                                    <a href="#">S (450 гр)</a>
+                            	</p>
+                            </td>
+                            <td>
+                            	<ul class="consist">
+                                	<li>Картофель</li>
+                                    <li>Рыба</li>
+                                    <li>Лапша удон.</li>
+                                </ul>
+                            </td>
+                            <td>290 руб</td>
+                            <td><div class="changenum">
+                                	<a href="#" class="m">minus</a>
+                                	<a href="#" class="p">plus</a>
+                                	<input type="text" size="1" value="0"/>
+                            	</div>
+                            </td>
+                            <td><span class="fs-16 bd">518 руб</span></td>
+                            <td><a href="javaScript:void(0);" class="l-red">Добавить к заказу</a></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td colspan="3"></td>
+                            <td colspan="5"></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="sp-50"></div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div id="footer_sp"></div>
+    <div id="footer">
+    	<div class="wrapper">
+        	<div class="box-l">
+            	<ul>
+                	<li><span class="parent">Воки</span>
+                    	<ul>
+                        	<li><a href="#">Готовые наборы</a></li>
+                            <li><a href="#">Конструктор</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="parent">Суши и роллы</span>
+                    	<ul>
+                        	<li><a href="#">Суши</a></li>
+                            <li><a href="#">Роллы</a></li>
+                            <li><a href="#">Горячее</a></li>
+                            <li><a href="#">Готовые наборы</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="parent">Вкусное здоровье</span>
+                    	<ul>
+                        	<li><a href="#">Супы</a></li>
+                            <li><a href="#">Салаты</a></li>
+                            <li><a href="#">Напитки</a></li>
+                            <li><a href="#">Десерты</a></li>
+                            <li><a href="#">Горячее</a></li>
+                        </ul>
+                   	</li>
+                </ul>
+            </div>
+            <div class="box-r">
+            	<ul>
+                	<li>
+                    	<ul>
+                        	<li><a href="#">Главная</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Полезно знать</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<ul>
+                        	<li><a href="#">О компании</a></li>
+                            <li><a href="#">Контактная информация</a></li>
+                            <li><a href="#">Сотрудничество и обучение</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <p class="copy">&copy; &laquo;Кивок&raquo;. Первые макарошки в коробочке</p>
+            <div class="box-r stamp">
+            	<div class="tel">
+                	<span class="c-grn">Звоните и задавайте вопросы:</span><br />
+                    <span class="fs-18 bd"><span class="c-red">(+7 812)</span> 981 42 24</span>
+                </div>
+                <a href="#" id="openstud" target="_blank" title="Открытая студия">Создание и продвижение сайта</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

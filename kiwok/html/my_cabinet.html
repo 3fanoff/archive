@@ -1,0 +1,223 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Мой кабинет</title>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+<link href="http://fonts.googleapis.com/css?family=Days+One" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<script type="text/javascript" src="js/carouselme.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+</head>
+
+<body class="my">
+	<div id="header">
+    	<div class="wrapper">
+        	<div class="top">
+            	<ul>
+                	<li><a href="#">О компании</a></li>
+                    <li><a href="#">Сотрудничество и обучение</a></li>
+                    <li><a href="#">Контактная информация</a></li>
+                </ul>
+                <div class="auth-on">
+                	<span class="ent"><a href="#" class="jslink">Войти</a></span>
+                    <span class="sep">|</span>
+                    <span class="reg"><a href="#">Регистрация</a></span>
+                    <div class="box">
+                    	<form id="auth-form" name="auth-form" action="" method="post">
+                        	<span class="fs-12">Электронная почта</span>
+                        	<div class="field"><input type="text" name="email" id="email"/></div>
+                            <span class="fs-12">Пароль</span>
+                            <a href="#" class="fs-12">Забыли пароль?</a>
+                            <div class="field"><input type="password" name="pass" id="pass"/></div>
+                            <input type="checkbox" id="remember" name="remember"/><label for="remember">Запомнить меня</label>
+                            <input type="submit" name="enter" id="enter" value="Войти"/>
+                        </form>	
+                    </div>
+                </div>
+            </div>
+            <div class="bot">
+            	<div id="logo"><a href="#"></a><span>&nbsp;</span></div>
+                <div class="address">
+                	<span class="c-grn it">Санкт-Петербург, Лиговский пр.</span>
+                    <a class="seemap" href="#">Посмотреть на карте</a>
+                </div>
+                <div id="cart">
+                	<a href="#" class="fs-25 bd">Моя корзина</a>
+                    <span class="num c-grn">(3)</span><br />
+                    <p>Стоимость всех товаров: <span class="c-red">1600 руб.</span></p>
+                </div>
+                <div class="tel"><span class="c-red">(+7 812)</span> 244-24-42</div>
+                <div class="time">
+                    <p>Принимаем заказы<br />
+                    <span>10:00 — 23:00</span><sup class="fs-12">пн — чт</sup><br />
+                    <span>10:00 — 01:00</span><sup class="fs-12">пт — вс</sup></p>
+                </div>
+                <div id="topmenu">
+                	<ul>
+                    	<li><a href="#">Оплата и доставка</a></li>
+                        <li><a href="#">Отзывы</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Сотрудничество и обучение</a></li>
+                        <li><a href="#">Контактная информация</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--/HEADER -->
+    <div id="main_body">
+    	<div class="wrapper">
+        	<div class="col-l">
+            	<div id="cabinetmenu">
+                	<ul>
+                    	<li><a class="parent" href="#">Мои заказы (7)</a>
+                            <ul>
+                                <li><a href="#">Активные (2)</a></li>
+                                <li><a href="#">Выполненные (1)</a></li>
+                                <li><a href="#">Отмененные (4)</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="parent" href="#">Моя корзина (3)</a></li>
+                        <li><a class="parent" href="#">Мои скидки</a></li>
+                    </ul>
+                    <p id="current_discount" class="c-grn lh-24">Ваша текущая скидка - 10%</p>
+                    <p><a href="#" class="l-blk">Как получить скидку?</a></p>
+                </div>
+            </div>
+            <div class="col-r">
+            	<!-- CRUMBS -->
+            	<div class="crumbs none">
+                	<ul>
+                    	<li><a href="#">Главная</a></li>
+                        <li class="sep">&ndash;</li>
+                        <li>Воки: готовые наборы</li>
+                    </ul>
+                    <div class="clear"></div>
+                </div>
+            	<!-- CABINET -->
+                <h1>Мой кабинет</h1>
+                <div id="cabinet">
+                	<h2>Личные данные</h2>
+                    <div class="clear none"></div>
+                    <p class="c-grn pt-6">Вы зарегестрированы 1 июля 2012 года</p>
+                    <div class="sp-24"></div>
+                    <div class="w-50">
+                        <div class="box w-33 ta-r"><b>Имя:&nbsp;</b></div>
+                        <div class="box w-33"><p class="none">Владимир</p><a href="#" class="edit"></a><input type="text" name="cname" id="cname" value="Владимир"/></div>
+                        <div class="clear"></div>
+                        <div class="box w-33 ta-r"><b>Фамилия:&nbsp;</b></div>
+                        <div class="box w-33"><p>Ермолаев</p><a href="#" class="edit"></a><input type="text" name="cfio" id="cfio" value="Ермолаев" class="none"/></div>
+                        <div class="clear"></div>
+                        <div class="box w-33 ta-r"><b>Отчество:&nbsp;</b></div>
+                        <div class="box w-33"><p>Александрович</p><a href="#" class="edit"></a><input type="text" name="csname" id="csname" value="Александрович" class="none"/></div>
+                        <div class="clear"></div>
+                        <div class="box w-33 ta-r"><b>Электронная почта:&nbsp;</b></div>
+                        <div class="box w-33"><p>mail.kiwok.ru</p><a href="#" class="edit"></a><input type="text" name="cmail" id="cmail" value="mail.kiwok.ru" class="none"/></div>
+                        <div class="clear"></div>
+                        <div class="box w-33 ta-r"><b>Телефон:&nbsp;</b></div>
+                        <div class="box w-33"><p>89006981893</p><a href="#" class="edit"></a><input type="text" name="ctel" id="ctel" value="89006981893" class="none"/></div>
+                        <div class="clear"></div>
+                        <div class="box w-33 ta-r"><b>Пароль:&nbsp;</b></div>
+                        <div class="box w-33"><p>*****</p><a href="#" class="edit"></a><input type="password" name="cpass" id="cpass" value="14267" class="none"/></div>
+                    </div>
+                    <div class="clear pt-6"></div>
+                    <h2>Мои адреса</h2>
+                    <div class="clear none"></div>
+                    <p class="c-orn pt-6">Домой (01.02.2013)</p>
+                    <div class="sp-24"></div>
+                    <div class="w-50">
+                        <div class="box w-33 ta-r"><b>Улица:&nbsp;</b></div>
+                        <div class="box w-33"><p>пр. Обуховской обороны</p><a href="#" class="edit"></a><input type="text" name="cstreet" id="cstreet" value="Невский проспект" class="none"/></div>
+                        <div class="clear"></div>
+                        <div class="box w-33 ta-r"><b>Дом:&nbsp;</b></div>
+                        <div class="box w-33"><p>50</p><a href="#" class="edit"></a><input type="text" name="chouse" id="chouse" value="50" class="none"/></div>
+                        <div class="clear"></div>
+                        <div class="box w-33 ta-r"><b>Корпус:&nbsp;</b></div>
+                        <div class="box w-33"><p>20</p><a href="#" class="edit"></a><input type="text" name="ccorp" id="ccorp" value="20" class="none"/></div>
+                        <div class="clear"></div>
+                        <div class="box w-33 ta-r"><b>Квартира / офис:&nbsp;</b></div>
+                        <div class="box w-33"><p>210</p><a href="#" class="edit"></a><input type="text" name="croom" id="croom" value="210" class="none"/></div>
+                        <div class="clear"></div>
+                        <div class="box w-33 ta-r"><b>Подъезд:&nbsp;</b></div>
+                        <div class="box w-33"><p>2</p><a href="#" class="edit"></a><input type="text" name="cporc" id="cporc" value="2" class="none"/></div>
+                        <div class="clear"></div>
+                        <div class="box w-33 ta-r"><b>Этаж:&nbsp;</b></div>
+                        <div class="box w-33"><p>11</p><a href="#" class="edit"></a><input type="text" name="clevel" id="clevel" value="11" class="none"/></div>
+                       	<div class="clear"></div>
+                        <div class="box w-33 ta-r"><b>Домофон:&nbsp;</b></div>
+                        <div class="box w-33"><p>210</p><a href="#" class="edit"></a><input type="text" name="cdom" id="cdom" value="210" class="none"/></div>
+                    </div>
+                    <div class="clear"></div>
+                    <p class="hint">Кликните на запись, чтобы отредактировать ее</p>
+                    <div class="sp-44"></div>
+                    <a href="#" class="jslink l-orn fs-16">На работу (21.02.2013)</a>
+                    <p class="hint">Кликните на профиль, чтобы отредактировать его</p>
+                </div>
+            </div>
+            <div class="sp-50"></div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <div id="footer_sp"></div>
+    <div id="footer">
+    	<div class="wrapper">
+        	<div class="box-l">
+            	<ul>
+                	<li><span class="parent">Воки</span>
+                    	<ul>
+                        	<li><a href="#">Готовые наборы</a></li>
+                            <li><a href="#">Конструктор</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="parent">Суши и роллы</span>
+                    	<ul>
+                        	<li><a href="#">Суши</a></li>
+                            <li><a href="#">Роллы</a></li>
+                            <li><a href="#">Горячее</a></li>
+                            <li><a href="#">Готовые наборы</a></li>
+                        </ul>
+                    </li>
+                    <li><span class="parent">Вкусное здоровье</span>
+                    	<ul>
+                        	<li><a href="#">Супы</a></li>
+                            <li><a href="#">Салаты</a></li>
+                            <li><a href="#">Напитки</a></li>
+                            <li><a href="#">Десерты</a></li>
+                            <li><a href="#">Горячее</a></li>
+                        </ul>
+                   	</li>
+                </ul>
+            </div>
+            <div class="box-r">
+            	<ul>
+                	<li>
+                    	<ul>
+                        	<li><a href="#">Главная</a></li>
+                            <li><a href="#">Оплата и доставка</a></li>
+                            <li><a href="#">Полезно знать</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                    	<ul>
+                        	<li><a href="#">О компании</a></li>
+                            <li><a href="#">Контактная информация</a></li>
+                            <li><a href="#">Сотрудничество и обучение</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="clear"></div>
+            <p class="copy">&copy; &laquo;Кивок&raquo;. Первые макарошки в коробочке</p>
+            <div class="box-r stamp">
+            	<div class="tel">
+                	<span class="c-grn">Звоните и задавайте вопросы:</span><br />
+                    <span class="fs-18 bd"><span class="c-red">(+7 812)</span> 981 42 24</span>
+                </div>
+                <a href="#" id="openstud" target="_blank" title="Открытая студия">Создание и продвижение сайта</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

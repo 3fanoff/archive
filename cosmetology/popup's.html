@@ -1,0 +1,134 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="style.css"/>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="scripts.js"></script>
+<title>Попапы</title>
+</head>
+<body>
+<!-- POPUP-->
+<div id="overlay"></div>
+<div id="popup" class="popup">
+	<a href="javascript:void(0);" onclick="popup.popupClose('#popup');" class="close"></a>
+    <div class="popup_content">
+    </div>
+</div>
+<div>
+	<!-- 
+    //Оставить отзыв//
+    onclick="popup.popupInit('#popup','#new-review');"
+    -->
+	<div id="new-review">
+        <form id="new-review_form" name="new-review_form" action="#" method="post" class="formstyle">
+            <div class="fs-16 tt-u">Оставить отзыв</div>
+            <div class="clear pad-t-10"></div>
+            <div class="name">Имя:</div><div class="field"><input type="text" id="nn_name" name="nn_name"/></div>
+            <div class="clear pad-t-06"></div>
+            <div class="name">Телефон:<span class="pre">+7&nbsp;&nbsp;</span></div><div class="field"><input type="text" id="nn_tel" name="nn_tel"/></div>
+            <div class="clear pad-t-06"></div>
+            <div class="name">E-mail:</div><div class="field"><input type="text" id="nn_tel" name="nn_tel"/></div>
+            <div class="clear pad-t-06"></div>
+            <div class="name">Ваша оценка:</div><div class="field">
+                <div id="rate">
+                    <a href="javascript:void(0);" id="s1" title="1"></a>
+                    <a href="javascript:void(0);" id="s2" title="2"></a>
+                    <a href="javascript:void(0);" id="s3" title="3"></a>
+                    <a href="javascript:void(0);" id="s4" title="4"></a>
+                    <a href="javascript:void(0);" id="s5" title="5"></a>
+                </div>
+                <input type="hidden" id="nn_rate" name="nn_rate"/></div>
+            <div class="clear pad-t-06"></div>
+            <div class="field">Дата посещения центра:</div><div class="name"><input type="text" id="nn_date" name="nn_date"/></div>
+            <div class="clear pad-t-06"></div>
+            <div class="name">Отзыв</div>
+            <div class="clear pad-t-06"></div>
+            <textarea name="nn_review" id="nn_review"></textarea>
+            <div class="clear pad-t-06">
+                <input id="nn_yes" class="checkbox rc" type="checkbox" value="yes" name="nn_yes">
+                <label for="nn_yes">Я не возражаю против публикации<br />моего вопроса и ответа эксперта</label>
+            </div>
+            <div class="clear pad-t-18"></div>
+            <div class="submit-button"><input type="submit" value="Отправить" /></div>
+            <div class="clear"></div>
+        </form>
+	</div>
+    <!-- 
+    //Записаться по акции//
+    onclick="popup.popupInit('#popup','#sign-share');"
+    -->
+    <div id="sign-share">
+		<form id="sign-share_form" name="sign-share_form" action="#" method="post" class="formstyle">
+            <div class="fs-16 tt-u">Записаться по акции</div>
+            <div class="clear pad-t-10"></div>
+            <div class="name">Имя:</div><div class="field"><input type="text" id="ss_name" name="ss_name"/></div>
+            <div class="clear pad-t-06"></div>
+            <div class="name">Телефон:<span class="pre">+7&nbsp;&nbsp;</span></div><div class="field"><input type="text" id="ss_tel" name="ss_tel"/></div>
+            <div class="clear pad-t-06"></div>
+            <div class="name">E-mail:</div><div class="field"><input type="text" id="ss_tel" name="ss_tel"/></div>
+            <div class="clear pad-t-06"></div>
+            <div class="field">Желаемая дата посещения:</div><div class="name"><input type="text" id="ss_date" name="ss_date"/></div>
+            <div class="clear pad-t-18"></div>
+            <div class="fs-12">Действие купона неограниченно. Купон действует в любой день в любое время. 
+            Один человек может выиграть неограниченное количество купонов. Единовременно вы можете использовать один купон.</div>
+            <div class="clear pad-t-18"></div>
+            <div class="submit-button"><input type="submit" value="Записаться" /></div>
+            <div class="clear"></div>
+		</form>
+	</div>
+    <!-- 
+    //Записаться по акции//
+    onclick="popup.popupInit('#popup','#new-question');"
+    -->
+    <div id="new-question">
+        <form id="new-question_form" name="new-question_form" action="#" method="post" class="formstyle">
+            <div class="fs-16 tt-u">Задать свой вопрос</div>
+            <div class="clear pad-t-10"></div>
+            <div class="name">Имя:</div><div class="field"><input type="text" id="nq_name" name="nq_name"/></div>
+            <div class="clear pad-t-06"></div>
+            <div class="name">Телефон:<span class="pre">+7&nbsp;&nbsp;</span></div><div class="field"><input type="text" id="nq_tel" name="nq_tel"/></div>
+            <div class="clear pad-t-06"></div>
+            <div class="name">E-mail:</div><div class="field"><input type="text" id="nq_tel" name="nq_tel"/></div>
+            <div class="clear pad-t-06"></div>
+            <div class="name">Тема вопроса:</div>
+            <div class="field">
+                    <select name="topic">
+                        <option value="общие вопросы">общие вопросы</option>
+                        <option value="процедуры">процедуры</option>
+                        <option value="работы центра">работы центра</option>
+                        <option value="методы">методы</option>
+                        <option value="разное">разное</option>
+                    </select>
+            </div>
+            <div class="clear pad-t-06"></div>
+            <div class="name">Фотография:</div><div class="field">
+                <input type="file" id="nq_tel" name="nq_tel"/>
+                <div class="upload-file"><input type="text" class="file-rep"/><div class="upload file-rep"></div></div>
+            </div>
+            <div class="clear pad-t-06"></div>
+            <div class="name">Ваш вопрос</div>
+            <div class="clear pad-t-06"></div>
+            <textarea name="nq_review" id="nq_review"></textarea>
+            <div class="clear pad-t-06">
+                <input id="nq_yes" class="checkbox rc" type="checkbox" value="yes" name="nq_yes">
+                <label for="nq_yes">Я не возражаю против публикации<br />моего вопроса и ответа эксперта</label>
+            </div>
+            <div class="clear pad-t-18"></div>
+            <div class="submit-button"><input type="submit" value="Отправить" /></div>
+            <div class="clear"></div>
+        </form>
+	</div>
+    <!-- 
+    //Ответное сообщение//
+    onclick="popup.popupInit('#popup','#thanks');"
+    -->
+    <div id="thanks">
+        <p class="fs-18 tt-u">ваша заявка на обратный звонок<br />принята!</p>
+        <div class="clear pad-t-06"></div>
+        <p class="fs-14">Евгения, мы перезвоним вам<br />в ближайшее время по телефону<br />+7 900 869 65 85</p>
+    </div>
+</div>
+<!--/POPUP-->
+</body>
+</html>

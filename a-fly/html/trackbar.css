@@ -1,0 +1,91 @@
+/***************************************************************
+ *  JS-TrackBar
+ *  Copyright (C) 2008 by Alexander Burtsev - webew.ru
+ ***************************************************************/
+
+/* Reset */
+table.trackbar div, table.trackbar td {margin:0; padding:0;}
+table.trackbar {border-collapse:collapse;border-spacing:0;}
+table.trackbar img{border:0;}
+
+/* Styles */
+table.trackbar {
+	width:250px;
+	background:url("images/filter/trackbar/center_bckg.png") 0 5px repeat-x;
+	margin:10px auto 0 auto;
+}
+table.trackbar .l {
+	width:1%;
+	text-align: right;
+	font-size: 1px;
+	background: url("images/filter/trackbar/left_bckg.png") -10px 5px no-repeat;
+}
+table.trackbar .l div {
+	position:relative;
+	width:0;
+	text-align: right;
+	z-index:500;
+	white-space:nowrap;
+}
+table.trackbar .l div img {
+	cursor:pointer;
+}
+table.trackbar .l div span,
+table.trackbar .r div span {
+	position: absolute;
+	top:-16px;
+	right:1px;
+	z-index:1000;
+	font:bold italic 12px Arial;
+	display:none;
+}
+table.trackbar .l div span.limit {
+	background:url("images/filter/trackbar/left_bckg.png") 0 5px no-repeat;
+	text-indent:100px;
+	overflow:hidden;
+	width:5px;
+	display:block;
+	position:absolute;
+	top:0; 
+	right:100%; 
+	z-index:100;
+}
+table.trackbar .r {
+	position:relative;
+	width:1%;
+	text-align: left;
+	font-size: 1px;
+	background: url("images/filter/trackbar/right_bckg.png") 2px 5px no-repeat;
+	cursor:default;
+}
+table.trackbar .r div {
+	position:relative;
+	width:0;
+	text-align: left;
+	margin-right:10px;
+	z-index:500;
+	white-space:nowrap;
+}
+table.trackbar .r div img {
+	cursor:pointer;
+}
+table.trackbar .r div span {
+	left:1px;
+	right:0;
+}
+table.trackbar .r div span.limit {
+	background: url("images/filter/trackbar/right_bckg.png") 100% 5px no-repeat;
+	position:absolute;
+	top:0;
+	left:auto;
+	right:-15px;
+	text-indent:100px;
+	overflow:hidden;
+	width:5px;
+	z-index:100;
+	display:block;
+}
+table.trackbar .c {
+	font-size:1px;
+	width:100%;
+}

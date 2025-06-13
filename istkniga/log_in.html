@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>ИстКнига</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.6.1.min.js" type="text/javascript"></script>
+
+<script src="js/slider.js" type="text/javascript"></script>
+<!--[if IE 6]>
+<script src="js/dd_belatedpng.js" type="text/javascript"></script>
+<script type="text/javascript">
+   DD_belatedPNG.fix('.border-top-03, #container-main-02, .photos_border div, .jcarousel-next-horizontal, .jcarousel-prev-horizontal, .sale, .hit, .choice, .books_carousel');
+</script>
+<![endif]-->
+<!--<link href="css/carousel.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery.jcarousel.js" type="text/javascript"></script>
+<script type="text/javascript">
+jQuery(document).ready(function() {
+    jQuery('.carus').jcarousel({
+	scroll:3,
+	animation: 500
+	});
+});
+</script>-->
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#slider").easySlider();
+});
+</script>
+</head>
+
+<body>
+<div id="ornament-cont-center"><div id="ornament-cont-top"><div id="ornament-cont-bot">
+ <!--MAIN CONTAINER -->
+<div id="container">
+	<div id="topborder_block">
+    	<div class="border-top-01">
+        	<div class="border-top-02">
+            	<div class="border-top-03"></div>
+            </div>
+        </div>
+    </div>
+    <div id="central_block">
+    	<div id="central_block-02">
+        	<div id="central_block-paper">
+            <!-- HEADER -->
+              <div id="header"><div id="logo"><p>istkniga.ru<br /><a href="#" class="tomain">Istkniga</a></p></div>
+              	<div id="leftonlogo">
+                	<div id="ornament-header">
+                     <div id="header-info">
+                   	   <div id="menu_block">
+                     	<ul id="topmenu" class="menu-x">
+                        	<li><a href="#"><span>Главная</span></a></li>
+                            <li><a href="#"><span>Блоги</span></a></li>
+                            <li><a href="#"><span>Форум</span></a></li>
+                            <li><a href="#"><span>События</span></a></li>
+                            <li><a href="#"><span>Фотогалереи</span></a></li>
+                            <li><a href="#"><span>Контакты</span></a></li>
+                        </ul>
+                        <ul id="logmenu" class="menu-x">
+                        	<li class="to-auth current"><a href="#"><span>Вход</span></a></li>
+                            <li><a href="#"><span>Регистрация</span></a></li>
+                        </ul>
+                       </div>
+                       <!-- cornice -->
+                        <div class="cornice">
+                            <div class="right"></div>
+                        </div>
+                        <!--/cornice-->
+                        <ul class="contacts">
+                        	<li class="tel">(812) 123-45-67</li>
+                            <li class="skype">skypelogin</li>
+                            <li class="icq">196450512</li>
+                            <li class="mail"><a href="mailto:info@istkniga.ru">info@istkniga.ru</a></li>
+                        </ul>
+                        <div class="cart">Моя корзина (12)</div>
+                       
+                     </div>
+                     <div id="welcome_block_top">
+                     <!-- if signed -->
+                     	<div class="welcome">Добро пожаловать, <a href="#">Константин Преображенский</a></div>
+                     </div>
+                     <!-- SEARCH -->
+                       <div id="search_block">
+                       <form method="get" action="#">
+							<div class="search_bitmap"><label for="search">Поиск по каталогу товаров:</label></div>
+                            <div class="search_textfield">
+                            	<span><input type="text" name="search" id="search" autocomplete="off"/></span>
+                            </div>
+                            <input type="button" value="Найти" class="button"/>
+                       </form>
+                       </div><div id="search_shadow"></div>
+					<!-- /SEARCH -->
+                    </div>
+              	</div>
+              </div>
+              <!-- /HEADER -->
+              
+              <div id="container-main">
+              	 <div id="container-main-01">
+                 	<div id="container-main-02">
+              <!-- LEFT -->
+              <!-- /LEFT -->
+                <!-- RIGHT -->
+                <div id="right">
+                    <!-- CRUMBS -->
+                   <div id="breadcrumbs">
+                    	<ul>
+                    	<li><span><a href="index.php" title="На главную">Главная</a></span></li>
+                        <li class="separator">&nbsp;&rsaquo;&nbsp;</li>
+                     	<li><span>Вход на сайт</span></li>
+                        </ul>
+                    </div>
+                    <div class="clear"></div>
+                    <!-- /CRUMBS -->
+                	<h1>Вход на сайт</h1>
+                   
+                    <!-- FORMS (LOG_IN) -->
+                    <div id="form_block" class="form_wrapper">
+                    <div class="tooltip_resizeble"><p><span class="req">Проверьте правильность ввода электронной почты и пароля. Убедитесь, что у Вас отключен «CapsLock»,<br/>и пароль введен на том же языке, что и в момент регистрации.</span></p></div>
+                    <form id="log_in-form" name="log_in-form" action="#" class="plain_form">
+                    	<label for="log_in-form-email">Электронная почта<span class="req">*</span></label>
+                        <input type="text" name="log_in-form-email" id="log_in-form-email" class="textfield"/>
+                        <label for="log_in-form-pass">Пароль<span class="req">*</span></label>
+                        <a href="#" class="question-right">Забыли пароль?</a>
+                        <input type="text" name="log_in-form-pass" id="log_in-form-pass" class="textfield"/>
+                       	  <div class="inline-checkboxes">
+                            <input type="checkbox" class="checkbox" name="log_in-form-remember" id="log_in-form-remember"/>
+                            <label for="log_in-form-remember">Запомнить меня</label>
+                       	  </div>
+                            <div class="clear"></div>
+                            <input type="button" class="button" value="Войти"/>
+                            <div class="clear"></div>
+                            <label>Если вы еще не зарегистрированы на нашем сайте, пожалуйста, <a href="#">зарегистрируйтесь.</a></label>
+                            
+                    </form>
+                    </div>
+                    <!-- /FORMS (LOG_IN) -->
+                </div><!-- /RIGHT -->
+                <!-- FOOTER -->
+                <div id="footer">
+                	<ul id="footmenu">
+                    <li><a href="#"><span>Оплата и доставка</span></a></li>
+                    <li><span class="nolink">О проекте</span>
+                    	<ul class="sub_footmenu">
+                        	<li><a href="#"><span>Миссия</span></a></li>
+                            <li><a href="#"><span>Партнёрам</span></a></li>
+                            <li><a href="#"><span>Статьи</span></a></li>
+                            <li><a href="#"><span>Условия использования</span></a></li>
+                        </ul>
+                    </li>
+                    <li class="tel"><span class="tel">(812) 123-45-67</span>
+                    	<ul class="sub_footmenu">
+                            <li class="skype">skypelogin</li>
+                            <li class="icq">196450512</li>
+                            <li class="mail"><a href="mailto:info@istkniga.ru">info@istkniga.ru</a></li>
+                            <li class="cntct"><a href="#"><span>Контакты</span></a></li>
+                        </ul>
+                    </li>
+                    </ul>
+                    <div class="clear"></div>
+                    <!-- cornise -->
+                    <div class="cornice">
+                            <div class="right"></div>
+                    </div>
+                    <!-- /cornise -->
+                    <p class="copy"><span>2011 © Все права защищены. Istkniga.ru</span>|<span>Создание сайта ― &laquo;<a href="http://openstud.ru">Открытая студия</a>&raquo;.</span></p>
+                </div><!-- /FOOTER -->
+                	</div>
+                </div>
+              </div>
+            </div>
+        </div>
+    </div>
+</div><!-- /MAIN CONTAINER -->
+
+</div></div></div><!-- ornament div's -->
+</body>
+</html>
